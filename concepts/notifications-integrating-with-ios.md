@@ -4,6 +4,8 @@ description: "Integrate your iOS app with user notifications client SDK."
 localization_priority: Priority
 ms.prod: "Microsoft Graph notifications"
 ---
+[!NOTE] 
+If you're using the Rome SDK, you should follow instructions on the Rome SDK github site: https://github.com/microsoft/project-rome.
 
 # Integrate your iOS app with the client-side SDK for user notifications
 
@@ -63,7 +65,7 @@ For more information about Microsoft Graph notifications, see [Microsoft Graph N
 
 ## Adding the SDK to your project
 
-The simplest way to add the Connected Devices Platform to your iOS app is by using the [CocoaPods](https://cocoapods.org/) dependency manager. Go to your iOS project's *Podfile* and insert the following entry:
+The simplest way to add the lightweight client SDK to your iOS app is by using the [CocoaPods](https://cocoapods.org/) dependency manager. Go to your iOS project's *Podfile* and insert the following entry:
 
 ```ObjectiveC
 platform :ios, "10.0"
@@ -73,7 +75,7 @@ target 'iOSSample' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
-	pod 'ProjectRomeSdk'
+	pod install 'microsoft/user-notifications-client'
 
   # Pods for iOSSample
 ```
@@ -81,60 +83,6 @@ target 'iOSSample' do
 > [!NOTE]
 > In order to consume CocoaPod, you must use the _.xcworkspace_ file in your project.
 
-## Initializing the Connected Device Platforms
-
-The client-side SDK is built on top of an infrastructure called Connected Device Platform. Before any feature can be used, the platform must be initialized within your app. The initialization steps should occur in your **AppDelegate** method, because they are required before the notification scenarios can take place.
-
-You must construct and initialize the platform by instantiating the [**MCDConnectedDevicesPlatform**](https://docs.microsoft.com/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform) class. efore doing that, make sure to hook up event handlers, as shown, because after platform is started, the events might begin to fire.  
-
-```ObjectiveC
-MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];
-        
-[platform.accountManager.accessTokenRequested subscribe:^(MCDConnectedDevicesAccountManager* _Nonnull manager, MCDConnectedDevicesAccessTokenRequestedEventArgs* _Nonnull args) {
-    // implement the callback;
-}];
-        
-[self.platform.accountManager.accessTokenInvalidated
-    subscribe:^(MCDConnectedDevicesAccountManager* _Nonnull manager __unused,
-        MCDConnectedDevicesAccessTokenInvalidatedEventArgs* _Nonnull request) {
-    // implement the callback;
-}];
-        
-[self.platform.notificationRegistrationManager.notificationRegistrationStateChanged subscribe:^(MCDConnectedDevicesNotificationRegistrationManager* _Nonnull manager __unused, MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs* _Nonnull args) {
-    // implement the callback
-}];
-        
-[platform start];
-```
-
-### Handling account access token
-
-All the web calls the SDK makes, including retrieving the content of a new incoming notification, updating notification states, and more, are reading from or writing to the user's data, and therefore always require a valid access token. The SDK requires you to handle the following events - invoked when an access token is requested or invalidated - to make sure that after the platform is initialized, your access token for the user is handled correctly. 
-
-#### accessTokenRequested
-
-For a full implementation, see the [iOS sample app](https://github.com/Microsoft/project-rome/blob/master/iOS/samples/GraphNotifications/GraphNotificationsSample/ConnectedDevicesPlatformManager.m). 
-
-#### accessTokenInvalidated
-
-For a full implementation, see the [iOS sample app](https://github.com/Microsoft/project-rome/blob/master/iOS/samples/GraphNotifications/GraphNotificationsSample/ConnectedDevicesPlatformManager.m). 
-
-```ObjectiveC
-[platform.accountManager.accessTokenInvalidated
-    subscribe:^(MCDConnectedDevicesAccountManager* _Nonnull manager __unused,
-        MCDConnectedDevicesAccessTokenInvalidatedEventArgs* _Nonnull request) {
-}];
-```
-
-### Handling push registration expiration 
-
-Microsoft Graph notifications use APNs, the native push platform on iOS, to signal the client application on user notifications data changes. This happens when new incoming notifications are published from your app server, or when any notification's state is updated on a different device with the same signed in user in a cross-device scenario. 
-
-For this reason, a valid APNs token that allows background update notifications to come through successfully is required. The following event callback handles APNs push token expirations. 
-
-#### notificationRegistrationStateChanged
-
-For a full implementation, see the [iOS sample app](https://github.com/Microsoft/project-rome/blob/master/iOS/samples/GraphNotifications/GraphNotificationsSample/ConnectedDevicesPlatformManager.m). 
 
 ## Signing in your user
 
@@ -143,16 +91,7 @@ Microsoft Graph notifications, like many other resource types inside Microsoft G
 If you're using a Microsoft account, you will need to include the following permissions in your sign-in request: `wl.offline_access"`, `ccs.ReadWrite`, `wns.connect`, `asimovrome.telemetry`, and `https://activity.windows.com/UserActivity.ReadWrite.CreatedByApp`. 
 
 If you're using an Azure AD account, you'll need to request the following audience: `https://cdpcs.access.microsoft.com`.
-
-## Adding the user account to the platform 
-
-You need to register the signed in user account with the SDK. This involves adding the account and registering a push channel to receive the initial push notifications through APNs. For details, see the [prepareAccountAsync](https://github.com/Microsoft/project-rome/blob/master/iOS/samples/GraphNotifications/GraphNotificationsSample/ConnectedDevicesPlatformManager.m) method in the sample.
-
-```ObjectiveC
-MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];
-MCDConnectedDevicesAccount* mcdAccount = [MCDConnectedDevicesAccount new];
-
-[platform.accountManager addAccountAsync:mcdAccount callback:adapter]; 
+ 
 ```
 
 ## Subscribing to receive user's notifications 
@@ -160,17 +99,18 @@ MCDConnectedDevicesAccount* mcdAccount = [MCDConnectedDevicesAccount new];
 You need to instantiate a **UserDataFeed** object for your application for this signed in user. Your application is identified by the cross-platform app ID you provided during the [Cross-Device Experiences onboarding](notifications-integration-cross-device-experiences-onboarding.md) process.
 
 ```ObjectiveC
-// Initialize the feed and subscribe for notifications
-MCDUserDataFeed* feed = [MCDUserDataFeed getForAccount:account
-                        platform:platform
-                        activitySourceHost:APP_HOST_NAME];
+    accessToken = ...; // the access token obtained from "Signing in your user" section
+    // create an instance of UserNotificationApiImpl
+     UserNotificationWebAPI userNotificationWebAPI = [[UserNotificationWebAPI alloc] init];
+     [userNotificationWebAPI setOAuthAccessToken: accessToken];
+    //  create a new Graph Notifications push notification subscription and set it as the current one for this client instance, or update the current subscription if one already exists. 
 
-NSArray<MCDUserDataFeedSyncScope*>* syncScopes = @[ [MCDUserNotificationChannel syncScope] ];
-[feed subscribeToSyncScopesAsync:syncScopes
-        callback:^(BOOL success __unused, NSError* _Nullable error __unused) {
-    // Start syncing down notifications
-    [feed startSync];
-}];
+[sharedListener subscribeToUserNotificationsAsync:APNSPushNotificationToken
+                                               appPackageNameForPushPlatform:@"com.microsoft.GraphNotificationsExample"
+                                               appDisplayNameForUnsAnalytics:@"GraphNotificationsExample Dsiplay"
+                                                           completionHandler:^(UserNotificationSusbscriptionResult *result) {
+                                                           
+                                                           }]; 
 ```
 
 ## Receiving and managing user notifications
@@ -179,38 +119,33 @@ The flow diagram earlier in this topic shows that the programming patterns to ha
 
 ### Handling incoming push notification signal
 
-All types of user notification data changes generate a signal that gets delivered to the app clients as a push notification. In the case of an iOS app, the signal is delivered as an APNs background update notification. On receiving the data message signal, the app should call **TryParse** to trigger the SDK to fetch from the Microsoft Graph notifications service for the actual data changes.
+All types of user notification data changes generate a signal that gets delivered to the app clients as a push notification. In the case of an iOS app, the signal is delivered as an APNs background update notification. On receiving the data message signal, the app should call userNotificationApiImpl.processPushNotificationAsync(notificationPayload: string) to trigger the SDK to fetch from the Microsoft Graph notifications service for the actual data changes.
 
 ```ObjectiveC
-// App running in background and received a push notification, launched by user tapping the alert view
-MCDConnectedDevicesNotification* notification = [MCDConnectedDevicesNotification tryParse:notificationInfo];
-if (notification != nil) {
-    [_platformManager.platform processNotificationAsync:notification
-            completion:^(NSError* error __unused) {
-        // NOTE: it may be useful to attach completion to this async in order to know when the
-        // notification is done being processed.
-        // This would be a good time to stop a background service or otherwise cleanup.
-    }];
-} else {
-    NSLog(@"Remote notification is not for ConnectedDevicesPlatform, skip processing");
-}
-```
+[userNotificationWebApi processPushNotificationAsync:notificationInfo completionHandler:^(ProcessPushNotificationResult * result) {
+        NSMutableArray<UserNotification*>*userNotificationList =  [result getUserNotifications];
+        if(result.isUserNotificationPush)
+        {
+            UserNotification* notification = [userNotificationList objectAtIndex:0];
+            UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+            RawNotificationPayload* payLoad = (RawNotificationPayload*)[notification getNotificationPayload];
+            content.body = payLoad.rawContent;
+            NSDictionary* userInfo = @{@"message:":payLoad.rawContent};
+            content.userInfo = userInfo;
+            content.sound = [UNNotificationSound defaultSound];
+            [content setValue:@(YES) forKeyPath:@"shouldAlwaysAlertWhileAppIsForeground"];
+            
+            UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:@"Notif" content:content trigger:nil];
+            [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
 
-### Handling user notification data changes
-
-After the SDK successfully fetches the data changes, an event callback is invoked and the app client is expected to handle notification creation, update, or deletion.
-
-```ObjectiveC
-[reader readBatchAsyncWithMaxSize:100 completion:^(NSArray<MCDUserNotification *> * _Nullable notifications,
-                                                    NSError * _Nullable error) {
-    if (error) {
-    } else {
-        for (MCDUserNotification* notification in self.notifications) {
-		// Handle notification change based on change type;
-		}
+            }];
         }
-    }
-}];
+Notes:
+  - Some Graph Notifications push notifications embed the Graph notifications to which they refer, but not all do. 
+  For those that don’t, this function will attempt to fetch all Graph notifications since the last time it was called with a Graph Notifications push notification (whether or not that last one had embedded payload). 
+  However, it is not guaranteed that the fetch will succeed or will get all matching notifications, especially because the number of network requests this function may make may be limited
+  - In order to successfully perform the incremental fetch of Graph notifications just described, this function will persist in per-app non-volatile storage the timestamp of the last Graph Notifications push notification it has been successfully called with.
+  Initially, that timestamp will be the beginning of the user’s notification feed
 ```
 
 ### Update state of a notification
@@ -218,15 +153,12 @@ After the SDK successfully fetches the data changes, an event callback is invoke
 If a notification state change is initiated from this app client instance (for example, if the toast notification popup on this device is activated by the user), the app needs to call the SDK to update the notification's state in order to have this state change synced across all devices used by the same user. 
 
 ```ObjectiveC
-- (void)dismissNotification:(MCDUserNotification*)notification {
-    if (notification.userActionState == MCDUserNotificationUserActionStateNoInteraction) {
-        [self dismissNotificationFromTrayWithId:notification.notificationId];
-        notification.userActionState = MCDUserNotificationUserActionStateDismissed;
-        [notification saveAsync:^(__unused MCDUserNotificationUpdateResult * _Nullable result, __unused NSError * _Nullable error) {
-		// handle result;
-         }];
-    }
-}
+UserNotificationApiImpl* userNotificationApiImpl = ...; // create an instance of the UserNotificationApiImpl
+NSString* notificationId = ...; // obtain the notification id for which the read state needs to be changed
+BOOL readState = true; // change the read state to true
+[sharedListener updateNotificationReadStateAsync:notificationId readState:readState completionHandler:^(BOOL *successResult) {
+  //do your own processing or update your local notifications here
+}];
 ```
 
 ### Delete a notifications
@@ -236,12 +168,11 @@ If a notification deletion is initiated from this app client instance (for examp
 A notification is removed from the user notification store only if it is expired or explicitly deleted. A user notification is not deleted when you update the **UserActionState** to be Dismissed, because the semantic definition of **UserActionState** is defined by the application itself.
 
 ```Obj-C
-- (void)deleteNotification:(MCDUserNotification*)notification {
-    [_channel deleteUserNotificationAsync:notification.notificationId
-     completion:^(__unused MCDUserNotificationUpdateResult* _Nullable result, NSError* _Nullable error) {
-        // handle result;
-     }];
-}
+UserNotificationApiImpl* userNotificationApiImpl = ...; // create an instance of the UserNotificationApiImpl
+NSString* notificationId = ...; // obtain the notification id for which the read state needs to be changed
+ [sharedListener deleteNotificationAsync:notificationId completionHandler:^(NSDate *Date) {
+ 
+ ]};
 ```
 
 ## See also
