@@ -676,7 +676,7 @@ times in the response.
   "name": "create_event_from_user_with_online_meeting"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/events
+POST https://graph.microsoft.com/v1.0/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
 {

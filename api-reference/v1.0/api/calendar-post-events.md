@@ -225,7 +225,7 @@ In the request body, supply a JSON representation of [event](../resources/event.
   "name": "create_event_from_calendar_with_online_meeting"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendars/AAMkAGViNDU8zAAAAAGtlAAA=/events
+POST https://graph.microsoft.com/v1.0/me/calendars/AAMkAGViNDU8zAAAAAGtlAAA=/events
 Content-type: application/json
 {
   "subject": "Let's go for lunch",

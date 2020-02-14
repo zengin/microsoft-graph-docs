@@ -65,7 +65,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
+GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id}
 ```
 
 ### Response

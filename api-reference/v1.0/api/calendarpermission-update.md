@@ -64,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
+PATCH https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id}
 Content-type: application/json
 {
   "emailAddress": {
