@@ -739,7 +739,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 2197
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",
     "id":"AAMkAGI1AAAt8AHjAAA=",
     "createdDateTime":"2017-04-15T03:00:50.7579581Z",
