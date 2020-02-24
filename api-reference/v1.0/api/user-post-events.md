@@ -477,7 +477,7 @@ Content-length: 2985
 #### Example 3: Create a recurring event
 
 ##### Request
-The third example shows how to create a recurring event. The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.
+The third example shows how to create a recurring event that occurs once a week. The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.
 
 # [HTTP](#tab/http)
 <!-- {
