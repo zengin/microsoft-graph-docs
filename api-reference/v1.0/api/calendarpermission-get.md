@@ -22,16 +22,20 @@ Depending on the type of calendar that the event is in and the permission type (
 
 ## HTTP request
 
+Get the specified permissions of a user's primary calendar:
 <!-- { "blockType": "ignored" } -->
-Get the specified permissions of a user's primary calendar.
 ```http
 GET /users/{id}/calendar/calendarPermissions/{id}
 ```
-Get the specified permissions of a group calendar.
+
+Get the specified permissions of a group calendar:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/calendar/calendarPermissions/{id}
 ```
-Get the specified permissions of the user calendar that contains the identified event.
+
+Get the specified permissions of the user calendar that contains the identified event:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
@@ -59,20 +63,37 @@ If successful, this method returns a `200 OK` response code and the requested [c
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendarpermission"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarpermission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarpermission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-calendarpermission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
 The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,6 +103,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "emailAddress": {
     "name": "My Organization",
