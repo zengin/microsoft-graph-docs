@@ -251,6 +251,26 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 
 ---
 
+## Authentication Method Policy permissions ([private preview](#permissions-availability-status))
+
+#### Delegated permissions
+
+|Permission                              |Display String                        |Description        |Admin Consent Required | Microsoft Account supported |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
+|_AuthenticationMethodPolicy.Read_ (private preview)        |Read authentication method policies       |Allows the app to read the authentication method policies for your tenant. |Yes|No|
+|_AuthenticationMethodPolicy.ReadWrite_ (private preview)    |Read and write authentication method policies|Allows the app to read and write the authentication method policies for your tenant.|Yes|No|
+
+#### Application permissions
+
+|Permission                              |Display String                        |Description        |Admin Consent Required |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
+|_AuthenticationMethodPolicy.Read_ (private preview)        |Read authentication method policies       |Allows the app to read the authentication method policies for the tenant. |Yes|
+|_AuthenticationMethodPolicy.ReadWrite_ (private preview)    |Read and write authentication method policies|Allows the app to read and write the authentication method policies for the tenant. |Yes|
+
+### Remarks
+
+Authentication Method Policy permissions are used to manage the tenant's authentication method policy. This policy determines which authentication methods are allowed to be used by which users and groups, which authentication methods are required or optional for registration, settings on each authentication method, and other settings related to authentication methods.
+
 ## Bookings permissions
 
 #### Delegated permissions
