@@ -251,7 +251,7 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 
 ---
 
-## Authentication Method Policy permissions ([private preview](#permissions-availability-status))
+## Authentication method policy permissions ([private preview](#permissions-availability-status))
 
 #### Delegated permissions
 
@@ -269,7 +269,7 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 
 ### Remarks
 
-Authentication Method Policy permissions are used to manage the tenant's authentication method policy. This policy determines which authentication methods are allowed to be used by which users and groups, which authentication methods are required or optional for registration, settings on each authentication method, and other settings related to authentication methods.
+Authentication method policy permissions are used to manage the tenant's authentication method policy. This policy determines which authentication methods are allowed to be used by which users and groups, which authentication methods are required or optional for registration, settings on each authentication method, and other settings related to authentication methods.
 
 ## Bookings permissions
 
