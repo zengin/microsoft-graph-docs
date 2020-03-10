@@ -36,10 +36,10 @@ Don't see your preferred language or platform? Request a tutorial for it on [Use
 
 The following tutorials focus on specific scenarios for using the Microsoft Graph.
 
-
 - [Optimize data usage when using Microsoft Graph with query parameters](https://docs.microsoft.com/learn/modules/optimize-data-usage/)
 - [Optimize network traffic with Microsoft Graph](https://docs.microsoft.com/learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters)
 - [Change notifications and delta query](/graph/tutorials/change-notifications)
+- [Add user profile features](/graph/tutorials/scenarios/user-profile)
 
 ## See also
 

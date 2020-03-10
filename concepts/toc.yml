@@ -33,38 +33,44 @@ items:
         items:
           - name: Overview
             href: tutorials.md
-          - name: .NET Core
-            href: /graph/tutorials/dotnet-core
-          - name: Android
-            href: /graph/tutorials/android
-          - name: Angular
-            href: /graph/tutorials/angular
-          - name: ASP.NET
-            href: /graph/tutorials/aspnet
-          - name: Microsoft Flow
-            href: /graph/tutorials/flow
-          - name: iOS Objective-C
-            href: /graph/tutorials/ios-objectivec
-          - name: iOS Swift
-            href: /graph/tutorials/ios-swift
-          - name: Java
-            href: /graph/tutorials/java
-          - name: Node.js
-            href: /graph/tutorials/node
-          - name: PHP
-            href: /graph/tutorials/php
-          - name: Python
-            href: /graph/tutorials/python
-          - name: React
-            href: /graph/tutorials/react
-          - name: React Native
-            href: /graph/tutorials/react-native
-          - name: Ruby
-            href: /graph/tutorials/ruby
-          - name: UWP
-            href: /graph/tutorials/uwp
-          - name: Xamarin
-            href: /graph/tutorials/xamarin
+          - name: Get started
+            items:
+            - name: .NET Core
+              href: /graph/tutorials/dotnet-core
+            - name: Android
+              href: /graph/tutorials/android
+            - name: Angular
+              href: /graph/tutorials/angular
+            - name: ASP.NET
+              href: /graph/tutorials/aspnet
+            - name: Microsoft Flow
+              href: /graph/tutorials/flow
+            - name: iOS Objective-C
+              href: /graph/tutorials/ios-objectivec
+            - name: iOS Swift
+              href: /graph/tutorials/ios-swift
+            - name: Java
+              href: /graph/tutorials/java
+            - name: Node.js
+              href: /graph/tutorials/node
+            - name: PHP
+              href: /graph/tutorials/php
+            - name: Python
+              href: /graph/tutorials/python
+            - name: React
+              href: /graph/tutorials/react
+            - name: React Native
+              href: /graph/tutorials/react-native
+            - name: Ruby
+              href: /graph/tutorials/ruby
+            - name: UWP
+              href: /graph/tutorials/uwp
+            - name: Xamarin
+              href: /graph/tutorials/xamarin
+          - name: Scenarios
+            items:
+            - name: User profile
+              href: /graph/tutorials/scenarios/user-profile
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -104,7 +110,7 @@ items:
           - name: Overview
             href: cloud-communications-concept-overview.md
           - name: Get started
-            href: cloud-communications-get-started.md            
+            href: cloud-communications-get-started.md
           - name: Calls
             href: cloud-communications-calls.md
           - name: Media
@@ -167,7 +173,7 @@ items:
         href: azuread-identity-access-management-concept-overview.md
         displaName: Azure AD, Microsoft identity platform
         items:
-          - name: Information Protection        
+          - name: Information Protection
             href: information-protection-overview.md
       - name: Mail
         displayName: Outlook, Outlook mail
@@ -261,7 +267,7 @@ items:
         items:
           - name: Overview
             href: reportroot-concept-overview.md
-          - name: Authorization for Office 365 usage reports 
+          - name: Authorization for Office 365 usage reports
             href: reportroot-authorization.md
       - name: Search (preview)
         items:
