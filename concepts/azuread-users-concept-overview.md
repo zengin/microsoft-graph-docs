@@ -21,7 +21,7 @@ To access a user's information and data, you'll need to [get access on their beh
 
 ### Manage your organization
 
-Create new users in your organization or update the resources and relationships for existing users. You can use Microsoft Graph to perform the following user management tasks: 
+Create new users in your organization or update the resources and relationships for existing users. You can use Microsoft Graph to perform the following user management tasks:
 
 - Create or delete users in your Azure AD organization.
 - List a user's group memberships and determine whether a user is a member of a group.
@@ -54,6 +54,7 @@ Maximize relevance in your application by promoting recently used or trending do
 - List documents shared with a user through email or OneDrive for Business.
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Users API in Microsoft Graph v1.0](/graph/api/resources/users?view=graph-rest-1.0)
@@ -65,7 +66,9 @@ Looking for the API reference for this service?
 - Explore your own data from the **user** resource in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Authenticate with Microsoft Graph [on behalf of a user](auth-v2-user.md) or [as a daemon or service by consent of an administrator](auth-v2-service.md).
 - Set access control and policies for users with the [Azure AD API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
-- Review the [permissions](permissions-reference.md) your app will need to access user data. 
+- Review the [permissions](permissions-reference.md) your app will need to access user data.
+- Learn how to [add user profile features](/graph/tutorials/scenarios/user-profile) to an application.
+
 <!-- This isn't really a next step; let's remove to keep the list of links concise.>
 - Stay up to date with Microsoft Graph [changelog](changelog.md).
 -->
