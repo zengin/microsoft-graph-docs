@@ -37,7 +37,7 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(preview)**| <p align="center">&#x2713;</p> | <p align="center">Limited*</p> | <p align="center">&#x2713;</p> |
 |[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(preview)**| <p align="center">&#x2713;</p> | <p align="center">Not supported in product</p> | <p align="center">&#x2713;</p> |
 
-> **Limited***: Updated with Microsoft Graph Security API integrated applications but not reflected in the portal. Support for Portal update is coming soon.
+> **Limited***: Alert status gets updated with Microsoft Graph Security API integrated applications but not reflected in the portal. Support for Portal update is coming soon.
 
 > **Note:** New providers are continuously onboarding to the Microsoft Graph Security ecosystem. To request new providers or for extended support from existing providers, [file an issue in the Microsoft Graph Security GitHub repo](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
