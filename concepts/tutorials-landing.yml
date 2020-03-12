@@ -14,7 +14,7 @@ metadata:
 landingContent:
   - title: Build your first server-side app
     linkLists:
-      - linkListType: tutorial
+      - linkListType: get-started
         links:
           - text: ASP.NET
             url: /graph/tutorials/aspnet
@@ -28,8 +28,10 @@ landingContent:
             url: /graph/tutorials/ruby
   - title: Build your first native app
     linkLists:
-      - linkListType: tutorial
+      - linkListType: get-started
         links:
+          - text: .NET Core
+            url: /graph/tutorial/dotnet-core
           - text: Android
             url: /graph/tutorials/android
           - text: iOS Objective-C
@@ -46,9 +48,21 @@ landingContent:
             url: /graph/tutorials/xamarin
   - title: Build your first single-page app
     linkLists:
-      - linkListType: tutorial
+      - linkListType: get-started
         links:
           - text: Angular
             url: /graph/tutorials/angular
           - text: React
             url: /graph/tutorials/react
+  - title: Scenarios
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Add user profile features
+            url: /graph/tutorials/scenarios/user-profile
+          - text: Change notifications and delta query
+            url: /learn/modules/msgraph-changenotifications-trackchanges
+          - text: Optimize data usage with query parameters
+            url: learn/modules/optimize-data-usage
+          - text: Optimize network traffic
+            url: learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters
