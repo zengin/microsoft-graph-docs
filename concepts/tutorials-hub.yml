@@ -1,0 +1,59 @@
+### YamlMime:Hub
+
+title: Microsoft Graph tutorials
+summary: Microsoft Graph tutorials are step-by-step training exercises that guide you through creating a basic application that accesses data via the Microsoft Graph.
+brand: ms-graph
+
+metadata:
+  title: Microsoft Graph tutorials
+  description: Microsoft Graph tutorials are step-by-step training exercises that guide you through creating a basic application that accesses data via the Microsoft Graph.
+  ms.topic: hub-page
+  author: jasonjoh
+  ms.author: jasonjoh
+  ms.date: 03/11/2020
+
+tools:
+  title: Build your first server-side app
+  summary: sectionsummary # < 160 chars (optional)
+  items:
+    # Card
+    - title: ASP.NET
+      imageSrc: ./images/index/logo_NETcore.svg
+      url: /graph/tutorials/aspnet
+    # Card
+    - title: Node.js
+      imageSrc: ./images/index/logo_nodejs.svg
+      url: /graph/tutorials/node
+    # Card
+    - title: PHP
+      imageSrc: ./images/index/logo_php.svg
+      url: /graph/tutorials/php
+    - title: Python
+      imageSrc: ./images/index/logo_python.svg
+      url: /graph/tutorials/python
+    - title: Ruby
+      imageSrc: ./images/index/logo_ruby.svg
+      url: /graph/tutorials/ruby
+
+tools:
+  title: Build your first server-side app
+  summary: sectionsummary # < 160 chars (optional)
+  items:
+    # Card
+    - title: ASP.NET
+      imageSrc: ./images/index/logo_NETcore.svg
+      url: /graph/tutorials/aspnet
+    # Card
+    - title: Node.js
+      imageSrc: ./images/index/logo_nodejs.svg
+      url: /graph/tutorials/node
+    # Card
+    - title: PHP
+      imageSrc: ./images/index/logo_php.svg
+      url: /graph/tutorials/php
+    - title: Python
+      imageSrc: ./images/index/logo_python.svg
+      url: /graph/tutorials/python
+    - title: Ruby
+      imageSrc: ./images/index/logo_ruby.svg
+      url: /graph/tutorials/ruby
