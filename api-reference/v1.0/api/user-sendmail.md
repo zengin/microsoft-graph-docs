@@ -59,7 +59,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "user_sendmail"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/me/sendMail
 Content-type: application/json
 

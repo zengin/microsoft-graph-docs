@@ -96,7 +96,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "update_user"
 }-->
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/me
 Content-type: application/json
 
