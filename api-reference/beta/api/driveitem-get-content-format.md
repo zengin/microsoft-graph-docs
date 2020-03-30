@@ -58,7 +58,7 @@ Pre-authenticated URLs are only valid for a short period of time (a few minutes)
 
 ### Errors
 
-See [Error Responses][error-response] for more information about how errors are returned.
+For more information about how errors are returned, see [Error responses][error-response].
 
 ## Example
 
