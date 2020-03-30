@@ -67,8 +67,7 @@ SharePoint permission levels set on an item are returned with an 'SP' prefix. Fo
 
 ### Errors
 
-Read the [Error Responses][error-response] topic for more information about
-how errors are returned.
+For information about how errors are returned, see [Error responses][error-response].
 
 ## Example
 
