@@ -67,8 +67,8 @@ In addition to the collection of DriveItems, the response will also include one 
 
 ### Errors
 
-There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
-In these cases the service will return an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
+There might be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
+In these cases, the service will return an `HTTP 410 Gone` error with an error response containing one of the following error codes, and a `Location` header that contains a new nextLink that starts a fresh delta enumeration.
 After finishing the full enumeration, compare the returned items with your local state and follow these instructions.
 
 | Error Type                       | Instructions                                                                                                                                                                                                                    |
@@ -76,7 +76,7 @@ After finishing the full enumeration, compare the returned items with your local
 | `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about. |
 | `resyncChangesUploadDifferences` | Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).                                       |
 
-In addition to the resync errors, see [Error Responses][error-response] for details about how errors are returned.
+In addition to the resync errors, see [Error responses][error-response] for details about how errors are returned.
 
 ## Example (Initial Request)
 
