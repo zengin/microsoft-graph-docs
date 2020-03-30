@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and updated [DriveIt
 
 ### Errors
 
-See [Error Responses][error-response] for details about how errors are returned.
+For details about how errors are returned, see [Error responses][error-response].
 
 
 ## Example
