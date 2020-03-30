@@ -56,16 +56,18 @@ If your client is not enabled to follow the 302-redirect URL by default:
 
 ### Errors
 
-See [Error Responses][error-response] for more info about how errors are returned.
+For information about how errors are returned, see [Error responses][error-response].
 
-## Example
+## Examples
 This section describes three example scenarios. Each scenario involves one or two requests:
 
 - The first scenario is the more common case where the client is set to automatically follow 302-redirects. An app makes [request 1](#request-1) and the operation succeeds. The client automatically makes a new separate request for the pre-authenticated download URL specified by the `Location` header, and starts downloading the complete file.
 - In the second scenario, the client is not enabled to automatically follow 302-redirects. An app makes [request 1](#request-1), the operation succeeds, and then makes [request 2](#request-2) to download the complete file.
 - In the third scenario, an app can disable automatic redirects on the client, and download only part of the file. It makes [request 1](#request-1), the operation succeeds, and then makes [request 3](#request-3) to download a specific partial byte range of the file.
 
-##### Request 1 
+### Example 1: Client automatically follows 302-redirects
+
+#### Request 1 
 This example request on `/content` gets a pre-authenticated download URL for a file:
 
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
@@ -74,7 +76,7 @@ This example request on `/content` gets a pre-authenticated download URL for a f
 GET /me/drive/items/{item-id}/content
 ```
 
-##### Response 1
+#### Response 1
 Here is an example of a successful response. The operation returns a `HTTP 302 Found` status code, and a `Location` header that indicates a temporary, pre-authenticated download URL for the file.
 
 <!-- { "blockType": "response", "name": "download-item-content", "@odata.type": "stream" } -->
@@ -84,7 +86,9 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-##### Request 2
+### Example 2: Client does not automatically follow 302-redirects
+
+#### Request 2
 Using the pre-authenticated download URL returned in response 1, do an explicit GET operation to download the full contents of the file:
 
 <!-- { "blockType": "request", "name": "download-item-full", "scopes": "files.read" } -->
@@ -92,7 +96,7 @@ Using the pre-authenticated download URL returned in response 1, do an explicit 
 GET https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-##### Response 2
+#### Response 2
 The following is an example response that returns all the bytes of the file.
 <!-- { "blockType": "response", "name": "download-item-full", "@odata.type": "stream" } -->
 
@@ -102,7 +106,9 @@ HTTP/1.1 200 OK
 <All the bytes of the file>
 ```
 
-##### Request 3
+### Example 3: App can disable automatic redirects on client
+
+#### Request 3
 
 Instead of getting the full contents of the file, alternatively, use the same pre-authenticated download URL returned in response 1 and apply a `Range` header to download a partial range of bytes from the file: 
 
@@ -113,7 +119,7 @@ GET https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 Range: bytes=0-1023
 ```
 
-##### Response 3
+#### Response 3
 The following is an example response that returns the requested bytes from the file.
 
 <!-- { "blockType": "response", "name": "download-item-partial", "@odata.type": "stream" } -->
