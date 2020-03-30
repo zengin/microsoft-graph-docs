@@ -57,8 +57,7 @@ If successful, this method returns a `201 Created` response code and a [driveIte
 
 ### Errors
 
-See [Error Responses][error-response] for details about
-how errors are returned.
+For details about how errors are returned, see [Error responses][error-response].
 
 ## Example (upload a new file)
 
