@@ -42,8 +42,7 @@ If successful, this method returns `201 Created` response code and a [Driveitem]
 
 ### Errors
 
-Read the [Error Responses][error-response] topic for more info about
-how errors are returned.
+For information about how errors are returned, see [Error responses][error-response].
 
 ## Example
 
