@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get a user
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of user object.
 
 > Note: Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
@@ -106,14 +108,14 @@ You can get the user information for the signed-in user by replacing `/users/{id
   "blockType": "request",
   "name": "get_user"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
