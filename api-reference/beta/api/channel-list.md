@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # List channels
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [channels](../resources/channel.md) in this [team](../resources/team.md).
@@ -122,7 +124,7 @@ The following example shows a request to list all private channels.
   "blockType": "request",
   "name": "list_private_channels"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
 ```
 # [C#](#tab/csharp)

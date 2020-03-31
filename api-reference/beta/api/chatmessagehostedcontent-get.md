@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get chatMessageHostedContent
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) object.
@@ -117,7 +119,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_chatmessagehostedcontent"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}/$value
 ```
 # [C#](#tab/csharp)

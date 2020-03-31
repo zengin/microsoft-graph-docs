@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # organization resource type
 
+Namespace: microsoft.graph
+
 Represents the Azure Active Directory tenant that the user or application is signed in to. Only the read and update operations are supported on this resource; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
 
 This resource lets you add your own data to custom properties using [extensions](/graph/extensibility-overview).
@@ -57,6 +59,7 @@ This resource lets you add your own data to custom properties using [extensions]
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization. Read-only. Nullable.|
 
 ## JSON representation
