@@ -24,7 +24,7 @@ The Microsoft Graph Security API includes the following key entities.
 
 Alerts are potential security issues within a customer's tenant that Microsoft or partner security solutions have identified and flagged for action or notification. With the Microsoft Graph Security [alerts](alert.md) entity, you can unify and streamline management of security issues across all integrated solutions. This also enables applications to correlate alerts and context to improve threat protection and response. With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph Security API by updating your [alerts](alert.md) entity.
 
-Alerts from the following providers are available via the Microsoft Graph Security API. Support for GET alerts, PATCH alerts and Subscribe (via webhooks) is indicated in the following table.
+Alerts from the following providers are available via the Microsoft Graph Security API. Support for GET alerts, PATCH alerts, and Subscribe (via webhooks) is indicated in the following table.
 
 \* File issue: Alert status gets updated across Microsoft Graph Security API integrated applications but not reflected in the provider’s management experience. Support for Portal update is coming soon.
 
