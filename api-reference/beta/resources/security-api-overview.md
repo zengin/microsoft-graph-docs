@@ -28,7 +28,7 @@ Alerts are potential security issues within a customer's tenant that Microsoft o
 
 Alerts from the following providers are available via the Microsoft Graph Security API. Support for GET alerts, PATCH alerts, and Subscribe (via webhooks) is indicated in the following table.
 
-\* File issue: Alert status gets updated across Microsoft Graph Security API integrated applications but not reflected in the provider’s management experience. Support for Portal update is coming soon.
+\* File issue: Alert status gets updated across Microsoft Graph Security API integrated applications but not reflected in the provider’s management experience.
 
 | Security provider | <p align="center">GET alert</p>| <p align="center">PATCH alert</p>| <p align="center">Subscribe to alert</p>|
 |:------------------|:---------|:-----------|:------------------|
