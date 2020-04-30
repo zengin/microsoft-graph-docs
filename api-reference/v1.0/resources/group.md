@@ -132,7 +132,7 @@ This resource supports:
 |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/group-renew.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only.|
 |resourceBehaviorOptions|String collection|Specifies the group behaviors that can be set for an Office 365 group during creation. This can be set only as part of creation (POST). Possible values are **AllowOnlyMembersToPost**, **HideGroupInOutlook**, **SubscribeNewGroupMembers**, **WelcomeEmailDisabled**.  More details are available below.|
 |resourceProvisioningOptions|String collection|Specifies the group resources that are provisioned as part of Office 365 group creation, that are not normally part of default group creation. Possible value is **Teams**. More details are available below.|
-|securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports $filter.|
+|securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports `$filter`.|
 |securityIdentifier|String|Security identifier of the group, used in Windows scenarios. <br><br>Returned by default.|
 |unseenCount|Int32|Count of conversations that have received new posts since the signed-in user last visited the group. <br><br>Returned only on $select. |
 |visibility|String| Specifies the visibility of an Office 365 group. Possible values are: `Private`, `Public`, or `Hiddenmembership`; blank values are treated as public.  See [group visibility options](#group-visibility-options) to learn more.<br>Visibility can be set only when a group is created; it is not editable.<br>Visibility is supported only for unified groups; it is not supported for security groups. <br><br>Returned by default.|
@@ -174,7 +174,7 @@ Groups can be further configured using the `resourceBehaviorOptions` and `resour
 |calendar|[calendar](calendar.md)|The group's calendar. Read-only.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only.|
 |conversations|[conversation](conversation.md) collection|The group's conversations.|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| The user (or application) that created the group. NOTE: This is not set if the user is an administrator. Read-only.|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| The user (or application) that created the group. **NOTE**: This is not set if the user is an administrator. Read-only.|
 |drive|[drive](drive.md)|The group's default drive. Read-only.|
 |drives|[drive](drive.md) collection|The group's drives. Read-only.|
 |events|[event](event.md) collection|The group's calendar events.|
