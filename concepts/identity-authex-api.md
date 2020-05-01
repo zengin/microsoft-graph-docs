@@ -2,7 +2,7 @@
 title: "Authentication flows policy"
 description: "This API is to enable or disable self service sign up experience at the tenant level. It was designed so that it can be used for other similar settings for all authentication flows."
 localization_priority: Priority
-author: "sangeetaranjit-msft"
+author: "linkhp"
 ms.prod: "identity-authex-api"
 doc_type: "apiPageType"
 ---
