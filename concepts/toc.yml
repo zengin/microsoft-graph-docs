@@ -173,6 +173,9 @@ items:
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
         displayname: Dynamics, Dynamics 365 Business Central
+      - name: Authentication flows policy
+        href: identity-authex-api.md
+        displayname: Authentication flows policy (preview)
       - name: Identity and access
         href: azuread-identity-access-management-concept-overview.md
         displaName: Azure AD, Microsoft identity platform
