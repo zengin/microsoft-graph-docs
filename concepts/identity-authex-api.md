@@ -1,3 +1,8 @@
+---
+title: "Authentication flows policy"
+description: "This API is to enable or disable self service sign up experience at the tenant level. It was designed so that it can be used for other similar settings for all authentication flows."
+---
+
 # Authentication flows policy
 
 The self service sign up experience in regular AAD tenants (colloquially known as ExtId/ExId/BYOI) enables the users to initiate a self service sign up flow. The tenant admin or the workflow admin can approve or deny user's request to sign up in their tenant. This can be compared with the current experience in a regular AAD tenant, where a user has to be invited or created manually by the tenant admin. 
