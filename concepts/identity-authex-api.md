@@ -1,18 +1,18 @@
 ---
 title: "Authentication flows policy"
-description: "This API is to enable or disable self service sign up experience at the tenant level. It was designed so that it can be used for other similar settings for all authentication flows."
+description: "The self-service sign up experience in regular Azure Active Directory (Azure AD) tenants (otherwsie known as ExtId/ExId/BYOI) enables  users to initiate a self-service sign up flow. "
 localization_priority: Priority
 author: "linkhp"
-ms.prod: "identity-authex-api"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 ---
 
 # Authentication flows policy
 
-The self service sign up experience in regular AAD tenants (colloquially known as ExtId/ExId/BYOI) enables the users to initiate a self service sign up flow. The tenant admin or the workflow admin can approve or deny user's request to sign up in their tenant. This can be compared with the current experience in a regular AAD tenant, where a user has to be invited or created manually by the tenant admin. 
+The self-service sign up experience in regular Azure Active Directory (Azure AD) tenants (otherwsie known as ExtId/ExId/BYOI) enables  users to initiate a self-service sign up flow. The tenant admin or the workflow admin can approve or deny a user's request to sign up in their tenant. This can be compared with the current experience in a regular Azure AD tenant, where a user has to be invited or created manually by the tenant admin. 
 
-Currently this api is to enable/disable the self service sign up experience at a tenant level. We are designing the api so that it can be used for other similar settings for all authentication flows.
+Currently, this API is to enable/disable the self-service sign up experience at a tenant level. The API is designed to be used for other similar settings for all authentication flows.
 
 The policy/api is named 'authentication flows' because the settings here will refer to the flow of user when they use identity. For example sign up is a flow, sign in is a flow, profile update, progressive profiling etc are the various authentication flows a user can go through. We'll pull in more and more settings on a case by case basis. 
 
