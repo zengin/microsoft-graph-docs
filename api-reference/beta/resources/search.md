@@ -19,9 +19,12 @@ This resource is not expected to be called as such. Any request on the resource 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## JSON representation
 
-None
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [query](../api/search-query.md) | [searchResponse](searchresponse.md) Collection| Executes the query specified in the [searchRequest](../resources/searchrequest.md) |
 
 ## Properties
 
@@ -31,11 +34,9 @@ None
 
 None
 
-## Methods
+## JSON representation
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [query](../api/search-query.md) | [searchResponse](searchresponse.md) Collection| Executes the query specified in the [searchRequest](../resources/searchrequest.md) |
+None
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

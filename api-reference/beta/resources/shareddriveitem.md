@@ -16,34 +16,11 @@ Namespace: microsoft.graph
 
 The **sharedDriveItem** resource is returned when using the [Shares](../api/shares-get.md) API to access a shared [driveItem](driveitem.md).
 
-## JSON representation
+## Methods
 
-Here is a JSON representation of the **sharedDriveItem** resource.
-
-The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
-
-<!-- {
-  "blockType": "resource",
-  "baseType": "microsoft.graph.baseItem",
-  "optionalProperties": [  ],
-  "@odata.type": "microsoft.graph.sharedDriveItem"
-}-->
-
-```json
-{
-  "id": "string",
-  "name": "string",
-  "owner": { "@odata.type": "microsoft.graph.identitySet" },
-
-  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-  "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
-  "list": { "@odata.type": "microsoft.graph.list" },
-  "listItem": { "@odata.type": "microsoft.graph.listItem" },
-  "permission": { "@odata.type": "microsoft.graph.permission" },
-  "root": { "@odata.type": "microsoft.graph.driveItem" },
-  "site": { "@odata.type": "microsoft.graph.site" }
-}
-```
+| Method                                  | REST Path                |
+| :-------------------------------------- | :----------------------- |
+| [Get shared item](../api/shares-get.md) | `GET /shares/{share-id}` |
 
 ## Properties
 
@@ -76,11 +53,34 @@ Alternatively, for **driveItems** shared from personal OneDrive accounts, the fo
 [permission]: permission.md
 [site]: site.md
 
-## Methods
+## JSON representation
 
-| Method                                  | REST Path                |
-| :-------------------------------------- | :----------------------- |
-| [Get shared item](../api/shares-get.md) | `GET /shares/{share-id}` |
+Here is a JSON representation of the **sharedDriveItem** resource.
+
+The **sharedDriveItem** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.
+
+<!-- {
+  "blockType": "resource",
+  "baseType": "microsoft.graph.baseItem",
+  "optionalProperties": [  ],
+  "@odata.type": "microsoft.graph.sharedDriveItem"
+}-->
+
+```json
+{
+  "id": "string",
+  "name": "string",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
+
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "list": { "@odata.type": "microsoft.graph.list" },
+  "listItem": { "@odata.type": "microsoft.graph.listItem" },
+  "permission": { "@odata.type": "microsoft.graph.permission" },
+  "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "site": { "@odata.type": "microsoft.graph.site" }
+}
+```
 
 ## Remarks
 

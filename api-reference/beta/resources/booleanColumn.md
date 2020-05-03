@@ -15,6 +15,10 @@ Namespace: microsoft.graph
 
 The **booleanColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a boolean value.
 
+## Properties
+
+The **booleanColumn** resource contains no properties.
+
 ## JSON representation
 
 Here is a JSON representation of a **booleanColumn** resource.
@@ -24,10 +28,6 @@ Here is a JSON representation of a **booleanColumn** resource.
 {
 }
 ```
-
-## Properties
-
-The **booleanColumn** resource contains no properties.
 
 <!--
 {

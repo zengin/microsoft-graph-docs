@@ -22,13 +22,13 @@ Represents locations included in and excluded from the policy scope.
 | includeLocations | String collection | Location IDs in scope of policy unless explicitly excluded, `All`, or `AllTrusted`. |
 | excludeLocations | String collection | Location IDs excluded from scope of policy. |
 
-## JSON representation
-
-The following is a JSON representation of the resource.
-
 ## Relationships
 
 None.
+
+## JSON representation
+
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

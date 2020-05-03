@@ -19,28 +19,6 @@ Content types allow you to define a set of columns that must be present on every
 [list]: list.md
 [listItem]: listitem.md
 
-## JSON representation
-
-Here is a JSON representation of a **contentType** resource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
-
-```json
-{
-  "description": "string",
-  "group": "string",
-  "hidden": false,
-  "id": "string",
-  "inheritedFrom": { "@type": "microsoft.graph.itemReference" },
-  "name": "string",
-  "order": { "@type": "microsoft.graph.contentTypeOrder" },
-  "parentId": "string",
-  "readOnly": false,
-  "sealed": false,
-
-  "columnLinks": [{ "@type": "microsoft.graph.columnLink" }]
-}
-```
-
 ## Properties
 
 | Property name     | Type                 | Description
@@ -63,6 +41,28 @@ Here is a JSON representation of a **contentType** resource.
 | **columnLinks** | [columnLink][] collection | The collection of columns that are required by this content type
 
 See [Introduction to content types and content type publishing][contentTypeIntro] for more information.
+
+## JSON representation
+
+Here is a JSON representation of a **contentType** resource.
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
+
+```json
+{
+  "description": "string",
+  "group": "string",
+  "hidden": false,
+  "id": "string",
+  "inheritedFrom": { "@type": "microsoft.graph.itemReference" },
+  "name": "string",
+  "order": { "@type": "microsoft.graph.contentTypeOrder" },
+  "parentId": "string",
+  "readOnly": false,
+  "sealed": false,
+
+  "columnLinks": [{ "@type": "microsoft.graph.columnLink" }]
+}
+```
 
 [columnLink]: columnlink.md
 [contentTypeIntro]: https://support.office.com/en-us/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5

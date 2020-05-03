@@ -35,14 +35,6 @@ The program control type objects are automatically generated when the global adm
 
 None.
 
-
-## See also
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Create programControl](../api/programcontrol-create.md) |		[programControl](programcontrol.md)	|	Add a programControl to a program.|
-
-
 ## JSON representation
 
 Here is a JSON representation of the resource.
@@ -62,6 +54,13 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
+## See also
+
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[Create programControl](../api/programcontrol-create.md) |		[programControl](programcontrol.md)	|	Add a programControl to a program.|
+
 
 <!--
 {

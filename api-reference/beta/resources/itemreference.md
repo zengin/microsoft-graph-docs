@@ -13,6 +13,22 @@ Namespace: microsoft.graph
 
 The **ItemReference** resource provides information necessary to address a [DriveItem](driveitem.md) via the API.
 
+## Properties
+
+| Property      | Type              | Description
+|:--------------|:------------------|:-----------------------------------------
+| driveId       | String            | Unique identifier of the drive instance that contains the item. Read-only.
+| driveType     | String            | Identifies the type of drive. See [drive][] resource for values.
+| id            | String            | Unique identifier of the item in the drive. Read-only.
+| name          | String            | The name of the item being referenced. Read-only.
+| path          | String            | Path that can be used to navigate to the item. Read-only.
+| shareId       | String            | A unique identifier for a shared resource that can be accessed via the [Shares][] API.
+| sharepointIds | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only.
+
+[drive]: ../resources/drive.md
+[sharepointIds]: ../resources/sharepointids.md
+[Shares]: ../api/shares-get.md
+
 ## JSON representation
 
 Here is a JSON representation of the resource
@@ -34,23 +50,6 @@ Here is a JSON representation of the resource
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" }
 }
 ```
-
-## Properties
-
-| Property      | Type              | Description
-|:--------------|:------------------|:-----------------------------------------
-| driveId       | String            | Unique identifier of the drive instance that contains the item. Read-only.
-| driveType     | String            | Identifies the type of drive. See [drive][] resource for values.
-| id            | String            | Unique identifier of the item in the drive. Read-only.
-| name          | String            | The name of the item being referenced. Read-only.
-| path          | String            | Path that can be used to navigate to the item. Read-only.
-| shareId       | String            | A unique identifier for a shared resource that can be accessed via the [Shares][] API.
-| sharepointIds | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only.
-
-[drive]: ../resources/drive.md
-[sharepointIds]: ../resources/sharepointids.md
-[Shares]: ../api/shares-get.md
-
 ## Remarks
 
 To address a **driveItem** from an **itemReference** resource, construct a URL of the format:

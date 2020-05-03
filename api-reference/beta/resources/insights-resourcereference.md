@@ -15,6 +15,14 @@ Namespace: microsoft.graph
 
 Complex type containing properties of [officeGraphInsights](officegraphinsights.md).
 
+## Properties
+
+| Property      | Type      | Description  |
+| ------------- |-----------| -------------|
+| webUrl      	| String	| A URL leading to the referenced item. |
+| id     		| String    | The item's unique identifier.           |
+| type 			| String   	| A string value that can be used to classify the item, such as "microsoft.graph.driveItem" |
+
 ## JSON representation
 
 Here is a JSON representation of the resource
@@ -31,11 +39,3 @@ Here is a JSON representation of the resource
   "type": "string"
 }
 ```
-
-## Properties
-
-| Property      | Type      | Description  |
-| ------------- |-----------| -------------|
-| webUrl      	| String	| A URL leading to the referenced item. |
-| id     		| String    | The item's unique identifier.           |
-| type 			| String   	| A string value that can be used to classify the item, such as "microsoft.graph.driveItem" |

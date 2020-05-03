@@ -16,6 +16,14 @@ Namespace: microsoft.graph
 The **Identity** resource represents an identity of an _actor_.
 For example, an actor can be a user, device, or application.
 
+## Properties
+
+| Property            | Type   | Description                                                                                                                                                                                                                                                                                                           |
+|:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| displayName         | String | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).  |
+| id                  | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
+| tenantId            | String | Unique identity of the tenant (optional).                                                                                                                                                                                                                                                                             |
+
 ## JSON representation
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity", "optionalProperties": ["displayName", "tenantId", "thumbnails"], "openType": true } -->
@@ -28,14 +36,6 @@ For example, an actor can be a user, device, or application.
   "thumbnails": { "@odata.type": "microsoft.graph.thumbnailSet" }
 }
 ```
-
-## Properties
-
-| Property            | Type   | Description                                                                                                                                                                                                                                                                                                           |
-|:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName         | String | The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).  |
-| id                  | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
-| tenantId            | String | Unique identity of the tenant (optional).                                                                                                                                                                                                                                                                             |
 
 ## Remarks
 

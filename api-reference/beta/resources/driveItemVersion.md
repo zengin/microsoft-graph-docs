@@ -34,21 +34,6 @@ The following tasks are available for driveItemVersion resources.
 
 In the previous table, the examples use `/drive`, but there are many valid requests.
 
-## JSON representation
-
-<!-- { "blockType": "resource","keyProperty":"id", "@odata.type": "microsoft.graph.driveItemVersion", "@type.aka": "oneDrive.driveItemVersion" } -->
-
-```json
-{
-  "content": {"@odata.type": "Edm.Stream"},
-  "id": "string",
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
-  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
-  "size": 12356
-}
-```
-
 ## Properties
 
 |      Property name       |                         Type                         |                               Description                               |
@@ -66,6 +51,21 @@ The following table defines the relationships that the **driveItemVersion** reso
 | Relationship name |  Type  |            Description             |
 | :---------------- | :----- | :--------------------------------- |
 | **content**       | Stream | The content stream of the version. |
+
+## JSON representation
+
+<!-- { "blockType": "resource","keyProperty":"id", "@odata.type": "microsoft.graph.driveItemVersion", "@type.aka": "oneDrive.driveItemVersion" } -->
+
+```json
+{
+  "content": {"@odata.type": "Edm.Stream"},
+  "id": "string",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
+  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
+  "size": 12356
+}
+```
 
 <!--
 {

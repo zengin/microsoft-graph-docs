@@ -13,6 +13,13 @@ Namespace: microsoft.graph
 
 For internal use only. This complex type will be deprecated in the future.
 
+## Properties
+| Property         | Type       | Description
+|:-----------------|:-----------|:---------------------
+| type             | Int32      | For internal use only
+| identityProvider | string     | For internal use only
+| key              | Edm.Binary | For internal use only
+
 ## JSON representation
 
 <!--{
@@ -27,10 +34,3 @@ For internal use only. This complex type will be deprecated in the future.
   "key": {"@odata.type": "Edm.Binary"}
 }
 ```
-
-## Properties
-| Property         | Type       | Description
-|:-----------------|:-----------|:---------------------
-| type             | Int32      | For internal use only
-| identityProvider | string     | For internal use only
-| key              | Edm.Binary | For internal use only

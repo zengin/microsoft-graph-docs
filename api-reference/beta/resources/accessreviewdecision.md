@@ -52,13 +52,6 @@ In addition, additional properties may be present depending on the object type o
 
 None.  Objects of this type can be retrieved from an access review using the [decisions](../api/accessreview-listdecisions.md) and [mydecisions](../api/accessreview-listmydecisions.md) relationships of the [accessReview](accessreview.md) object.
 
-## See also
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[List accessReview decisions](../api/accessreview-listdecisions.md) |		[accessReviewDecision](accessreviewdecision.md) collection|	Get the decisions of an accessReview.|
-|[List my accessReview decisions](../api/accessreview-listmydecisions.md) |		[accessReviewDecision](accessreviewdecision.md) collection|	As a reviewer, get my decisions of an accessReview.|
-
 ## JSON representation
 
 Here is a JSON representation of the resource.
@@ -89,6 +82,13 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
+## See also
+
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[List accessReview decisions](../api/accessreview-listdecisions.md) |		[accessReviewDecision](accessreviewdecision.md) collection|	Get the decisions of an accessReview.|
+|[List my accessReview decisions](../api/accessreview-listmydecisions.md) |		[accessReviewDecision](accessreviewdecision.md) collection|	As a reviewer, get my decisions of an accessReview.|
 
 <!--
 {

@@ -17,18 +17,6 @@ The **FolderView** resource provides or sets recommendations on the user-experie
 
 It is available from the [folder][folder-facet] property of [driveItem][item-resource] resources.
 
-## JSON representation
-
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.folderView" } -->
-
-```json
-{
-  "sortBy": "default | name | type | size | takenOrCreatedDateTime | lastModifiedDateTime | sequence",
-  "viewType": "default | icons | details | thumbnails",
-  "sortOrder": "string"
-}
-```
-
 ## Properties
 
 | Property name         | Type   | Description
@@ -75,6 +63,18 @@ The following values are defined for the **viewType** property.
 | `details`    | A view with multiple columns that provide additional details about each item.
 | `thumbnails` | A view that uses larger thumbnails of driveItems to represent the items.
 
+
+## JSON representation
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.folderView" } -->
+
+```json
+{
+  "sortBy": "default | name | type | size | takenOrCreatedDateTime | lastModifiedDateTime | sequence",
+  "viewType": "default | icons | details | thumbnails",
+  "sortOrder": "string"
+}
+```
 
 [item-resource]: driveitem.md
 [folder-facet]: folder.md

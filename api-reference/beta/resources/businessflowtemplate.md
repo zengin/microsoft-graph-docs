@@ -35,13 +35,6 @@ The business flow template objects are automatically generated when the global a
 
 None.
 
-## See also
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Create accessReview](../api/accessreview-create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
-
-
 ## JSON representation
 
 Here is a JSON representation of the resource.
@@ -61,6 +54,13 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
+## See also
+
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[Create accessReview](../api/accessreview-create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
+
 
 <!--
 {

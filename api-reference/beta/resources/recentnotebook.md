@@ -15,6 +15,12 @@ Namespace: microsoft.graph
 
 A recently accessed OneNote notebook. A **recentNotebook** is similar to a [notebook](notebook.md) but has fewer properties.
 
+## Methods
+
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [notebook](notebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -44,9 +50,3 @@ The following is a JSON representation of the resource.
 }
 
 ```
-
-## Methods
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [notebook](notebook.md) collection | Get a collection of the most recently accessed notebooks for the user. |

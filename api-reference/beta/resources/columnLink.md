@@ -17,6 +17,13 @@ A **columnLink** on a [contentType][] attaches a site **columnDefinition** to th
 
 [contentType]: contenttype.md
 
+## Properties
+
+| Property name | Type   | Description
+|:--------------|:-------|:----------------------------------------------------
+| **id**        | string | The unique identifier for the column.
+| **name**      | string | The name of the column  in this content type.
+
 ## JSON representation
 
 Here is a JSON representation of a **columnLink** resource.
@@ -28,13 +35,6 @@ Here is a JSON representation of a **columnLink** resource.
   "name": "string"
 }
 ```
-
-## Properties
-
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| **id**        | string | The unique identifier for the column.
-| **name**      | string | The name of the column  in this content type.
 
 <!--
 {

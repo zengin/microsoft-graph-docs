@@ -15,28 +15,6 @@ Namespace: microsoft.graph
 
 Complex type containing properties of [officeGraphInsights](officegraphinsights.md).
 
-## JSON representation
-
-Here is a JSON representation of the resource
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-  ],  
-  "@odata.type": "microsoft.graph.resourceVisualization"
-}-->
-```json
-{
-  "title": "string",
-  "type"  : "string",
-  "mediaType": "string",
-  "previewImageUrl": "string",
-  "previewText": "string",
-  "containerWebUrl": "string",
-  "containerDisplayName": "string",
-  "containerType": "string"
-}
-```
 
 ## Properties
 
@@ -93,3 +71,26 @@ The supported types can differ based on containers from which [officeGraphInsigh
 
 Example query:
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+
+## JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],  
+  "@odata.type": "microsoft.graph.resourceVisualization"
+}-->
+```json
+{
+  "title": "string",
+  "type"  : "string",
+  "mediaType": "string",
+  "previewImageUrl": "string",
+  "previewText": "string",
+  "containerWebUrl": "string",
+  "containerDisplayName": "string",
+  "containerType": "string"
+}
+```

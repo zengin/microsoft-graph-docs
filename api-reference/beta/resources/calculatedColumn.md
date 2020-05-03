@@ -15,19 +15,6 @@ Namespace: microsoft.graph
 
 The **calculatedColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's data is calculated based on other columns in the site.
 
-## JSON representation
-
-Here is a JSON representation of a **calculatedColumn** resource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.calculatedColumn" } -->
-
-```json
-{
-  "format": "dateOnly | dateTime",
-  "formula": "=[Column1]+[Column2]+[Column3]",
-  "outputType": "boolean | currency | dateTime | number | text",
-}
-```
-
 ## Properties
 
 | Property name  | Type    | Description
@@ -41,6 +28,19 @@ See [Examples of common formulas in SharePoint Lists][SPFormulas] for more infor
 
 [SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
+
+## JSON representation
+
+Here is a JSON representation of a **calculatedColumn** resource.
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.calculatedColumn" } -->
+
+```json
+{
+  "format": "dateOnly | dateTime",
+  "formula": "=[Column1]+[Column2]+[Column3]",
+  "outputType": "boolean | currency | dateTime | number | text",
+}
+```
 <!--
 {
   "type": "#page.annotation",

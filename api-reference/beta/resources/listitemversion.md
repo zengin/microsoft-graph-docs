@@ -30,21 +30,6 @@ The following tasks are available for listItemVersion resources.
 [version-restore]: ../api/listitemversion-restore.md
 
 
-## JSON representation
-
-<!-- { "blockType": "resource","keyProperty":"id", "@odata.type": "microsoft.graph.listItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
-
-```json
-{
-  "content": { "@odata.type": "Edm.Stream" },
-  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
-  "id": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
-  "published": { "@odata.type": "microsoft.graph.publicationFacet" }
-}
-```
-
 ## Properties
 
 |      Property name       |                         Type                         |                               Description                               |
@@ -64,6 +49,20 @@ The following table defines the relationships that the **driveItemVersion** reso
 | **fields**        | [FieldValueSet](../resources/fieldvalueset.md) | A collection of the fields and values for this version of the list item. |
 
 
+## JSON representation
+
+<!-- { "blockType": "resource","keyProperty":"id", "@odata.type": "microsoft.graph.listItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
+
+```json
+{
+  "content": { "@odata.type": "Edm.Stream" },
+  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "id": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
+  "published": { "@odata.type": "microsoft.graph.publicationFacet" }
+}
+```
 <!--
 {
   "type": "#page.annotation",

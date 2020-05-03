@@ -39,14 +39,6 @@ In this case, the **displayName** property for the identity will be returned, bu
 
 None.
 
-## See also
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get accessReview reviewers](../api/accessreview-listreviewers.md) |		[userIdentity](useridentity.md) collection|	Get the reviewers of an accessReview. |
-|[Add accessReview reviewer](../api/accessreview-addreviewer.md) |		None.	|	Add a reviewer to an accessReview. |
-|[Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
-
 ## JSON representation
 
 Here is a JSON representation of the type.
@@ -68,6 +60,14 @@ Here is a JSON representation of the type.
 }
 
 ```
+
+## See also
+
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[Get accessReview reviewers](../api/accessreview-listreviewers.md) |		[userIdentity](useridentity.md) collection|	Get the reviewers of an accessReview. |
+|[Add accessReview reviewer](../api/accessreview-addreviewer.md) |		None.	|	Add a reviewer to an accessReview. |
+|[Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
 
 <!--
 {

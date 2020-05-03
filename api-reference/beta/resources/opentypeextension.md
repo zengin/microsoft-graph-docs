@@ -53,6 +53,26 @@ you need to access custom data for Outlook MAPI properties that are not already 
 [extended properties and its REST API](extended-properties-overview.md). You can verify which properties the metadata
 exposes at [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
 
+## Methods
+
+| Method | Return Type | Description |
+|:---------------|:--------|:----------|
+|[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
+|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
+|[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
+|[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |
+
+## Properties
+
+| Property | Type | Description |
+|:---------------|:--------|:----------|
+|extensionName|String|A unique text identifier for an open type data extension. Required.|
+|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
+
+## Relationships
+
+None
+
 ## JSON representation
 
 Here is a JSON representation of the resource
@@ -72,26 +92,6 @@ Here is a JSON representation of the resource
 }
 
 ```
-
-## Properties
-
-| Property | Type | Description |
-|:---------------|:--------|:----------|
-|extensionName|String|A unique text identifier for an open type data extension. Required.|
-|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only.|
-
-## Relationships
-
-None
-
-## Methods
-
-| Method | Return Type | Description |
-|:---------------|:--------|:----------|
-|[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(in an existing resource instance), or a new [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md) that contains an openTypeExtension object. | Create an openTypeExtension object in an existing or new resource instance.|
-|[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Read properties and relationships of openTypeExtension object.|
-|[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Update openTypeExtension object. |
-|[Delete](../api/opentypeextension-delete.md) | None |Delete openTypeExtension object. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

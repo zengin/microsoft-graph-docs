@@ -35,6 +35,14 @@ and available rule conditions and exceptions are represented by the [messageRule
 | isReadOnly | Boolean | Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API. |
 | sequence | Int32 | Indicates the order in which the rule is executed, among other rules. |
 
+## Methods
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) collection |Get all the **messageRule** objects defined for the user's Inbox.|
+|[Get rule](../api/messagerule-get.md) | [messageRule](messagerule.md) |Read the properties and relationships of a **messageRule** object.|
+|[Create](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Create a **messageRule** object by specifying a set of conditions and actions.|
+|[Update](../api/messagerule-update.md) | [messageRule](messagerule.md) |Change writable properties on a **messageRule** object and save the changes. |
+|[Delete](../api/messagerule-delete.md) | None |Delete the specified **messageRule** object. |
 
 ## JSON representation
 Here is a JSON representation of the resource.
@@ -60,16 +68,6 @@ Here is a JSON representation of the resource.
 }
 
 ```
-
-## Methods
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) collection |Get all the **messageRule** objects defined for the user's Inbox.|
-|[Get rule](../api/messagerule-get.md) | [messageRule](messagerule.md) |Read the properties and relationships of a **messageRule** object.|
-|[Create](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Create a **messageRule** object by specifying a set of conditions and actions.|
-|[Update](../api/messagerule-update.md) | [messageRule](messagerule.md) |Change writable properties on a **messageRule** object and save the changes. |
-|[Delete](../api/messagerule-delete.md) | None |Delete the specified **messageRule** object. |
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

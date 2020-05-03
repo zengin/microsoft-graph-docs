@@ -40,27 +40,6 @@ This policy is described in further detail below.
 |alternativeIdentifer|String| |
 |keyCredentials| [keyCredential](keycredential.md) collection| |
 
-## JSON representation
-Here is a JSON representation of the resource.
-
-<!--{
-  "blockType": "resource",
-  "@odata.type": "microsoft.graph.policy",
-  "keyProperty": "id",
-  "baseType":"microsoft.graph.directoryObject",  
-  "openType": true
-}-->
-```json
-{
-  "alternativeIdentifer": "String",
-  "definition": ["String"],
-  "displayName": "String",
-  "isOrganizationDefault": "Boolean",
-  "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
-  "type": "String"
-}
-```
-
 ## Relationships
 |Relationship|Type|Description|
 |:-------------|:-----------|:-----------|
@@ -100,4 +79,23 @@ The properties below form the JSON object that represents a token lifetime polic
 |MaxAgeSessionMultiFactor|String|Controls how long a user can continue to use session tokens to get new ID/session tokens after the last time they authenticated successfully with multi factors.|10 minutes|until-revoked|365 or until-revoked|
 |Version|Integer|Set value of 1. Required.|None|None|None|
 
+## JSON representation
+Here is a JSON representation of the resource.
 
+<!--{
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.policy",
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.directoryObject",  
+  "openType": true
+}-->
+```json
+{
+  "alternativeIdentifer": "String",
+  "definition": ["String"],
+  "displayName": "String",
+  "isOrganizationDefault": "Boolean",
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
+  "type": "String"
+}
+```

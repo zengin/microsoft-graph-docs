@@ -39,43 +39,6 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
 
-## JSON representation
-
-Here is a JSON representation of a **listItem** resource.
-
-<!--{
-  "blockType": "resource",
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.listItem"
-}-->
-
-```json
-{
-  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
-  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-
-  /* relationships */
-  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
-  "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
-  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
-
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "name of resource",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "timestamp",
-  "description": "description of resource",
-  "eTag": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "timestamp",
-  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "url"
-}
-```
-
 ## Properties
 
 The **listItem** resource has the following properties.
@@ -123,6 +86,43 @@ The following properties are inherited from **[baseItem][]**.
 [list]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
+
+## JSON representation
+
+Here is a JSON representation of a **listItem** resource.
+
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.listItem"
+}-->
+
+```json
+{
+  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
+  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+
+  /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
+
+  /* inherited from baseItem */
+  "id": "string",
+  "name": "name of resource",
+  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "timestamp",
+  "description": "description of resource",
+  "eTag": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
+  "webUrl": "url"
+}
+```
 
 <!--
 {

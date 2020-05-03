@@ -18,6 +18,14 @@ The **ShareAction** resource provides information about an [activity][activity] 
 
 [activity]: itemactivity.md
 
+## Properties
+
+| Property name | Type                       | Description
+|:--------------|:---------------------------|:-----------------------------
+| recipients    | [identitySet][] collection | The identities the item was shared with in this action.
+
+[identitySet]: identityset.md
+
 ## JSON representation
 
 <!-- {
@@ -31,14 +39,6 @@ The **ShareAction** resource provides information about an [activity][activity] 
   "recipients": [{"@odata.type": "microsoft.graph.identitySet"}]
 }
 ```
-
-## Properties
-
-| Property name | Type                       | Description
-|:--------------|:---------------------------|:-----------------------------
-| recipients    | [identitySet][] collection | The identities the item was shared with in this action.
-
-[identitySet]: identityset.md
 
 ## Remarks
 

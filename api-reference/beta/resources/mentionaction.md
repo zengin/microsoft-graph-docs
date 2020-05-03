@@ -17,6 +17,18 @@ The **MentionAction** resource provides information about an [activity][] that m
 
 [activity]: itemactivity.md
 
+## Properties
+
+| Property name | Type                       | Description
+|:--------------|:---------------------------|:-----------------------------
+| mentionees    | [identitySet][] collection | The identities of the users mentioned in this action.
+
+[identitySet]: identityset.md
+
+## Remarks
+
+Item activity records are currently only available on SharePoint and OneDrive for Business.
+
 ## JSON representation
 
 <!-- {
@@ -30,19 +42,6 @@ The **MentionAction** resource provides information about an [activity][] that m
   "mentionees": [{"@odata.type": "microsoft.graph.identitySet"}]
 }
 ```
-
-## Properties
-
-| Property name | Type                       | Description
-|:--------------|:---------------------------|:-----------------------------
-| mentionees    | [identitySet][] collection | The identities of the users mentioned in this action.
-
-[identitySet]: identityset.md
-
-## Remarks
-
-Item activity records are currently only available on SharePoint and OneDrive for Business.
-
 <!--
 {
   "type": "#page.annotation",

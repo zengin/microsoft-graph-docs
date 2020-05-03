@@ -17,6 +17,9 @@ The **sitePageData** resource represents the properties of a [webPart][]. As the
 
 [webPart]: webpart.md
 
+## Properties
+This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.
+
 ## JSON representation
 
 <!-- {
@@ -30,9 +33,6 @@ The **sitePageData** resource represents the properties of a [webPart][]. As the
 {
 }
 ```
-
-## Properties
-This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.
 
 <!--
 {

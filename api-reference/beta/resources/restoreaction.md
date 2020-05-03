@@ -19,6 +19,10 @@ The presence of the **RestoreAction** resource on an [**itemActivity**][activity
 
 [activity]: itemactivity.md
 
+## Properties
+
+None. This facet is a null or not-null value and contains no properties.
+
 ## JSON representation
 
 <!-- {
@@ -31,10 +35,6 @@ The presence of the **RestoreAction** resource on an [**itemActivity**][activity
 {
 }
 ```
-
-## Properties
-
-None. This facet is a null or not-null value and contains no properties.
 
 ## Remarks
 

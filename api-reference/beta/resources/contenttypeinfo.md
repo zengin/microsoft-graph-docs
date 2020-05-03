@@ -15,6 +15,13 @@ Namespace: microsoft.graph
 
 The **contentTypeInfo** resource indicates the SharePoint content type of an item.
 
+## Properties
+
+| Property name  | Type    | Description
+|:---------------|:--------|:--------------------------------------------------
+| **id**         | string  | The id of the content type.
+| **name**       | string  | The name of the content type.
+
 ## JSON representation
 
 Here is a JSON representation of a **contentTypeInfo** resource.
@@ -26,13 +33,6 @@ Here is a JSON representation of a **contentTypeInfo** resource.
   "name": "string"
 }
 ```
-
-## Properties
-
-| Property name  | Type    | Description
-|:---------------|:--------|:--------------------------------------------------
-| **id**         | string  | The id of the content type.
-| **name**       | string  | The name of the content type.
 
 <!--
 {

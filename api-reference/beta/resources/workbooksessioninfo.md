@@ -15,6 +15,12 @@ Namespace: microsoft.graph
 
 Provides information about workbook session.
 
+## Properties
+
+| Property | Type  | Description                               |
+|:---------|:------|:------------------------------------------|
+| id  | string | Id of the workbook session. |
+| persistChanges | string |  `true` for persistent session. `false` for non-persistent session (view mode) |
 
 ## JSON representation
 
@@ -32,13 +38,6 @@ Here is a JSON representation of the resource
   "persistChanges": true
 }
 ```
-
-## Properties
-
-| Property | Type  | Description                               |
-|:---------|:------|:------------------------------------------|
-| id  | string | Id of the workbook session. |
-| persistChanges | string |  `true` for persistent session. `false` for non-persistent session (view mode) |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

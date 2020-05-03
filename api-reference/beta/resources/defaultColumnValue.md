@@ -16,18 +16,6 @@ Namespace: microsoft.graph
 The **defaultColumnValue** on a [columnDefinition](columndefinition.md) resource specifies the default value for this column.
 The default value can either be specified directly or as a formula.
 
-## JSON representation
-
-Here is a JSON representation of a **defaultColumnValue** resource.
-<!-- { "blockType": "resource", "@type": "microsoft.graph.defaultColumnValue" } -->
-
-```json
-{
-  "formula": "=[Column1]+[Column2]+[Column3]",
-  "value": "defaultValueString"
-}
-```
-
 ## Properties
 
 | Property name | Type   | Description
@@ -42,6 +30,18 @@ See [Examples of common formulas in SharePoint Lists][SPFormulas] for more infor
 
 [SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
+
+## JSON representation
+
+Here is a JSON representation of a **defaultColumnValue** resource.
+<!-- { "blockType": "resource", "@type": "microsoft.graph.defaultColumnValue" } -->
+
+```json
+{
+  "formula": "=[Column1]+[Column2]+[Column3]",
+  "value": "defaultValueString"
+}
+```
 
 <!--
 {

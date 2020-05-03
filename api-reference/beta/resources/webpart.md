@@ -15,6 +15,15 @@ Namespace: microsoft.graph
 
 The **webPart** resource represents type and rendering information for a web part on a [sitePage](sitepage.md).
 
+## Properties
+
+| Property                | Type             | Description
+|:------------------------|:-----------------|:----------------------------------
+| **type**                | String           | A unique identifier specifying the webPart type. Read-only.
+| **data**                | [sitePageData][] | The required properties for the webPart (varies by webPart)
+
+[sitePageData]: sitepagedata.md
+
 ## JSON representation
 
 <!-- {
@@ -29,15 +38,6 @@ The **webPart** resource represents type and rendering information for a web par
   "data": {"@odata.type":"microsoft.graph.sitePageData"}
 }
 ```
-
-## Properties
-
-| Property                | Type             | Description
-|:------------------------|:-----------------|:----------------------------------
-| **type**                | String           | A unique identifier specifying the webPart type. Read-only.
-| **data**                | [sitePageData][] | The required properties for the webPart (varies by webPart)
-
-[sitePageData]: sitepagedata.md
 
 ## Remarks
 

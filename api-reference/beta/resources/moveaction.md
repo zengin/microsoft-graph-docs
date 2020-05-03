@@ -17,6 +17,13 @@ The presence of the **MoveAction** resource on an [**itemActivity**][activity] i
 
 [activity]: itemactivity.md
 
+## Properties
+
+| Property name | Type   | Description
+|:--------------|:-------|:----------------------------------------------------
+| from          | string | The name of the location the item was moved from.
+| to            | string | The name of the location the item was moved to.
+
 ## JSON representation
 
 <!-- {
@@ -31,13 +38,6 @@ The presence of the **MoveAction** resource on an [**itemActivity**][activity] i
   "to": "string"
 }
 ```
-
-## Properties
-
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| from          | string | The name of the location the item was moved from.
-| to            | string | The name of the location the item was moved to.
 
 ## Remarks
 

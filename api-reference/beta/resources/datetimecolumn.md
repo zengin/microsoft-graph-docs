@@ -15,18 +15,6 @@ Namespace: microsoft.graph
 
 The **dateTimeColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are dates or times.
 
-## JSON representation
-
-Here is a JSON representation of a **dateTimeColumn** resource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.dateTimeColumn" } -->
-
-```json
-{
-  "displayAs": "default | friendly | standard",
-  "format": "dateOnly | dateTime"
-}
-```
-
 ## Properties
 
 | Property name      | Type               | Description
@@ -42,6 +30,17 @@ Here is a JSON representation of a **dateTimeColumn** resource.
 | **friendly** | Uses a friendly relative representation (eg. "today at 3:00 PM")
 | **standard** | Uses the standard absolute representation (eg. "5/10/2017 3:20 PM")
 
+## JSON representation
+
+Here is a JSON representation of a **dateTimeColumn** resource.
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.dateTimeColumn" } -->
+
+```json
+{
+  "displayAs": "default | friendly | standard",
+  "format": "dateOnly | dateTime"
+}
+```
 
 <!--
 {

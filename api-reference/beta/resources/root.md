@@ -19,6 +19,10 @@ A null (or missing) value indicates the object is not the root.
 
 **Note**: While this facet is empty today, in future API revisions the facet may be populated with additional properties.
 
+## Properties
+
+The **Root** resource has no properties.
+
 ## JSON representation
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.root" } -->
@@ -27,11 +31,6 @@ A null (or missing) value indicates the object is not the root.
 {
 }
 ```
-
-## Properties
-
-The **Root** resource has no properties.
-
 
 <!--
 {

@@ -26,21 +26,6 @@ If a user deletes one, it is recreated when written to again.
 
 **Note:** If your app has only requested **Files.Read** scope and requests a special folder that doesn't exist, the response will be a `403 Forbidden` error.
 
-## JSON representation
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.specialFolder"
-}-->
-```json
-{
-  "name": "string"
-}
-```
-
 ## Properties
 
 | Property  | Type   | Description                                                            |
@@ -58,6 +43,21 @@ Here are the special folders available in OneDrive Personal and OneDrive for Bus
 | Documents   | `documents`  | The Documents folder.                                                    |
 | Music       | `music`      | The Music folder. Not available in OneDrive for Business.                |
 | Photos      | `photos`     | The Photos folder.                                                       |
+
+## JSON representation
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.specialFolder"
+}-->
+```json
+{
+  "name": "string"
+}
+```
 
 ## Remarks 
 

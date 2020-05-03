@@ -17,6 +17,14 @@ The **listInfo** complex type provides additional information about a [list][].
 
 [list]: list.md
 
+## Properties
+
+| Property name           | Type    | Description
+|:------------------------|:--------|:------------------------------------------------
+| **contentTypesEnabled** | Boolean | If `true`, indicates that content types are enabled for this list.
+| **hidden**              | Boolean | If `true`, indicates that the list is not normally visible in the SharePoint user experience.
+| **template**            | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more.
+
 ## JSON representation
 
 Here is a JSON representation of the resource.
@@ -35,14 +43,6 @@ Here is a JSON representation of the resource.
   "template": "documentLibrary | genericList | tasks | survey | links | announcements | contacts | ..."
 }
 ```
-
-## Properties
-
-| Property name           | Type    | Description
-|:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | If `true`, indicates that content types are enabled for this list.
-| **hidden**              | Boolean | If `true`, indicates that the list is not normally visible in the SharePoint user experience.
-| **template**            | String  | An enumerated value that represents the base list template used in creating the list. Possible values include `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts`, and more.
 
 ### Remarks
 

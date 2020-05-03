@@ -15,6 +15,15 @@ Namespace: microsoft.graph
 
 A page in a OneNote notebook.
 
+## Methods
+
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[Get page](../api/page-get.md) | [onenotePage](onenotepage.md) |Read the properties and relationships of the page.|
+|[Update page content](../api/page-update.md) | None |Update the HTML content of the page. |
+|[Delete page](../api/page-delete.md) | None |Delete the page. |
+|[copyToSection](../api/page-copytosection.md)| None |Copies the page to a specific section.|
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -35,15 +44,6 @@ A page in a OneNote notebook.
 |:---------------|:--------|:----------|
 |parentNotebook|[notebook](notebook.md)|The notebook that contains the page.  Read-only.|
 |parentSection|[onenoteSection](onenotesection.md)|The section that contains the page. Read-only.|
-
-## Methods
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get page](../api/page-get.md) | [onenotePage](onenotepage.md) |Read the properties and relationships of the page.|
-|[Update page content](../api/page-update.md) | None |Update the HTML content of the page. |
-|[Delete page](../api/page-delete.md) | None |Delete the page. |
-|[copyToSection](../api/page-copytosection.md)| None |Copies the page to a specific section.|
 
 ## JSON representation
 

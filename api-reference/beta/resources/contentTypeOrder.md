@@ -15,6 +15,13 @@ Namespace: microsoft.graph
 
 The **contentTypeOrder** resource specifies in which order the Content Type will appear in the selection UI.
 
+## Properties
+
+| Property name | Type    | Description
+|:--------------|:--------|:----------------------------------------------------
+| **default**   | boolean | Whether this is the default Content Type
+| **position**  | Int32   | Specifies the position in which the Content Type appears in the selection UI.
+
 ## JSON representation
 
 Here is a JSON representation of a **contentTypeOrder** resource.
@@ -26,13 +33,6 @@ Here is a JSON representation of a **contentTypeOrder** resource.
   "position": 2
 }
 ```
-
-## Properties
-
-| Property name | Type    | Description
-|:--------------|:--------|:----------------------------------------------------
-| **default**   | boolean | Whether this is the default Content Type
-| **position**  | Int32   | Specifies the position in which the Content Type appears in the selection UI.
 
 <!--
 {

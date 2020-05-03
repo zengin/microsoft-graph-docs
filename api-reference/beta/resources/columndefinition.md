@@ -13,6 +13,40 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+## Properties
+
+Columns can hold data of various types.
+The following properties indicate what type of data a column stores, as well as additional settings for that data.
+The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text) are mutually exclusive -- a column can only have one of them specified.
+
+| Property name           | Type    | Description
+|:------------------------|:--------|:-----------------------------------------
+| **columnGroup**         | string  | For site columns, the name of the group this column belongs to. Helps organize related columns.
+| **description**         | string  | The user-facing description of the column.
+| **displayName**         | string  | The user-facing name of the column.
+| **enforceUniqueValues** | boolean | If true, no two list items may have the same value for this column.
+| **hidden**              | boolean | Specifies whether the column is displayed in the user interface.
+| **id**                  | string  | The unique identifier for the column.
+| **indexed**             | boolean | Specifies whether the column values can used for sorting and searching.
+| **name**                | string  | The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see **displayName**.
+| **readOnly**            | bool    | Specifies whether the column values can be modified.
+| **required**            | boolean | Specifies whether the column value is not optional.
+| **boolean**       | [booleanColumn][]       | This column stores boolean values.
+| **calculated**    | [calculatedColumn][]    | This column's data is calculated based on other columns.
+| **choice**        | [choiceColumn][]        | This column stores data from a list of choices.
+| **currency**      | [currencyColumn][]      | This column stores currency values.
+| **dateTime**      | [dateTimeColumn][]      | This column stores DateTime values.
+| **defaultValue**  | [defaultColumnValue][]  | The default value for this column.
+| **geolocation**   | [geolocationColumn][]   | This column stores a geolocation.
+| **lookup**        | [lookupColumn][]        | This column's data is looked up from another source in the site.
+| **number**        | [numberColumn][]        | This column stores number values.
+| **personOrGroup** | [personOrGroupColumn][] | This column stores Person or Group values.
+| **text**          | [textColumn][]          | This column stores text values.
+
+>**Note:** These properties correspond to SharePoint's [SPFieldType][] enumeration.
+While the most common field types are represented in the previous table, this beta API is still missing some.
+In those cases, none of the column type facets will be populated, and the column will only have its basic properties.
+
 ## JSON representation
 
 Here is a JSON representation of a columnDefinition resource.
@@ -51,40 +85,6 @@ Here is a JSON representation of a columnDefinition resource.
 }
 ```
 
-## Properties
-
-Columns can hold data of various types.
-The following properties indicate what type of data a column stores, as well as additional settings for that data.
-The type-related properties (boolean, calculated, choice, currency, dateTime, lookup, number, personOrGroup, text) are mutually exclusive -- a column can only have one of them specified.
-
-| Property name           | Type    | Description
-|:------------------------|:--------|:-----------------------------------------
-| **columnGroup**         | string  | For site columns, the name of the group this column belongs to. Helps organize related columns.
-| **description**         | string  | The user-facing description of the column.
-| **displayName**         | string  | The user-facing name of the column.
-| **enforceUniqueValues** | boolean | If true, no two list items may have the same value for this column.
-| **hidden**              | boolean | Specifies whether the column is displayed in the user interface.
-| **id**                  | string  | The unique identifier for the column.
-| **indexed**             | boolean | Specifies whether the column values can used for sorting and searching.
-| **name**                | string  | The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see **displayName**.
-| **readOnly**            | bool    | Specifies whether the column values can be modified.
-| **required**            | boolean | Specifies whether the column value is not optional.
-| **boolean**       | [booleanColumn][]       | This column stores boolean values.
-| **calculated**    | [calculatedColumn][]    | This column's data is calculated based on other columns.
-| **choice**        | [choiceColumn][]        | This column stores data from a list of choices.
-| **currency**      | [currencyColumn][]      | This column stores currency values.
-| **dateTime**      | [dateTimeColumn][]      | This column stores DateTime values.
-| **defaultValue**  | [defaultColumnValue][]  | The default value for this column.
-| **geolocation**   | [geolocationColumn][]   | This column stores a geolocation.
-| **lookup**        | [lookupColumn][]        | This column's data is looked up from another source in the site.
-| **number**        | [numberColumn][]        | This column stores number values.
-| **personOrGroup** | [personOrGroupColumn][] | This column stores Person or Group values.
-| **text**          | [textColumn][]          | This column stores text values.
-
->**Note:** These properties correspond to SharePoint's [SPFieldType][] enumeration.
-While the most common field types are represented in the previous table, this beta API is still missing some.
-In those cases, none of the column type facets will be populated, and the column will only have its basic properties.
-
 ## Remarks
 
 ColumnDefinitions and field values for `hidden` columns are not shown by default.
@@ -107,7 +107,6 @@ To see them when showing **field** values on [listItems][listItem], include the 
 [listItem]: listitem.md
 
 [SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
-
 <!--
 {
   "type": "#page.annotation",

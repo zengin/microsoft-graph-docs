@@ -13,6 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+## Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|alias|String||
+|email|String||
+|objectId|String||
+|permissionIdentityType|String||
+
 ## JSON representation
 
 Here is a JSON representation of the resource
@@ -34,13 +42,6 @@ Here is a JSON representation of the resource
 }
 
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|alias|String||
-|email|String||
-|objectId|String||
-|permissionIdentityType|String||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

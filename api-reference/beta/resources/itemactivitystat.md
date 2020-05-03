@@ -15,29 +15,6 @@ Namespace: microsoft.graph
 
 The **itemActivityStat** resource provides information about activities that took place within an interval of time.
 
-## JSON representation
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "baseType": "microsoft.graph.entity",
-  "@type": "microsoft.graph.itemActivityStat",
-}-->
-
-```json
-{
-  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
-  "incompleteData": {"@odata.type": "microsoft.graph.incompleteData"},
-  "isTrending": true,
-  "startDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)",
-  "create": {"@odata.type": "microsoft.graph.itemActionStat"},
-  "delete": {"@odata.type": "microsoft.graph.itemActionStat"},
-  "edit": {"@odata.type": "microsoft.graph.itemActionStat"},
-  "move": {"@odata.type": "microsoft.graph.itemActionStat"},
-  "access": {"@odata.type": "microsoft.graph.itemActionStat"}
-}
-```
 
 ## Properties
 
@@ -64,7 +41,29 @@ The **itemActivityStat** resource provides information about activities that too
 
 [itemActivity]: itemactivity.md
 
-## Remarks
+## JSON representation
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "baseType": "microsoft.graph.entity",
+  "@type": "microsoft.graph.itemActivityStat",
+}-->
+
+```json
+{
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "incompleteData": {"@odata.type": "microsoft.graph.incompleteData"},
+  "isTrending": true,
+  "startDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
+  "create": {"@odata.type": "microsoft.graph.itemActionStat"},
+  "delete": {"@odata.type": "microsoft.graph.itemActionStat"},
+  "edit": {"@odata.type": "microsoft.graph.itemActionStat"},
+  "move": {"@odata.type": "microsoft.graph.itemActionStat"},
+  "access": {"@odata.type": "microsoft.graph.itemActionStat"}
+}
+```
 
 <!--
 {

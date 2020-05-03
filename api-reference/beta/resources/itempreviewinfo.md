@@ -15,15 +15,6 @@ Namespace: microsoft.graph
 
 The **ItemPreviewInfo** resource contains information on how to embed a preview of a [DriveItem](driveitem.md).
 
-## JSON representation
-
-```json
-{
-    "getUrl": "https://www.onedrive.com/embed?foo=bar&bar=baz",
-    "postParameters": "param1=value&param2=another%20value",
-    "postUrl": "https://www.onedrive.com/embed_by_post"
-}
-```
 
 ## Properties
 
@@ -44,3 +35,13 @@ param1=value&param2=another%20value
 ```
 
 The formats of URLs and parameters should be considered opaque.
+
+## JSON representation
+
+```json
+{
+    "getUrl": "https://www.onedrive.com/embed?foo=bar&bar=baz",
+    "postParameters": "param1=value&param2=another%20value",
+    "postUrl": "https://www.onedrive.com/embed_by_post"
+}
+```

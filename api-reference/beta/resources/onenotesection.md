@@ -15,6 +15,16 @@ Namespace: microsoft.graph
 
 A section in a OneNote notebook. Sections can contain pages.
 
+## Methods
+
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[Get section](../api/section-get.md) | [onenoteSection](onenotesection.md) |Read the properties and relationships of the section.|
+|[Create page](../api/section-post-pages.md) |[onenotePage](onenotepage.md)| Create a page by posting to the pages collection in the specified section.|
+|[List pages](../api/section-list-pages.md) |[onenotePage](onenotepage.md) collection| Get a collection of pages in the specified section.|
+|[copyToNotebook](../api/section-copytonotebook.md)|None|Copy the section to a specific notebook.|
+|[copyToSectionGroup](../api/section-copytosectiongroup.md)|None|Copy the section to a specific section group.|
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -35,17 +45,6 @@ A section in a OneNote notebook. Sections can contain pages.
 |pages|[onenotePage](onenotepage.md) collection|The collection of pages in the section.  Read-only. Nullable.|
 |parentNotebook|[notebook](notebook.md)|The notebook that contains the section.  Read-only.|
 |parentSectionGroup|[sectionGroup](sectiongroup.md)|The section group that contains the section.  Read-only.|
-
-## Methods
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get section](../api/section-get.md) | [onenoteSection](onenotesection.md) |Read the properties and relationships of the section.|
-|[Create page](../api/section-post-pages.md) |[onenotePage](onenotepage.md)| Create a page by posting to the pages collection in the specified section.|
-|[List pages](../api/section-list-pages.md) |[onenotePage](onenotepage.md) collection| Get a collection of pages in the specified section.|
-|[copyToNotebook](../api/section-copytonotebook.md)|None|Copy the section to a specific notebook.|
-|[copyToSectionGroup](../api/section-copytosectiongroup.md)|None|Copy the section to a specific section group.|
-
 
 ## JSON representation
 

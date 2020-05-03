@@ -15,6 +15,13 @@ Namespace: microsoft.graph
 
 The **currencyColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent currency.
 
+## Properties
+
+| Property name | Type   | Description
+|:--------------|:-------|:----------------------------------------------------
+| **locale**    | string | Specifies the locale from which to infer the currency symbol.
+
+
 ## JSON representation
 
 Here is a JSON representation of a **currencyColumn** resource.
@@ -25,12 +32,6 @@ Here is a JSON representation of a **currencyColumn** resource.
   "locale": "en-us"
 }
 ```
-
-## Properties
-
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| **locale**    | string | Specifies the locale from which to infer the currency symbol.
 
 <!--
 {

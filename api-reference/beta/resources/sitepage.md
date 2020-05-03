@@ -35,45 +35,6 @@ All examples below are relative to a [site][], eg: `https://graph.microsoft.com/
 [Create]: ../api/sitepage-create.md
 [Delete]: ../api/sitepage-delete.md
 [Publish]: ../api/sitepage-publish.md
-
-## JSON representation
-
-Here is a JSON representation of a **sitePage** resource.
-
-<!--{
-  "blockType": "resource",
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.sitePage",
-  "openType": true
-}-->
-
-```json
-{
-  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
-
-  /* page content */
-  "title": "string",
-  "pageLayoutType": "String",
-  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
-
-  /* authoring metadata */
-  "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },
-
-   /* inherited from baseItem */
-  "id": "string (identifier)",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "String (timestamp)",
-  "description": "string",
-  "eTag": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "String (timestamp)",
-  "name": "string",
-  "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
-  "webUrl": "url"
-}
-```
-
 ## Properties
 
 The **sitePage** resource has the following properties.
@@ -116,6 +77,44 @@ The following properties are inherited from **[baseItem][]**.
 ## Relationships
 
 The **sitePage** resource does not have relationships to other resources.
+
+## JSON representation
+
+Here is a JSON representation of a **sitePage** resource.
+
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.sitePage",
+  "openType": true
+}-->
+
+```json
+{
+  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
+
+  /* page content */
+  "title": "string",
+  "pageLayoutType": "String",
+  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
+
+  /* authoring metadata */
+  "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },
+
+   /* inherited from baseItem */
+  "id": "string (identifier)",
+  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "String (timestamp)",
+  "description": "string",
+  "eTag": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "String (timestamp)",
+  "name": "string",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
+  "webUrl": "url"
+}
+```
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md

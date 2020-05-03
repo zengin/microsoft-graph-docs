@@ -16,29 +16,6 @@ Namespace: microsoft.graph
 The **ItemActivity** resource provides information about activities that took place on an item or within a container.
 Currently only available on SharePoint and OneDrive for Business.
 
-## JSON representation
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "keyProperty": "id",
-  "@type": "microsoft.graph.itemActivity",
-  "@type.aka": "oneDrive.activityEntity"
-}-->
-
-```json
-{
-  "id": "string (identifier)",
-  "access": "microsoft.graph.accessAction",
-  "action": {"@odata.type": "microsoft.graph.itemActionSet"},
-  "actor": {"@odata.type": "microsoft.graph.identitySet"},
-  "driveItem": {"@odata.type": "microsoft.graph.driveItem"},
-  "listItem": {"@odata.type": "microsoft.graph.listItem"},
-  "location": {"@odata.type": "microsoft.graph.location"},
-  "times": {"@odata.type": "microsoft.graph.itemActivityTimeSet"}
-}
-```
-
 ## Properties
 
 | Property | Type                    | Description
@@ -95,6 +72,29 @@ New actions may get logged in the future, so make sure your app is tolerant of h
 [restoreAction]: restoreaction.md
 [shareAction]: shareaction.md
 [versionAction]: versionaction.md
+
+## JSON representation
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "keyProperty": "id",
+  "@type": "microsoft.graph.itemActivity",
+  "@type.aka": "oneDrive.activityEntity"
+}-->
+
+```json
+{
+  "id": "string (identifier)",
+  "access": "microsoft.graph.accessAction",
+  "action": {"@odata.type": "microsoft.graph.itemActionSet"},
+  "actor": {"@odata.type": "microsoft.graph.identitySet"},
+  "driveItem": {"@odata.type": "microsoft.graph.driveItem"},
+  "listItem": {"@odata.type": "microsoft.graph.listItem"},
+  "location": {"@odata.type": "microsoft.graph.location"},
+  "times": {"@odata.type": "microsoft.graph.itemActivityTimeSet"}
+}
+```
 
 ## Remarks
 

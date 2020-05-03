@@ -18,16 +18,6 @@ If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item repr
 
 **Note:** If the service is unable to determine the width and height of the image, the **Image** resource may be empty.
 
-## JSON representation
-
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.image" } -->
-```json
-{
-  "width": 100,
-  "height": 200
-}
-```
-
 ## Properties
 
 | Property   | Type  | Description                                |
@@ -41,6 +31,15 @@ In OneDrive for Business, this resource is returned on items that are expected t
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
+## JSON representation
+
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.image" } -->
+```json
+{
+  "width": 100,
+  "height": 200
+}
+```
 
 <!--
 {

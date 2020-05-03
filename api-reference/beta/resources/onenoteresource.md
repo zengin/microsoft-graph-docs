@@ -61,6 +61,11 @@ An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the
     data-attachment="file-name.file-type" 
     type="media-type" ... />
 ```
+## Methods
+| Method		   | Return Type	|Description|
+|:---------------|:--------|:----------|
+|[Get resource binary data](../api/resource-get.md) | Stream |Retrieve the binary data of a file or image resource.|
+
 
 ## Properties
 | Property	   | Type	|Description|
@@ -71,11 +76,6 @@ An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the
 ## Relationships
 None.
 
-
-## Methods
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Get resource binary data](../api/resource-get.md) | Stream |Retrieve the binary data of a file or image resource.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

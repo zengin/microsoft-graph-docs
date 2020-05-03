@@ -15,6 +15,12 @@ Namespace: microsoft.graph
 
 The **storagePlanInformation** resource provides information about the drive's storage quota plans.
 
+## Properties
+
+| Property name     | Type      | Description                                                             |
+|:------------------|:----------|:----------------------------------------------------------------------- |
+| upgradeAvailable  | Boolean   | Indicates if there are higher storage quota plans available. Read-only. |
+
 ## JSON representation
 
 <!-- {
@@ -29,12 +35,6 @@ The **storagePlanInformation** resource provides information about the drive's s
 }
 
 ```
-## Properties
-
-| Property name     | Type      | Description                                                             |
-|:------------------|:----------|:----------------------------------------------------------------------- |
-| upgradeAvailable  | Boolean   | Indicates if there are higher storage quota plans available. Read-only. |
-
 
 <!--
 {

@@ -19,6 +19,10 @@ The presence of the **EditAction** resource on an [**itemActivity**][activity] i
 
 [activity]: itemactivity.md
 
+## Properties
+
+None. This facet is a null or not-null value and contains no properties.
+
 ## JSON representation
 
 <!-- {
@@ -31,10 +35,6 @@ The presence of the **EditAction** resource on an [**itemActivity**][activity] i
 {
 }
 ```
-
-## Properties
-
-None. This facet is a null or not-null value and contains no properties.
 
 ## Remarks
 
