@@ -55,5 +55,8 @@ The following is a JSON representation of the type.
   "description": "groupMembers complex type",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+     "Error: /resources/groupmembers.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }-->

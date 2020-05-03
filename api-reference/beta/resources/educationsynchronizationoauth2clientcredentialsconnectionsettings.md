@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource
+# educationSynchronizationOAuth2ClientCredentialsConnectionSettings resource type
 
 Namespace: microsoft.graph
 

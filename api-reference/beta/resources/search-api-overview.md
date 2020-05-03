@@ -4,7 +4,7 @@ description: "Using the search API, apps can search Office 365 data in the conte
 localization_priority: Priority
 author: "nmoreau"
 ms.prod: "search"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Search API to query data

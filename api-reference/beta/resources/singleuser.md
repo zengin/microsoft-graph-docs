@@ -54,5 +54,8 @@ The following is a JSON representation of the type.
   "description": "singleUser complex type",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+     "Error: /resources/singleuser.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }-->

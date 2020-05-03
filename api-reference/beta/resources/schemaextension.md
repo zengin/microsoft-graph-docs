@@ -7,7 +7,7 @@ doc_type: resourcePageType
 ms.prod: ""
 ---
 
-# schemaExtension resource type (schema extensions)
+# schemaExtension (schema extensions) resource type 
 
 Namespace: microsoft.graph
 

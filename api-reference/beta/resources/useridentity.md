@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
-# userIdentity type
+# userIdentity resource type
 
 Namespace: microsoft.graph
 

@@ -76,6 +76,8 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
   "tocPath": "Facets/Audio",
-  "suppressions": []
+  "suppressions": [
+    "Error: /resources/audio.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }
 -->

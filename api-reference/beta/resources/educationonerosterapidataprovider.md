@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# educationOneRosterApiDataProvider resource
+# educationOneRosterApiDataProvider resource type
 
 Namespace: microsoft.graph
 

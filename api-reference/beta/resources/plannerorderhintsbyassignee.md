@@ -20,7 +20,8 @@ This type is an open type. The properties are the ids of users assigned to the t
 Properties of an Open Type can be defined by the client. In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner-order-hint-format.md) as the value.
 Properties cannot be removed from this type. The service will automatically remove values as the assignments on the containing [plannerTask](plannertask.md) are updated.
 
-Example:
+## JSON representation
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -60,5 +60,8 @@ The following is a JSON representation of the request approval stage.
   "description": "approvalSettings complex type",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+      "Error: /resources/approvalstage.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }-->

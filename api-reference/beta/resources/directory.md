@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
-# directory resource type (deleted items)
+# directory (deleted items) resource type 
 
 Namespace: microsoft.graph
 

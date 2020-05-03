@@ -55,6 +55,8 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "keywords": "deleted,delete,item,facet",
   "section": "documentation",
   "tocPath": "Facets/Deleted",
-  "suppressions": []
+  "suppressions": [
+    "Error: /resources/deleted.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }
 -->

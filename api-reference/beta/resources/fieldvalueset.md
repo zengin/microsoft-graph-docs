@@ -7,7 +7,7 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
 ---
-# FieldValueSet resource
+# FieldValueSet resource type
 
 Namespace: microsoft.graph
 

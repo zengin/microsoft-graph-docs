@@ -31,7 +31,7 @@ If a custom card is not provided, a simple card will be generated using displayT
 |content | Untyped JSON object | Optional. Custom piece of data - JSON object used to provide custom content to render the activity in the Windows Shell UI|
 |attribution | [imageInfo](../resources/projectrome-imageinfo.md) | Optional. JSON object used to represent an icon which represents the application used to generate the activity|
 
-## JSON Representation
+## JSON representation
 
 The following is a JSON representation of the resource.
 

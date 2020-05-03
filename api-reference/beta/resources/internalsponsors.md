@@ -50,5 +50,8 @@ The following is a JSON representation of the type.
   "description": "internalSponsor complex type",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+     "Error: /resources/internalsponsors.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }-->

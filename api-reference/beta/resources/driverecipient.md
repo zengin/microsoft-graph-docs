@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
-# DriveRecipient resource
+# DriveRecipient resource type
 
 Namespace: microsoft.graph
 

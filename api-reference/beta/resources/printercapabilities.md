@@ -155,5 +155,8 @@ The following is a JSON representation of the resource.
   "description": "printerCapabilities resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+     "Error: /resources/printercapabilities.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }-->

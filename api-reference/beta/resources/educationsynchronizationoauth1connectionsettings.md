@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# educationSynchronizationOAuth1ConnectionSettings resource
+# educationSynchronizationOAuth1ConnectionSettings resource type
 
 Namespace: microsoft.graph
 

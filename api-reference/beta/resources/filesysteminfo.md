@@ -73,6 +73,8 @@ For more information about the facets on a DriveItem, see [DriveItem](driveitem.
   "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
   "tocPath": "Facets/FileSystemInfo",
-  "suppressions": []
+  "suppressions": [
+     "Error: /resources/filesysteminfo.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }
 -->

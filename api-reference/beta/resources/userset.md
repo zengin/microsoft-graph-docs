@@ -49,5 +49,8 @@ The following is a JSON representation of userSet.  Note that a userSet is an ab
   "description": "userSet complex type",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /resources/userset.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }-->

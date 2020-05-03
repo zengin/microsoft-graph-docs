@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
-# ListItem resource
+# ListItem resource type
 
 Namespace: microsoft.graph
 

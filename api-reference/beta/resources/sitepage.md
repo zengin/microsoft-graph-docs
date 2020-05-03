@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
 
-# sitePage resource
+# sitePage resource type
 
 Namespace: microsoft.graph
 

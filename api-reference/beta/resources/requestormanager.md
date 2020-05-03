@@ -51,5 +51,8 @@ The following is a JSON representation of the type.
   "description": "requestorManager complex type",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+     "Error: /resources/requestormanager.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }-->

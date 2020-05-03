@@ -41,3 +41,17 @@ Represents a Postal Address complex type in Dynamics 365 Business Central.
 } 
  ```
 
+ <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "complex types JSON",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /resources/dynamics-complextypes.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
+}
+-->

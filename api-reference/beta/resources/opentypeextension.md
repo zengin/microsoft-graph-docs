@@ -7,7 +7,7 @@ doc_type: resourcePageType
 ms.prod: ""
 ---
 
-# openTypeExtension resource type (open extensions)
+# openTypeExtension (open extensions) resource type 
 
 Namespace: microsoft.graph
 

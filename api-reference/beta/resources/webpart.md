@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
-# webPart resource
+# webPart resource type
 
 Namespace: microsoft.graph
 

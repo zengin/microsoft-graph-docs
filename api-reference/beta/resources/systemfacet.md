@@ -36,6 +36,8 @@ None. This facet is a null or not-null value and contains no properties.
   "type": "#page.annotation",
   "section": "documentation",
   "tocPath": "Facets/System",
-  "suppressions": []
+  "suppressions": [
+    "Error: /resources/systemfacet.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }
 -->

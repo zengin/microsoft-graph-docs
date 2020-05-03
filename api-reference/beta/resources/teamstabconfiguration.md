@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
-# teamsTabConfiguration resource type (Open Type)
+# teamsTabConfiguration (Open Type) resource type
 
 Namespace: microsoft.graph
 

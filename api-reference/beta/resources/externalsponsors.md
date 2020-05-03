@@ -51,5 +51,8 @@ The following is a JSON representation of this type.
   "description": "externalSponsor complex type",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+      "Error: /resources/externalsponsors.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }-->

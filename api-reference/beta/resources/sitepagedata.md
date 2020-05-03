@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
 ---
-# sitePageData resource
+# sitePageData resource type
 
 Namespace: microsoft.graph
 

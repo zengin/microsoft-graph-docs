@@ -7,7 +7,7 @@ ms.prod: ""
 author: ""
 ---
 
- #  secureScoreControlStateUpdate resource type
+# secureScoreControlStateUpdate resource type
 Contains the history of the control states updated by the user (control states include Default, Ignored, ThirdParty, Reviewed).
 
 |Property |Type |Description |
@@ -17,9 +17,10 @@ Contains the history of the control states updated by the user (control states i
 |state | string | State of the control can be modified using PATCH command(Ex: ignored, thirdParty etc) |
 |updatedBy | string |ID of the user who updated tenant state |
 |updatedDateTime | DateTimeOffset |Time at which control state was updated |
- ## JSON representation
- The following is a JSON representation of the resource.
- <!-- {
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
   "blockType": "resource",
   "optionalProperties": [
    ],

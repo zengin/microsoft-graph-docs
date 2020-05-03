@@ -4,7 +4,7 @@ description: "Various Azure services (for example, Azure Active Directory Connec
 localization_priority: Normal
 author: "japere"
 ms.prod: "microsoft-identity-platform"
-doc_type: "resourcePageType"
+doc_type: "conceptualPageType"
 ---
 
 # On-premises publishing profiles

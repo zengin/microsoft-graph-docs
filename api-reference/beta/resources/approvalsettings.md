@@ -55,5 +55,8 @@ The following is a JSON representation of the request approval settings property
   "description": "approvalSettings complex type",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+      "Error: /resources/approvalsettings.md:\r\n      A required document header is missing from the document: * resource type"
+  ]
 }-->

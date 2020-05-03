@@ -7,7 +7,7 @@ ms.prod: "insights"
 doc_type: resourcePageType
 ---
 
-# insightIdentity
+# insightIdentity resource type
 
 Namespace: microsoft.graph
 

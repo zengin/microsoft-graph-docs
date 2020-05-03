@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.prod: ""
 ---
 
-# AsyncJobStatus resource
+# AsyncJobStatus resource type
 
 Namespace: microsoft.graph
 
