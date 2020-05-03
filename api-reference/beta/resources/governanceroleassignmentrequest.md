@@ -51,7 +51,7 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 |roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Read-only. The role definition that the request aims to. |
 |subject       |[governanceSubject](../resources/governancesubject.md)|Read-only. The user/group principal.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

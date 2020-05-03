@@ -24,5 +24,8 @@ None
   "description": "targetResourceApp resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /resources/targetresourceapp.md:\r\n      A required document header is missing from the document: JSON representation"
+  ]
 }-->

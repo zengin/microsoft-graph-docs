@@ -23,7 +23,7 @@ A complex type for representing the **attribution** property in the [visualInfo]
 |alternateText | String | Optional; alt-text accessible content for the image|
 |addImageQuery | Boolean | Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image|
 
-## JSON Representation
+## JSON representation
 
 Here is a JSON representation of the resource
 

@@ -66,6 +66,12 @@ For information about the permissions required to work with OneNote APIs, see [N
 |[List pages](../api/onenote-list-pages.md) |[onenotePage](onenotepage.md)  collection| Get a collection of pages.|
 |[List section groups](../api/onenote-list-sectiongroups.md) |[sectionGroup](sectiongroup.md) collection| Get a collection of section groups.|
 |[List sections](../api/onenote-list-sections.md) |[onenoteSection](onenotesection.md) collection| Get a collection of sections.|
+
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
 <!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",

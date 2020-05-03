@@ -24,7 +24,7 @@ Application developers can configure optional claims in their Azure AD apps to s
 |accessToken|[optionalClaim](optionalclaim.md) collection| The optional claims returned in the JWT access token. |
 |saml2Token|[optionalClaim](optionalclaim.md) collection| The optional claims returned in the SAML token.|
 
-## JSON Representation
+## JSON representation
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",

@@ -12,13 +12,15 @@ author: ""
 Namespace: microsoft.graph
 
 Represents data returned in JSON format
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 
 ## Relationships
 None
-## JSON Representation
+
+## JSON representation
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 The **storagePlanInformation** resource provides information about the drive's storage quota plans.
 
-### JSON representation
+## JSON representation
 
 <!-- {
   "blockType": "resource",

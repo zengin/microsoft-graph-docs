@@ -27,3 +27,18 @@ Represents the source SIS schema. This allows the system to know how to map the 
 ## Properties
 
 No properties are exposed by this type.
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "educationSynchronizationDataProvider resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /resources/educationsynchronizationdataprovider.md:\r\n      A required document header is missing from the document: JSON representation"
+  ]
+}
+-->

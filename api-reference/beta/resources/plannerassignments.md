@@ -21,7 +21,8 @@ object with orderHint property populated as the value. The assignees can be unas
 ## Properties
 Properties of an Open Type can be defined by the client. In this case though, the client must provide assigned user's IDs as property names. The property must be set to a **plannerAssignment** object to create or modify assignees, and to null to remove them.
 
-Example:
+## JSON representation
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

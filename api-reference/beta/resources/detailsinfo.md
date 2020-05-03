@@ -20,7 +20,7 @@ The **detailsInfo** resource is a JSON string that contains additional propertie
 
 ## Relationships
 None
-## JSON Representation
+## JSON representation
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",

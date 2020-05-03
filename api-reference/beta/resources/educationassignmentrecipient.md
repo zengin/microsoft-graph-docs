@@ -48,6 +48,8 @@ None.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /resources/educationassignmentrecipient.md:\r\n      A required document header is missing from the document: JSON representation"
+  ]
 }
 -->
