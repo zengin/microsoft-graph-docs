@@ -13,7 +13,15 @@
         {
           "title": "Properties",
           "level": 2,
-          "required": true
+          "required": true,
+          "headers": [
+            {
+              "title": "* values",
+              "level": 3,
+              "required": false,
+              "multiple": true
+            }
+          ]
         },
         {
           "title": "Relationships",

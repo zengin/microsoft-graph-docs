@@ -51,7 +51,7 @@ Here is a JSON representation of the resource
 | containerDisplayName  | String		| A string describing where the item is stored. For example, the name of a SharePoint site or the user name identifying the owner of the OneDrive storing the item.  |
 | containerType    		| String | Can be used for filtering by the type of container in which the file is stored. Such as Site or OneDriveBusiness.	   |
 
-## Type property values
+### Type property values
 -	PowerPoint
 -	Word
 -	Excel
@@ -81,7 +81,7 @@ Here is a JSON representation of the resource
 Example query:
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-## containerType property values
+### containerType property values
 The supported types can differ based on containers from which [officeGraphInsights](officegraphinsights.md) returns files. For example, only the [sharedInsight](insights-shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
 
 -	OneDriveBusiness

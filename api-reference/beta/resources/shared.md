@@ -44,7 +44,7 @@ If a [**Driveitem**](driveitem.md) has a non-null **shared** facet, the item has
 | sharedBy       | [identitySet](identityset.md) | The identity of the user who shared the item. Read-only.
 | sharedDateTime | DateTimeOffset                | The UTC date and time when the item was shared. Read-only.
 
-## Scope values
+### scope values
 
 | Value          | Description                                                                           |
 |:---------------|:--------------------------------------------------------------------------------------|
