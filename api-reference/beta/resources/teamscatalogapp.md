@@ -22,6 +22,7 @@ see [teamsApp](teamsapp.md).
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /resources/teamscatalogapp.md:\r\n      A required document header is missing from the document: JSON representation"
+    "Error: /resources/teamscatalogapp.md:\r\n      A required document header is missing from the document: JSON representation",
+    "Error: /resources/teamscatalogapp.md:\r\n      A required document header is missing from the document: Properties"
   ]
 }-->

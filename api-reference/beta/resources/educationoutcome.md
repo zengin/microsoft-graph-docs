@@ -54,5 +54,8 @@ The following is a JSON representation of the resource.
   "description": "educationOutcome resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /resources/educationoutcome.md:\r\n      A required document header is missing from the document: Properties"
+  ]
 }-->

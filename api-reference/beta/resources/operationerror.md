@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Describes errors in [teamsAsyncOperation](teamsasyncoperation.md).
 
-## operationError Properties
+## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |code|string (readonly)|Operation error code.|

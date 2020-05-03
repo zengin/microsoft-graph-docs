@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 This resource contains a tenant score and description for an individual control.
 
+## Properties
+
 |Name |Type |Description |
 |:--|:--|:--|
 |	controlName	|	String	|	Control unique name	|

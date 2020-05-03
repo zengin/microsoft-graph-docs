@@ -107,6 +107,8 @@ New actions may get logged in the future, so make sure your app is tolerant of h
   "keywords": "activities,activity,action",
   "section": "documentation",
   "tocPath": "Resources/ItemActivity",
-  "suppressions": []
+  "suppressions": [
+    "Error: /resources/itemactivity.md:\r\n      Found header: Actions. Did you mean: Methods?"
+  ]
 }
 -->

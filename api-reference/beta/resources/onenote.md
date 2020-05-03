@@ -97,6 +97,8 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+     "Error: /resources/onenote.md:\r\n      A required document header is missing from the document: Properties"
+  ]
 }
 -->

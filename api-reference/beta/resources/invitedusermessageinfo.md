@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "elisolMS"
 ---
 
-# Configuring the invitation message
+# invitedUserMessageInfo resource type
 
 Namespace: microsoft.graph
 
