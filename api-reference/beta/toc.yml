@@ -8890,6 +8890,8 @@
           items:
           - name: List provisioning
             href: api/provisioningobjectsummary-list.md
+      - name: Authentication flows policy
+        href: resources/identity-authex-api.md
       - name: Authentication methods
         items: 
         - name: Overview
