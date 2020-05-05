@@ -2,8 +2,8 @@
 title: "Get identityProtectionNotificationPolicy"
 description: "Retrieve the properties and relationships of identityprotectionnotificationpolicy object."
 localization_priority: Normal
-author: "--author"
-ms.prod: ""
+author: "cloudhandler"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

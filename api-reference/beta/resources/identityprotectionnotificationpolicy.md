@@ -2,8 +2,8 @@
 title: "identityProtectionNotificationPolicy resource type"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
-author: "--author"
-ms.prod: ""
+author: "cloudhandler"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
@@ -11,15 +11,15 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Represents the settings for the Identity Protection  Weekly Digest e-mails and the Users flagged for risk e-mails.
+
+For more information about Identity Protection notification settings, see [Azure Active Directory Identity Protection notifications](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-notifications)
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get identityProtectionNotificationPolicy](../api/identityprotectionnotificationpolicy-get.md) | [identityProtectionNotificationPolicy](identityprotectionnotificationpolicy.md) | Read properties and relationships of identityProtectionNotificationPolicy object. |
-| [Update](../api/identityprotectionnotificationpolicy-update.md) | [identityProtectionNotificationPolicy](identityprotectionnotificationpolicy.md) | Update identityProtectionNotificationPolicy object. |
-| [Delete](../api/identityprotectionnotificationpolicy-delete.md) | None | Delete identityProtectionNotificationPolicy object. |
 
 ## Properties
 
