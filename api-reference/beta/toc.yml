@@ -9270,6 +9270,11 @@
             href: api/riskyusers-confirmcompromised.md
           - name: Dismiss
             href: api/riskyusers-dismiss.md
+        - name: Notification policy
+          href: resources/identityProtectionNotificationPolicy.md
+          items:
+          - name: Get notification policy
+            href: api/identityprotectionnotificationpolicy-get.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
