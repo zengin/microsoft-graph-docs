@@ -18,6 +18,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **resourceBehaviorOptions** and **resourceProvisioningOptions** properties to the [group](/graph/api/resources/group?view=graph-rest-beta) entity.|
+| Addition | beta | Introduced  [identityProtectionNotificationPolicy API](/graph/api/resources/group?view=graph-rest-beta), which represents the Identity Protection notification settings.|
 
 ## April 2020
 
