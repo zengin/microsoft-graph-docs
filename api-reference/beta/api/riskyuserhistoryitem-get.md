@@ -96,7 +96,7 @@ Content-type: application/json
     "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
     "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
     "activity": {
-        "eventTypes": [],
+        "riskEventType": [],
         "detail": "userPerformedSecuredPasswordReset"
     }
 }

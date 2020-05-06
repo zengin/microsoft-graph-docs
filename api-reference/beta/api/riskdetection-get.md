@@ -86,7 +86,7 @@ Content-type: application/json
     "id": "6a5874ca-abcd-9d82-5ad39bd71600",
     "requestId": "6a5874ca-abcd-9d82-5ad39bd71600",
     "correlationId": "abcd74ca-9823-4b1c-9d82-5ad39bd71600",
-    "riskType": "unfamiliarFeatures",
+    "riskEventType": "unfamiliarFeatures",
     "riskState": "remediated",
     "riskLevel": "medium",
     "riskDetail": "userPerformedSecuredPasswordReset",
