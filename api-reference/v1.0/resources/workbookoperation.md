@@ -26,7 +26,7 @@ The status of certain long-running workbook operations.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Get the operation with `{operation-id}`. |
+| [Get workbookOperation](../v1.0/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Get the operation with `{operation-id}`. |
 
 
 ## Relationships
