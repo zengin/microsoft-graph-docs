@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # workbookOperationError resource type
 
-PROVIDE DESCRIPTION HERE
+An error from a failed workbook operation
 
 ## Properties
 
