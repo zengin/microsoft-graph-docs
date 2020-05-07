@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: "apiPageType"
 ---
 
-# Get onenoteOperation
+# Get workbookOperation
 
 Retrieve the properties and relationships of workbookOperation object. This applies to operations that return the **Operation-Location** header in the response.
 
