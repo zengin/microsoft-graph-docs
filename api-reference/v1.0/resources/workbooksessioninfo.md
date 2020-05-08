@@ -37,5 +37,4 @@ Here is a JSON representation of the resource
 |:---------|:------|:------------------------------------------|
 | id  | string | Id of the workbook session. |
 | persistChanges | boolean |  `true` for persistent session. `false` for non-persistent session (view mode) |
-| commitExplicitly | boolean |  `true` indicates the session is long running operation session. `false` for common session. |
 
