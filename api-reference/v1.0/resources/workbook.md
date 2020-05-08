@@ -50,6 +50,7 @@ None
 |names|[WorkbookNamedItem](nameditem.md) collection|Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
 |tables|[WorkbookTable](table.md) collection|Represents a collection of tables associated with the workbook. Read-only.|
 |worksheets|[WorkbookWorksheet](worksheet.md) collection|Represents a collection of worksheets associated with the workbook. Read-only.|
+|operations|[WorkbookOperations](workbookoperation.md) collection|The status of Workbook operations. Getting an operations collection is not supported, but you can get the status of long-running operations if the `Location` header is returned in the response. Read-only. Nullable.|
 
 ## Functions
 
