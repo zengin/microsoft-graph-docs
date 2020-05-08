@@ -22,9 +22,17 @@ To represent the session in the API, use the `workbook-session-id: {session-id}`
 
 >**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.  
 
+In some cases, API responses require indeterminate time to complete, for example, update a huge table in a workbook. Instead of waiting until the action is complete before returning a response, Excel Graph also provides a long running operations pattern. This pattern provides a way to poll for status updates on a long running operation, without any request waiting for the action to complete. Here are the steps:
+
+1. Adds a header of  `Prefer: respond-async` in the request to indicate it as a long running operation when creating a session.
+2. Response returns a header of `Location` to specify the URL for polling the operation status. You can retrieves the operation status by accessing the specified URL. Status includes `NotStarted`, `Running`, `Completed` or `Failed`.
+3. After operation completes. You can request the status again and response will show whether the operation is `Completed` or `Failed`.
+
 ## Error Handling
 
 This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.
+
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,9 +59,9 @@ In the request body, supply a JSON representation of [WorkbookSessionInfo](../re
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body.
+If successful, this method returns `201 Created` or `202 Accepted` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body.
 
-## Example
+## Example 1: Basic session creation
 ##### Request
 Here is an example of the request.
 
@@ -89,8 +97,6 @@ Content-length: 52
 
 ---
 
-In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.
-
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -106,6 +112,34 @@ Content-length: 52
 {
   "id": "id-value",
   "persistChanges": true
+}
+```
+
+## Example 2: Session creation with long running operation pattern
+##### Request
+Here is an example of the request for long running operation.
+```http
+POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
+Prefer: respond-async
+Content-type: application/json
+{
+    "persistChanges": true
+}
+```
+
+
+##### Response
+Here is an example of the response for creating long running operation session. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
+Content-type: application/json
+{
 }
 ```
 
