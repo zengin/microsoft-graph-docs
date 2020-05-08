@@ -16,7 +16,7 @@ The status of certain long-running workbook operations.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|[workbookoperationStatus](workbookoperationstatus.md)| The current status of the operation. Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
+|status|[workbookOperationStatus](workbookoperationstatus.md)| The current status of the operation. Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
 |id|String| The operation id. Read-only.|
 |error|[workbookOperationError](workbookoperationerror.md)| The error returned by the operation.|
 |resourceLocation|String| The resource URI for the result.|
