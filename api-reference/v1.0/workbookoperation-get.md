@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # Get workbookOperation
 
-Retrieve the properties and relationships of workbookOperation object. This applies to operations that return the **Operation-Location** header in the response.
+Retrieve the status of workbookOperation object.
 
 ## Permissions
 
