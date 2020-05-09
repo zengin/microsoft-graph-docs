@@ -59,7 +59,7 @@ In the request body, supply a JSON representation of [WorkbookSessionInfo](../re
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body. For long running operation pattern, it returns '202 Accepted' response code and a `Location` header with empty body in response.
+If successful, this method returns `201 Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body. For long running operation pattern, it returns  `202 Accepted ` response code and a `Location` header with empty body in response.
 
 ## Example 1: Basic session creation
 ##### Request
