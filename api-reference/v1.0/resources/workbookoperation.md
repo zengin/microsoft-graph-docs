@@ -9,15 +9,15 @@ doc_type: "resourcePageType"
 
 # workbookOperation resource type
 
-The status of certain long-running workbook operations.
+The status of certain long-running workbook operation.
 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|[workbookOperationStatus](workbookoperationstatus.md)| The current status of the operation. Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
 |id|String| The operation id. Read-only.|
+|status|[workbookOperationStatus](workbookoperationstatus.md)| The current status of the operation. Possible values are: `notStarted`, `running`, `succeeded`, `failed`.|
 |error|[workbookOperationError](workbookoperationerror.md)| The error returned by the operation.|
 |resourceLocation|String| The resource URI for the result.|
 
@@ -49,8 +49,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "status": {"@odata.type": "microsoft.graph.workbookOperationStatus"},
   "id": "String (identifier)",
+  "status": {"@odata.type": "microsoft.graph.workbookOperationStatus"},
   "error": {"@odata.type": "microsoft.graph.workbookOperationError"},
   "resourceLocation": "String",
 }
