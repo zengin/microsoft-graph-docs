@@ -17,6 +17,7 @@ An error from a failed workbook operation.
 |:-------------|:------------|:------------|
 |code|String| The error code.|
 |message|String| The error message.|
+|innererror|error object| Optional. Additional error objects that may be more specific than the top level error.|
 
 ## JSON representation
 
