@@ -8,7 +8,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var transferTarget = new InvitationParticipantInfo
 {
-	EndpointType = "default",
 	Identity = new IdentitySet
 	{
 		User = new Identity
@@ -17,7 +16,11 @@ var transferTarget = new InvitationParticipantInfo
 			DisplayName = "Heidi Steen"
 		}
 	},
-	ReplacesCallId = "replacesCallId-value"
+	ReplacesCallId = "replacesCallId-value",
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"endpointType", "default"}
+	}
 };
 
 var clientContext = "9e90d1c1-f61e-43e7-9f75-d420159aae08";

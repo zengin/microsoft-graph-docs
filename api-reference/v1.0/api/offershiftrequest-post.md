@@ -53,6 +53,8 @@ If successful, this method returns a `200 OK` response code and an [offerShiftRe
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_offershiftrequest"
@@ -69,6 +71,12 @@ Content-type: application/json
   "recipientUserId": "fe278b61-21ac-4872-8b41-1962bbb98e3c"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-offershiftrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 

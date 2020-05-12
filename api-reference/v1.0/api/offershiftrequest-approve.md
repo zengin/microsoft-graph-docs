@@ -59,6 +59,8 @@ If successful, this method returns a `200 OK` response code. It does not return 
 
 The following example shows a request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "offershiftrequest_approve"
@@ -72,6 +74,12 @@ Content-type: application/json
   "message": "Approved!"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/offershiftrequest-approve-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 

@@ -55,6 +55,8 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_workforceintegration_from_teamwork"
@@ -76,6 +78,12 @@ Content-type: application/json
   "supportedEntities": "supportedEntities-value"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-workforceintegration-from-teamwork-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 

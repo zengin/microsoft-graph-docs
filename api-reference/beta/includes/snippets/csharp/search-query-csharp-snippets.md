@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var requests = new List<SearchRequest>()
+var requests = new List<SearchRequestObject>()
 {
-	new SearchRequest
+	new SearchRequestObject
 	{
 		EntityTypes = new List<EntityType>()
 		{

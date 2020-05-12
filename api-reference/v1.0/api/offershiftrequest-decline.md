@@ -58,6 +58,8 @@ If successful, this method returns a `200 OK` response code. It does not return 
 
 The following example shows a request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "offershiftrequest_decline"
@@ -71,6 +73,12 @@ Content-type: application/json
   "message": "Sorry, you can't offer this shift."
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/offershiftrequest-decline-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

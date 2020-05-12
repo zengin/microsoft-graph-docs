@@ -58,6 +58,8 @@ If successful, this method returns a `200 OK` response code. It does not return 
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoffrequest_decline"
@@ -71,6 +73,12 @@ Content-type: application/json
   "message": "message-value"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/timeoffrequest-decline-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 
