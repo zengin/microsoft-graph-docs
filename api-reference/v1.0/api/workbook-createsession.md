@@ -26,7 +26,7 @@ In some cases, API responses require indeterminate time to complete, for example
 
 1. Adds a header of  `Prefer: respond-async` in the request to indicate it as a long running operation when creating a session.
 2. Response returns a header of `Location` to specify the URL for polling the operation status. You can retrieves the operation status by accessing the specified URL. Status includes `notStarted`, `running`, `succeeded` or `failed`.
-3. After operation completes. You can request the status again and response will show whether the operation is `succeeded` or `failed`.
+3. After operation completes, you can request the status again and response will show whether the operation is `succeeded` or `failed`.
 
 ## Error Handling
 
