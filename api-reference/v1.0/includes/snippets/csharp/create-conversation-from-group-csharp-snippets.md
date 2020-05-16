@@ -13,7 +13,7 @@ var conversation = new Conversation
 	{
 		new ConversationThread
 		{
-			Posts = (IConversationThreadsPostsCollectionPage)new List<Post>()
+			Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
 			{
 				new Post
 				{

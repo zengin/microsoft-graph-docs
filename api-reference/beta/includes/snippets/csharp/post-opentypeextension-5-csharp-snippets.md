@@ -13,7 +13,7 @@ var conversation = new Conversation
 	{
 		new ConversationThread
 		{
-			Posts = (IConversationThreadsPostsCollectionPage)new List<Post>()
+			Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
 			{
 				new Post
 				{
@@ -22,7 +22,7 @@ var conversation = new Conversation
 						ContentType = BodyType.Html,
 						Content = "This is urgent!"
 					},
-					Extensions = (IConversationThreadsPostsExtensionsCollectionPage)new List<Extension>()
+					Extensions = (IPostExtensionsCollectionPage)new List<Extension>()
 					{
 						new OpenTypeExtension
 						{
