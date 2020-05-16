@@ -26,7 +26,7 @@ var list = new List
 			}
 		}
 	},
-	List = new ListInfo
+	ListInfo = new ListInfo
 	{
 		Template = "genericList"
 	}
