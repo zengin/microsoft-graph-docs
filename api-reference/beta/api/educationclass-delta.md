@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /education/classes/{id}/delta
-POST /education/me/classes/{id}/delta
+GET /education/classes/{id}/delta
+GET /education/me/classes/{id}/delta
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/{id}/delta
+GET https://graph.microsoft.com/beta/education/classes/{id}/delta
 ```
 
 ##### Response
