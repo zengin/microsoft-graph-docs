@@ -25,6 +25,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |[Get user](../api/educationuser-get-user.md) |[user](user.md)| Get the simple directory **user** that corresponds to this **educationUser**.|
 |[Update](../api/educationuser-update.md) | [educationUser](educationuser.md)	|Update an **educationUser** object. |
 |[Delete](../api/educationuser-delete.md) | None |Delete an **educationUser** object. |
+| [Delta](../api/educationuser-delta.md)               | [educationUser](educationuser.md) collection | Get incremental changes for **educationUsers**.                               |
 
 ## Properties
 | Property	   | Type	|Description|

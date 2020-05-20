@@ -3267,6 +3267,8 @@ items:
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
+        - name: Get delta
+          href: api/educationuser-delta.md
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
