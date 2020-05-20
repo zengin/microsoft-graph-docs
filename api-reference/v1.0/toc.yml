@@ -3227,6 +3227,8 @@ items:
           href: api/educationschool-post-users.md
         - name: Remove user
           href: api/educationschool-delete-users.md
+        - name: Get delta
+          href: api/educationschool-delta.md
       - name: Classes
         href: resources/educationclass.md
         items:
