@@ -37,7 +37,7 @@ GET /education/schools/{id}/users/{id}/delta
 
 | Name          | Description   |
 | :------------ | :------------ |
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
