@@ -8306,6 +8306,8 @@ items:
           href: api/educationclass-update.md
         - name: Delete class
           href: api/educationclass-delete.md
+        - name: Delta
+          href: api/educationclass-delta.md
         - name: List teachers
           href: api/educationclass-list-teachers.md
         - name: Add teacher
