@@ -29,6 +29,7 @@ Represents a class within a school. The **educationClass** resource corresponds 
 |[Get group](../api/educationclass-get-group.md) |[group](group.md)| Get the Office 365 **group** that corresponds to this **educationClass**.|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)	|Update **educationClass** object. |
 |[Delete](../api/educationclass-delete.md) | None |Delete **educationClass** object. |
+| [Delta](../api/educationclass-delta.md)                                 | [educationClass](educationclass.md) collection | Get incremental changes for **educationClasses**                                          |
 
 ## Properties
 | Property	   | Type	|Description|
