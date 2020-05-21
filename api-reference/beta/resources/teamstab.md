@@ -17,13 +17,13 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
-|[Get tab](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
-|[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
-|[Delete tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
-|[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
+| Method       | Return Type  |Description| Permissions |
+|:---------------|:--------|:----------| :----------|
+|[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.| Delegated (admin consent), Application, RSC |
+|[Get tab](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.| Delegated (admin consent), Application, RSC |
+|[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.| Delegated (admin consent), Application, RSC |
+|[Delete tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.| Delegated (admin consent), Application, RSC |
+|[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.| Delegated (admin consent), Application, RSC |
 
 
 ## Properties
