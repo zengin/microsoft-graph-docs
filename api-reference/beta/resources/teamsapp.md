@@ -20,7 +20,7 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 ## Methods
 
 | Method       | Return Type  |Description| Permissions |
-|:---------------|:--------|:----------|
+|:---------------|:--------|:----------|:----------|
 |[List published apps](../api/teamsapp-list.md) | [teamsApp](teamsapp.md) collection | List published apps from the Microsoft Teams apps catalog.| Delegated (admin consent), Application |
 |[Publish an app](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Publish an app to your organization's app catalog.| Delegated (admin consent), Application |
 |[Update a published app](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Update a published app in your organization's app catalog.| Delegated (admin consent), Application | 
