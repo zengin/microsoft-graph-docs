@@ -35,19 +35,33 @@ The **extensionAttributes** property of the [device](device.md) entity contains 
 |extensionAttribute14|String| Fourteenth customizable extension attribute. |
 |extensionAttribute15|String| Fifteenth customizable extension attribute. |
 
-## JSON representation
+## Example REST operations
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
+### Use case:  Write extensionAttributes on a device
 
-  ],
-  "@odata.type": "microsoft.graph.extensionAttributes"
-}-->
+``` JSON
+PATCH https://graph.microsoft.com/v1.0/devices/{id}
+Content-type: application/json
 
-
-```json
 {
+  "extensionAttributes": [
+    "extensionAttribute1" : "extensionAttribute1-value",
+    "extensionAttribute2" : "extensionAttribute2-value",
+    "extensionAttribute10" : "extensionAttribute10-value",
+    "extensionAttribute15" : "extensionAttribute15-value"
+  ]
+}
+```
+
+### Use case:  Get device with extensionAttributes
+
+``` JSON
+GET https://graph.microsoft.com/beta/devices?$select=extensionAttributes,id
+
+HTTP/1.1 200 OK
+{
+    "id": "id-value",
+    "extensionAttributes": {
       "extensionAttribute1": "string",
       "extensionAttribute2": "string",
       "extensionAttribute3": "string",
@@ -64,7 +78,18 @@ The **extensionAttributes** property of the [device](device.md) entity contains 
       "extensionAttribute14": "string",
       "extensionAttribute15": "string"
   }
+}
+```
 
+### Use case: Bad request when using filter on extensionAttributes
+
+``` JSON
+GET https://graph.microsoft.com/beta/devices?$filter=extensionAttributes/extensionAttributes1 eq 'extensionAttributes1-value'
+
+HTTP/1.1 400 BadRequest
+{
+    "Error message body"
+}
 ```
 
 
@@ -73,7 +98,7 @@ The **extensionAttributes** property of the [device](device.md) entity contains 
 <!--
 {
   "type": "#page.annotation",
-  "description": "onPremisesExtensionAttributes resource",
+  "description": "extensionAttributes resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
