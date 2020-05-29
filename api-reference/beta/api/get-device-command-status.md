@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET me/devices/{id}/commands/{id}
+GET /me/devices/{id}/commands/{id}
 ```
 
 ## Request headers
@@ -93,7 +93,7 @@ The following example shows the request.
   "name": "get_command"
 } -->
 ```http
-GET me/devices/{id}/commands/{id}
+GET /me/devices/{id}/commands/{id}
 Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 ```
@@ -147,7 +147,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET me/devices/{id}/command/{id}/responsePayload
+GET /me/devices/{id}/command/{id}/responsePayload
 ```
 
 ### Request headers
@@ -187,7 +187,7 @@ The following example shows the request.
   "name": "get_command_payload"
 } -->
 ```http
-GET me/devices/{id}/commands/{id}
+GET /me/devices/{id}/commands/{id}
 Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 ```

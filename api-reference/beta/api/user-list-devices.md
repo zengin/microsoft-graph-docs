@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET me/devices
+GET /me/devices
 ```
 
 ## Request headers
@@ -86,7 +86,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET me/devices
+GET /me/devices
 Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 ```
