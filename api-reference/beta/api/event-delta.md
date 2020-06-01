@@ -143,7 +143,7 @@ Content-length: 359
 }
 ```
 
-# event: delta
+## event: delta
 By using delta query on **events**, you can get new, updated, or deleted events in a user’s default calendar or a specific calendar. The returned events will include single instance meetings and series master with a minimal set of details. For the returned list of events, client can expand the event using the [Get Event](../api/event-get.md) as needed. 
 
  The delta data enables you to maintain and synchronize a local store of a user's events, without having to fetch the entire set of the user's events from the server every time. 
