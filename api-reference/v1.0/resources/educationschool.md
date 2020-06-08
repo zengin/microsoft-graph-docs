@@ -26,7 +26,7 @@ A resource representing a school and used to manage the classes, teachers, and s
 | [Remove user](../api/educationschool-delete-users.md)    | [educationUser](educationuser.md)              | Remove an **educationUser** from the school through the **users** navigation property.      |
 | [Update](../api/educationschool-update.md)               | [educationSchool](educationschool.md)          | Update an **educationSchool** object.                                                       |
 | [Delete](../api/educationschool-delete.md)               | None                                           | Delete an **educationSchool** object.                                                       |
-| [Delta](../api/educationschool-delta.md)                                   | [educationSchool](educationschool.md) collection | Get incremental changes for **educationSchools**                                            |
+| [Delta](../api/educationschool-delta.md)  | [educationSchool](educationschool.md) collection | Get incremental changes for **educationSchools** |
 
 ## Properties
 

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection. See [Use delta query](/graph/delta-query-overview) for details.
+Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection. For more information, see [Use delta query](/graph/delta-query-overview).
 
 ## Permissions
 
@@ -48,9 +48,8 @@ If successful, this method returns a `200 OK` response code and an [educationCla
 
 ## Example
 
-The following example shows how to call this API.
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -63,7 +62,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/education/classes/{id}/delta
 ```
 
-##### Response
+### Response
 
 The following is an example of the response. 
 

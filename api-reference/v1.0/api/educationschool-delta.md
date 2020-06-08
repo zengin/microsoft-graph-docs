@@ -50,9 +50,8 @@ If successful, this method returns a `200 OK` response code and an [educationSch
 
 ## Example
 
-The following example shows how to call this API.
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -65,7 +64,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/education/schools/{id}/delta
 ```
 
-##### Response
+### Response
 
 The following is an example of the response. 
 
