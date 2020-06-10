@@ -49,13 +49,13 @@ POST /teams/{id}/sendActivityNotification
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|topic|teamworkActivityTopic | Represents what is being referenced in the feed item. Required.|
+|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md) | Represents what is being referenced in the feed item. Required.|
 |activityType | string | Represents the type of activity and must be declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest). Required.|
-|recipient | teamworkNotificationRecipient | The intended receiver. A recipient must be a Teams user with the ability to post notifications to everyone in a team, channel, and chat.  Required.|
+|recipient | [teamworkNotificationRecipient]([teamworkActivityTopic](../resources/teamworknotificationrecipient.md) | The intended receiver. A recipient must be a Teams user with the ability to post notifications to everyone in a team, channel, and chat.  Required.|
 | from | string |Displays a hint if the sender is different than the caller on the Graph token.|
 | chainId | long | Enables the developer to override a previous notification. If not included, a new notifcation will be posted.|
-| previewText | itemBody | Preview text displayed to the user as part an activity feed item. |
-| templateParameters | collection\<keyvaluepair\>| Parameter values declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest) |
+| previewText | [itemBody](../resources/itemBody.md) | Preview text displayed to the user as part an activity feed item. |
+| templateParameters | [keyvaluepair](../resources/keyvaluepair.md) collection | Parameter values declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest) |
 
 ## Response
 
