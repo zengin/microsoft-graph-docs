@@ -18,7 +18,7 @@ to a single [user](../resources/user.md),
 to all users in a [chat](../resources/chat.md), 
 or to all users in a [team](../resources/team.md).
 
-> Note: Only Graph appids that have been linked with a Teams appid can send notifications, 
+> Note: Only Microsoft Graph appids that have been linked with a Teams appid can send notifications, 
 see [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest) for more information.
 
 > Note: Currently activity notifications sent via this API will only appear For users running Microsoft Teams Developer Preview on a web or desktop device.
@@ -55,7 +55,7 @@ POST /teams/{id}/sendActivityNotification
 |:---------------|:--------|:----------|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md) | Represents what is being referenced in the feed item. Required.|
 |activityType | string | Represents the type of activity and must be declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest). Required.|
-|recipient | [teamworkNotificationRecipient]([teamworkActivityTopic](../resources/teamworknotificationrecipient.md) | The intended receiver. A recipient must be a Teams user with the ability to post notifications to everyone in a team, channel, and chat.  Required.|
+|recipient | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) | The intended receiver. A recipient must be a Teams user with the ability to post notifications to everyone in a team, channel, and chat.  Required.|
 | from | string |Displays a hint if the sender is different than the caller on the Graph token.|
 | chainId | long | Enables the developer to override a previous notification. If not included, a new notifcation will be posted. Note: currently, when specifying chainId, an unrelated notification from the same app will sometimes be replaced, we are working on a fix. |
 | previewText | [itemBody](../resources/itemBody.md) | Preview text displayed to the user as part an activity feed item. |
@@ -67,10 +67,10 @@ If successful, this method will return a `202 Accepted` response code.
 It does not return anything in the response body.
 
 If there is more than one Teams app corresponding to a given Graph appid, this method will return a `409 Conflict` response code
-with the message "Found multiple applications with the same AAD App ID '{guid}' - a Teams Application ID is required to resolve which application is correct."
+with the message `Found multiple applications with the same AAD App ID '{guid}' - a Teams Application ID is required to resolve which application is correct.`
 The message is misleading, there is no way to specify a Teams Application ID.
-You must disambiguate by Uninstalling any conflicting Teams apps.
-Note that Sideloading (uploading custom maps to a particular team, rather than to the app catalog)
+You must disambiguate by uninstalling any conflicting Teams apps.
+Note that sideloading (uploading custom maps to a particular team, rather than to the app catalog)
 creates a new teams app and a new teams appid.
 
 ## Example

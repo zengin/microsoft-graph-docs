@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 Who to send an [activity notification](../api/team-sendactivitynotification.md) to. 
-Subclasses include aadUserNotificationRecipient](aadusernotificationrecipient.md).
+Subclasses include [aadUserNotificationRecipient](aadusernotificationrecipient.md).
 
 ## Properties
 |Property|Type|Description|
