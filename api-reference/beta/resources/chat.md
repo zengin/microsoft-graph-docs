@@ -25,6 +25,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Get chat member](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Get a single user in the chat.| Delegated and application (see note) |
 |[List messages in a chat](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a 1:1 or group chat. | Delegated and application (see note) |
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. | Delegated and application (see note) |
+|[Send activity notification](../api/team-sendactivitynotification.md) | None | Send an activity feed notification to the members of the chat. |
 
 > **Note:** 
 When using application permissions, be sure you know how you're going to get the chat ID. 

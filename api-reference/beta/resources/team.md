@@ -33,6 +33,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[List all teams](/graph/teams-list-all-teams) | [group](group.md) collection | List all groups that have teams. |
 |[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
 |[Update team photo](../api/team-update-photo.md) | None | Update the photo (picture) for a team. |
+|[Send activity notification](../api/team-sendactivitynotification.md) | None | Send an activity feed notification to the members of the team. |
 
 ## Properties
 

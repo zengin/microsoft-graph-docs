@@ -26,6 +26,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in the personal scope of this user.|
+|[Send activity notification](../api/team-sendactivitynotification.md) | None | Send an activity feed notification to the user. |
 
 ## JSON representation
 
