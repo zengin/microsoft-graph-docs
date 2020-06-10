@@ -71,7 +71,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "clone_team"
+  "name": "Send_activity_notification"
 }-->
 ```http
 POST /teams/{teamId}/sendActivityNotification
@@ -84,7 +84,7 @@ Content-Type: application/json
   },
   "activityType": "questionAnswered",
   "previewText": {
-    "content": "Your question has been answered!"
+    "content": "Your question has been answered"
   },
   "recipient": {
     "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
