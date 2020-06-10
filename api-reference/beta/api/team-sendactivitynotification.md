@@ -18,7 +18,9 @@ to a single [user](../resources/user.md),
 to all users in a [chat](../resources/chat.md), 
 or to all users in a [team](../resources/team.md).
 
-> Note: 
+> Note: [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest)
+
+> Note: Send Activity Notification ..... The Microsoft Teams Graph API activity feed notifications are currently available in desktop and Android clients after Developer Preview has been enabled. See How do I enable Developer Preview for more information.
 
 ## Permissions
 
@@ -55,12 +57,20 @@ POST /teams/{id}/sendActivityNotification
 | from | string |Displays a hint if the sender is different than the caller on the Graph token.|
 | chainId | long | Enables the developer to override a previous notification. If not included, a new notifcation will be posted.|
 | previewText | [itemBody](../resources/itemBody.md) | Preview text displayed to the user as part an activity feed item. |
-| templateParameters | [keyvaluepair](../resources/keyvaluepair.md) collection | Parameter values declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest) |
+| templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection | Parameter values declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest) |
 
 ## Response
 
 If successful, this method will return a `202 Accepted` response code with a Location: header pointing to the [operation](../resources/teamsasyncoperation.md) resource.
 When the operation is complete, the operation resource will tell you the id of the created team.
+
+If there is more than one Teams app corresponding to a given Graph appid, this method will return a `409 Conflict` response code
+with the message "Found multiple applications with the same AAD App ID '{guid}' - a Teams Application ID is required to resolve which application is correct."
+The message is misleading, there is no way to specify a Teams Application ID.
+You must disambiguate by Uninstalling any conflicting Teams apps.
+Note that Sideloading (uploading custom maps to a particular team, rather than to the app catalog)
+creates a new teams app and a new teams appid.
+
 
 ## Example
 
