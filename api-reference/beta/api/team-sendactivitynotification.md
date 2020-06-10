@@ -72,11 +72,28 @@ The following is an example of the request.
   "name": "clone_team"
 }-->
 ```http
-POST /users/{id}/teamwork/sendActivityNotification
+POST /teams/{teamId}/sendActivityNotification
 Content-Type: application/json
-
-{  
-.....................
+  
+{
+  "topic": {
+    "source": "entityUrl",
+    "value": "https://graph.microsoft.com/teams/dc0ae126-1046-4c7b-8b56-991f55479a11/channels/19:910b7d76f3564480a0e52e0671e0f116@thread.tacv2/messages/1591749374896"
+  },
+  "activityType": "questionAnswered",
+  "previewText": {
+    "content": "You've been answered, dude!"
+  },
+  "recipient": {
+    "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+    "userId": "598efcd4-e549-402a-9602-0b50201faebe"
+  },
+  "templateParameters": [
+    {
+      "name": "taskId",
+      "value": "Task 12322"
+    }
+  ]
 }
 ```
 # [C#](#tab/csharp)
@@ -107,6 +124,18 @@ HTTP/1.1 202 Accepted
 Location: /teams({id})/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
+
++		response	{StatusCode: 202, ReasonPhrase: 'Accepted', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  request-id: 3dea3644-e73c-4c5d-ab77-537e37ccdc61
+  client-request-id: 3dea3644-e73c-4c5d-ab77-537e37ccdc61
+  x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"West US 2","Slice":"SliceC","Ring":"1","ScaleUnit":"002","RoleInstance":"AGSFE_IN_13"}}
+  Strict-Transport-Security: max-age=31536000
+  Cache-Control: private
+  Date: Wed, 10 Jun 2020 05:55:42 GMT
+  Content-Length: 0
+  Content-Type: text/plain
+}}	System.Net.Http.HttpResponseMessage
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
