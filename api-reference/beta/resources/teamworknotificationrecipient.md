@@ -1,9 +1,9 @@
 ---
 title: "teamworkNotificationRecipient resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Who to send an activity notification to."
+author: "nkramer"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: Priority
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+Who to send an [activity notification](../api/team-sendactivitynotification.md) to. 
+Subclasses include aadUserNotificationRecipient](aadusernotificationrecipient.md).
 
 ## Properties
 |Property|Type|Description|
