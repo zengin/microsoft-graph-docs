@@ -10,8 +10,8 @@ ms.prod: "microsoft-teams"
 
 Here's some HTML you may encounter in the Teams messages.
 
-|Message Type|Content Property|
-|--------|-----------|---------|
+|Construct|Example|
+|--------|-----------|
 |Strikethrough|`<s>Strikethrough</s>`|
 |Table|`<table style=\"border-width:1px; border-style:solid; width:100%\">\n<colgroup><col style=\"width:50%\"><col style=\"width:50%\"></colgroup>\n<tbody>\n<tr style=\"border-width:1px; border-style:solid\">\n<td style=\"border-width:1px; border-style:solid; padding:0.3rem 0.6rem\"><strong>Name</strong></td>\n<td style=\"border-width:1px; border-style:solid; padding:0.3rem0.6rem\"><strong>Description</strong></td>\n</tr>\n<tr style=\"border-width:1px; border-style:solid\">\n<td style=\"border-width:1px; border-style:solid; padding:0.3rem 0.6rem\">&nbsp;</td>\n<td style=\"border-width:1px; border-style:solid; padding:0.3rem0.6rem\">&nbsp;</td>\n</tr>\n</tbody>\n</table>`|
 |Sticker|`<img alt=\"Meme image, Hey !!\" src=\"https://graph.microsoft.com/beta/teams/32e3b156-66b2-4135-9aeb-73295a35a55b/channels/19:f253e46c035b42308e9a4a22a87037af@thread.skype/messages/1591170271279/hostedContents/aWQ9eF8wLWV1cy1kNi1mMzk4YmU3ZmE5ZmUxODc0NWUxYzcwMGU1ZjM2ZWFjZSx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLWV1cy1kNi1mMzk4YmU3ZmE5ZmUxODc0NWUxYzcwMGU1ZjM2ZWFjZS92aWV3cy9pbWdv/$value\" style=\"width:250px; height:166px\">`|
@@ -25,4 +25,3 @@ Here's some HTML you may encounter in the Teams messages.
 |Send a praise card|`<attachment id=\"deea5ef098394989a6db5ec55f77ee1a\"></attachment></div></div> <div><at id=\"0\">Meenakshi Yeswanth (Ushta Te Consultancy Services) </at>`|
 |Attach a picture|`UY<attachment id=\"dd5685ef-e4b4-4a69-93e1-10c97ce9e2a4\"></attachment>`|
 |Highlight|`<span style=\"background-color:#6888c9\">Highlighting</span>`|
-
