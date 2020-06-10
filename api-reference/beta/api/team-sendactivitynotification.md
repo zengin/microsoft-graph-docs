@@ -63,8 +63,8 @@ POST /teams/{id}/sendActivityNotification
 
 ## Response
 
-If successful, this method will return a `202 Accepted` response code with a Location: header pointing to the [operation](../resources/teamsasyncoperation.md) resource.
-When the operation is complete, the operation resource will tell you the id of the created team.
+If successful, this method will return a `202 Accepted` response code. 
+It does not return anything in the response body.
 
 If there is more than one Teams app corresponding to a given Graph appid, this method will return a `409 Conflict` response code
 with the message "Found multiple applications with the same AAD App ID '{guid}' - a Teams Application ID is required to resolve which application is correct."
