@@ -85,6 +85,7 @@ The following is an example of the request.
 }-->
 ```http
 POST /teams/{teamId}/sendActivityNotification
+
 Content-Type: application/json
   
 {
@@ -124,8 +125,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
