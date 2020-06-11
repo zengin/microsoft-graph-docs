@@ -107,6 +107,9 @@ This resource supports:
 |[resetUnseenCount](../api/group-resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the signed-in user has not seen since their last visit. Supported for only Office 365 groups.|
 
 ## Properties
+
+> **Note:** The `creationOptions` property should not be used to determine the app that created a group and it will be deprecated at a future date.
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean| Indicates if people external to the organization can send messages to the group. Default value is **false**. <br><br>Returned only on $select. |
