@@ -10,7 +10,7 @@ ms.prod: "microsoft-identity-platform"
 
 This is step 2 of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-While planning your migration to Microsoft Graph, take time to review your existing application and to catalog the Azure AD Graph APIs you're currently using.  You can review the application code to see if the application is calling Azure AD Graph APIs.    You can also review your proxy traffic and find out which apps are calling Azure AD Graph API endpoints.
+While planning your migration to Microsoft Graph, take time to catalog API usage of your existing applications. You can review the application code to see if the application is calling Azure AD Graph APIs.  You can also review your proxy traffic and find out where apps are calling Azure AD Graph API endpoints.
 
 Compare your list to the known differences.  This helps identify specific changes you'll need to make to migrate your app.  These include simple changes easily resolved using an editor's search-and-replace features or more complicated updates that might require more analysis.
 
