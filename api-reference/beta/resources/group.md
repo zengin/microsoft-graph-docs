@@ -107,7 +107,7 @@ This resource supports:
 
 ## Properties
 
-> **Note:** The `resourceProvisioningOptions` property should not be used to determine the app that created a group and it may be deprecated at a future date.  Instead use the `createdByAppId` property for the App ID of the app used to create the group. 
+> **Note:** The `creationOptions` property should not be used to determine the app that created a group and it will be deprecated at a future date.  Instead use the `createdByAppId` property for the App ID of the app used to create the group.  In many cases the value of `createdByAppId` will be null as it was introduced in April 2020.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
