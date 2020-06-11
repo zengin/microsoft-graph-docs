@@ -107,6 +107,8 @@ This resource supports:
 
 ## Properties
 
+> **Note:** The `resourceProvisioningOptions` property should not be used to determine the app that created a group and it may be deprecated at a future date.  Instead use the `createdByAppId` property for the App ID of the app used to create the group. 
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean| Indicates if people external to the organization can send messages to the group. Default value is **false**. <br><br>Returned only on $select. |
