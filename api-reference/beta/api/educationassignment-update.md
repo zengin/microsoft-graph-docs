@@ -44,6 +44,8 @@ In the request body, supply the values for relevant fields that should be update
 |allowStudentsToAddResourcesToSubmission|Boolean| Whether a student can add resources to a submission. Indicated whether the only items on the submission came from the assignment resource list. |
 |assignDateTime|DateTimeOffset| Date the assignment should be published to students. |
 |assignTo|educationAssignmentRecipient| Students who get the assignment.|
+|backfillSetting|educationBackfillSetting| Controls the behavior for students who are added after the assignment is published.|
+|channelId|String| Channel to post assignment publish notification. Updating the channelId is not allowed after the assignment has been published and is only allowed when **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md).|
 |closeDateTime|DateTimeOffset| Date when the assignment will be closed for submissions. This is an optional field that can be null if the assignment does not allowLateSubmissions or the closeDateTime is the same as the dueDateTime but if specified, it must be greater than or equal to the dueDateTime.|
 |displayName|String| Name of assignment. |
 |dueDateTime|DateTimeOffset| Date assignment is due. |

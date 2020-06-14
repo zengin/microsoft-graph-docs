@@ -75,6 +75,10 @@ Content-length: 279
   "assignDateTime": "String (timestamp)",
   "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
   "assignedDateTime": "2014-01-01T00:00:00Z",
+  "backfillStting": {
+    "@odata.type": "#microsoft.graph.educationNoBackfill"
+  },
+  "channelId":null,
   "classId": "11006",
   "createdBy": {
     "user": {

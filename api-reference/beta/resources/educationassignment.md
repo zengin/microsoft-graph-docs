@@ -46,6 +46,8 @@ The assignment APIs are exposed in the class namespace.
 |assignDateTime|DateTimeOffset|The date when the assignment should become active.  If in the future, the assignment is not shown to the student until this date.  The **Timestamp** type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Which users, or whole class should receive a submission object once the assignment is published. |
 |assignedDateTime|DateTimeOffset|The moment that the assignment was published to students and the assignment shows up on the students timeline.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|backfillSetting|[educationBackfillSetting](educationbackfillsetting.md)|Optional field to control the assignment behavior for students who are added after the assignment is published. If not specified, defaults to [educationNoBackfill](educationnobackfill.md) value.|
+|channelId|String|Optional field to specify the Id of the [channel](channel.md) to post the assignment publish notification. If not specified or a null value defaults to the `General` channel. This field only applies to assignments where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the channelId is not allowed after the assignment has been published.|
 |classId|String| Class which this assignment belongs. |
 |closeDateTime|DateTimeOffset| Date when the assignment will be closed for submissions. This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime. But if specified, then the closeDateTime must be greater than or equal to the dueDateTime. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |createdBy|[identitySet](identityset.md)| Who created the assignment. |
@@ -87,6 +89,8 @@ The following is a JSON representation of the resource.
   "assignDateTime": "String (timestamp)",
   "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
   "assignedDateTime": "String (timestamp)",
+  "backfillSetting": {"@odata.type": "microsoft.graph.educationBackfillSetting"},
+  "channelId": "String",
   "classId": "String",
   "closeDateTime": "String (timestamp)",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
