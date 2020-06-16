@@ -17,7 +17,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 ## Methods
 
-| Property | Type | Description |
+| Method | Type | Description |
 |:---------------|:--------|:----------|
 |[Send activity notification](../api/team-sendactivitynotification.md) | None | Send an activity feed notification to the user. |
 
