@@ -13,16 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send an activity feed notification 
-to a single [user](../resources/user.md), 
-to all users in a [chat](../resources/chat.md), 
-or to all users in a [team](../resources/team.md).
+Send an activity feed notification to a single [user](../resources/user.md), to all users in a [chat](../resources/chat.md), or to all users in a [team](../resources/team.md).
 
-> Note: Only Microsoft Graph appids that have been linked with a Teams appid can send notifications, 
-see [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest) for more information.
+> **Note:** Only Microsoft Graph app IDs that have been linked with a Teams app ID can send notifications. For details,
+see [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest).
 
-> Note: Currently activity notifications sent via this API will only appear For users running Microsoft Teams Developer Preview on a web or desktop device.
-See [How do I enable Developer Preview](/microsoftteams/platform/resources/dev-preview/developer-preview-intro) for more information.
+> **Note:** Currently, activity notifications sent via this API will only appear For users running Microsoft Teams Developer Preview on a web or desktop device. For more information, see [How do I enable Developer Preview](/microsoftteams/platform/resources/dev-preview/developer-preview-intro).
 
 ## Permissions
 
@@ -47,7 +43,7 @@ POST /teams/{id}/sendActivityNotification
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -56,37 +52,29 @@ POST /teams/{id}/sendActivityNotification
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md) | Represents what is being referenced in the feed item. Required.|
 |activityType | string | Represents the type of activity and must be declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest). Required.|
 |recipient | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) | The intended receiver. A recipient must be a Teams user with the ability to post notifications to everyone in a team, channel, and chat.  Required.|
-| from | string |Displays a hint if the sender is different than the caller on the Graph token.|
-| chainId | long | Enables the developer to override a previous notification. If not included, a new notifcation will be posted. Note: currently, when specifying chainId, an unrelated notification from the same app will sometimes be replaced, we are working on a fix. |
+| from | string |Displays a hint if the sender is different than the caller on the Microsoft Graph token.|
+| chainId | long | Enables the developer to override a previous notification. If not included, a new notifcation will be posted. **Note:** Currently, when specifying **chainId**, an unrelated notification from the same app will sometimes be replaced. |
 | previewText | [itemBody](../resources/itemBody.md) | Preview text displayed to the user as part an activity feed item. |
-| templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection | Parameter values declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest) |
+| templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection | Parameter values declared in the [Teams App Manifest](/microsoftteams/platform/graph-api/activity-feed/feed-notifications#update-your-teams-app-manifest). |
 
 ## Response
 
-If successful, this method will return a `202 Accepted` response code. 
-It does not return anything in the response body.
+If successful, this method will return a `202 Accepted` response code. It does not return anything in the response body.
 
-If there is more than one Teams app corresponding to a given Graph appid, this method will return a `409 Conflict` response code
-with the message `Found multiple applications with the same AAD App ID '{guid}' - a Teams Application ID is required to resolve which application is correct.`
-The message is misleading, there is no way to specify a Teams Application ID.
-You must disambiguate by uninstalling any conflicting Teams apps.
-Note that sideloading (uploading custom maps to a particular team, rather than to the app catalog)
-creates a new teams app and a new teams appid.
+If there is more than one Teams app corresponding to a given Microsoft Graph app ID, this method will return a `409 Conflict` response code with the message `Found multiple applications with the same AAD App ID '{guid}' - a Teams Application ID is required to resolve which application is correct.` The message is misleading. There is no way to specify a Teams Application ID. You must disambiguate by uninstalling any conflicting Teams apps. Note that sideloading (uploading custom maps to a particular team, rather than to the app catalog) creates a new teams app and a new teams app ID.
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "Send_activity_notification"
 }-->
 ```http
 POST /teams/{teamId}/sendActivityNotification
-
 Content-Type: application/json
   
 {
@@ -109,22 +97,8 @@ Content-Type: application/json
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/clone-team-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/clone-team-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/clone-team-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
+### Response
 
 The following is an example of the response. 
 
