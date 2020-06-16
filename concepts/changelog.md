@@ -16,16 +16,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added the [GET Presence API](/graph/api/presence-get) API, the [POST getPresencesByUserID](/graph/api/cloudcommunications-getpresencesbyuserid) API, and the [Presence](/graph/api/resources/presence) resource type.|
-
-
-### Cloud communications
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget) method.|
 | Addition | v1.0 | Added an optional **externalId** property. |
 |Addition | beta | Added an additional path to the [Get presence](/graph/api/presence-get?view=graph-rest-beta) API.|
 |Addition | v1.0 | Added an optional `Accept-Language` header for [online meetings](/graph/api/resources/onlinemeeting).|
+| Addition | v1.0 | Added the [presence](/graph/api/resources/presence) resource type and the [Get presence](/graph/api/presence-get) and the [getPresencesByUserID](/graph/api/cloudcommunications-getpresencesbyuserid) methods.|
 
 ### Identity and access
 | **Change type** | **Version**   | **Description**                          |
