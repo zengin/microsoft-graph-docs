@@ -48,6 +48,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [educationSchool](../resources/educationschool.md) collection object in the response body.
 
+> [!IMPORTANT]
+> educationSchool deltas do not include deleted schools.
+
 ## Example
 
 
