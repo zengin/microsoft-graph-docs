@@ -76,7 +76,7 @@ Content-type: application/json
 
 {
   "id": "operation-id",
-  "status": "running",
+  "status": "running"
 }
 ```
 

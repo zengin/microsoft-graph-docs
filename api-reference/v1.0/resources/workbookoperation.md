@@ -52,7 +52,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "status": {"@odata.type": "microsoft.graph.workbookOperationStatus"},
   "error": {"@odata.type": "microsoft.graph.workbookOperationError"},
-  "resourceLocation": "String",
+  "resourceLocation": "String"
 }
 ```
 
