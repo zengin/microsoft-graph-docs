@@ -278,6 +278,7 @@ Content-type: application/json
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
+- [Create a group and team](/graph/teams-create-group-and-team)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
