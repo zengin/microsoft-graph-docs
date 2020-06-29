@@ -22,11 +22,11 @@ To represent the session in the API, use the `workbook-session-id: {session-id}`
 
 >**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.  
 
-In some cases, API responses require indeterminate time to complete, for example, open a workbook with large size. Instead of waiting until the action is complete before returning a response, Excel Graph also provides a long running operations pattern. This pattern provides a way to poll for status updates on a long running operation, without any request waiting for the action to complete. Here are the steps:
+In some cases, creating a new session requires indeterminate time to complete, Excel Graph also provides a long running operations pattern for it. This pattern provides a way to poll for creation status updates, without waiting for the creation to complete. Here are the steps:
 
 1. Adds a header of  `Prefer: respond-async` in the request to indicate it as a long running operation when creating a session.
-2. Response returns a header of `Location` to specify the URL for polling the operation status. You can retrieves the operation status by accessing the specified URL. Status includes `notStarted`, `running`, `succeeded` or `failed`.
-3. After operation completes, you can request the status again and response will show whether the operation is `succeeded` or `failed`.
+2. Response returns a header of `Location` to specify the URL for polling the creation operation status. You can retrieves the operation status by accessing the specified URL. Status includes `notStarted`, `running`, `succeeded` or `failed`.
+3. After operation completes, you can request the status again and response will show whether the creation is `succeeded` or `failed`.
 
 ## Error Handling
 
