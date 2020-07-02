@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 The getAvailableExtensionProperties action returns all or a filtered list of the directory extension properties that have been registered in a directory. The following entities support extension properties: user, group, organization, device, application, and servicePrincipal.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).[Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -82,6 +82,7 @@ Content-length: 43
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": [
     {
