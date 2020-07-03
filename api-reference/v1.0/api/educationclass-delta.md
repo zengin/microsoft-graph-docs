@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection. For more information, see [Use delta query](/graph/delta-query-overview).
+Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection. See [Use delta query](/graph/delta-query-overview) for details.
 
 ## Permissions
 
@@ -28,15 +28,14 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /education/classes/{id}/delta
-GET /education/me/classes/{id}/delta
+GET /education/classes/delta
 ```
 
 ## Request headers
 
 | Name          | Description   |
 | :------------ | :------------ |
-| Authorization | Bearer {token} |
+| Authorization | Bearer {code} |
 
 ## Request body
 
@@ -51,6 +50,7 @@ If successful, this method returns a `200 OK` response code and an [educationCla
 
 ## Example
 
+The following example shows how to call this API.
 
 ### Request
 
@@ -62,14 +62,14 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/{id}/delta
+GET https://graph.microsoft.com/v1.0/education/classes/delta
 ```
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -86,25 +86,18 @@ Content-length: 585
 {
   "value": [
     {
-      "displayName": "displayName-value",
-      "mailNickname": "mailNickname-value",
-      "description": "description-value",
-      "createdBy": {
-        "application": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "device": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "user": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        }
-      },
-      "classCode": "classCode-value",
-      "externalName": "externalName-value"
+      "classCode": "String",
+      "course": { "@odata.type": "microsoft.graph.educationCourse" },
+      "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+      "description": "String",
+      "displayName": "String",
+      "externalId": "String",
+      "externalName": "String",
+      "externalSource": "string",
+      "grade": "string",
+      "id": "String (identifier)",
+      "mailNickname": "String",
+      "term": { "@odata.type": "microsoft.graph.educationTerm" }
     }
   ]
 }

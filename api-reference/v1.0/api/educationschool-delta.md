@@ -28,17 +28,14 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /education/schools/{id}/delta
-GET /education/me/schools/{id}/delta
-GET /education/users/{id}/schools/{id}/delta
-
+GET /education/schools/delta
 ```
 
 ## Request headers
 
 | Name          | Description   |
 | :------------ | :------------ |
-| Authorization | Bearer {token} |
+| Authorization | Bearer {code} |
 
 ## Request body
 
@@ -53,6 +50,7 @@ If successful, this method returns a `200 OK` response code and an [educationSch
 
 ## Example
 
+The following example shows how to call this API.
 
 ### Request
 
@@ -64,14 +62,14 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/education/schools/{id}/delta
+GET https://graph.microsoft.com/v1.0/education/schools/delta
 ```
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -88,12 +86,20 @@ Content-length: 313
 {
   "value": [
     {
-      "principalEmail": "principalEmail-value",
-      "principalName": "principalName-value",
-      "externalPrincipalId": "externalPrincipalId-value",
-      "lowestGrade": "lowestGrade-value",
-      "highestGrade": "highestGrade-value",
-      "schoolNumber": "schoolNumber-value"
+      "address": { "@odata.type": "microsoft.graph.physicalAddress" },
+      "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+      "description": "String",
+      "displayName": "String",
+      "externalId": "String",
+      "externalPrincipalId": "String",
+      "externalSource": "string",
+      "highestGrade": "String",
+      "id": "String (identifier)",
+      "lowestGrade": "String",
+      "phone": "String",
+      "principalEmail": "String",
+      "principalName": "String",
+      "schoolNumber": "String"
     }
   ]
 }
