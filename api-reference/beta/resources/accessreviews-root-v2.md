@@ -35,8 +35,8 @@ The following table lists the methods that you can use to interact with access r
 
 | Method		   | Return type	|Description|
 |:---------------|:--------|:----------|
-|[List accessReviews](../api/accessreview-get.md) |	[scheduleDefinition](accessreview.md) collection |	Get a list of all access review definitions. |
-|[Get accessReview](../api/accessreview-get.md) |	[scheduleDefinition](accessreview.md) |	Get an access review deifintion with a specific ID. |
+|[List accessReviews](../api/accessreview-list-v2.md) |	[accessReviewScheduleDefinition](accessreview.md) collection |	Get a list of all access review definitions. |
+|[Get accessReview](../api/accessreview-get-v2.md) |	[accessReviewScheduleDefinition](accessreview.md) |	Get an access review deifintion with a specific ID. |
 
 <!--|[Create accessReview](../api/accessreview-create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
 |[Delete accessReview](../api/accessreview-delete.md) |	None.	| Delete an accessReview. |
