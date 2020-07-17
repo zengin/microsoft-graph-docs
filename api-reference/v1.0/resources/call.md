@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-TODO: Need to add Method - TranscriptionInfo and updated JSON 
+TODO: Need to add Method/Property- TranscriptionInfo and updated JSON 
 
 
 # call resource type
