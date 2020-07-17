@@ -7,6 +7,9 @@ ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
+TODO: Need to add Method - TranscriptionInfo and updated JSON 
+
+
 # call resource type
 
 Namespace: microsoft.graph
