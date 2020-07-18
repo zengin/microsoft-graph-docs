@@ -85,32 +85,42 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "2b83cc42-09db-46f6-8c6e-16fec466a82d",
-    "displayName": "review",
-    "startDateTime": "2017-11-14T01:14:54.89Z",
-    "endDateTime": "2017-12-14T01:14:54.89Z",
-    "status": "InProgress",
-    "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "self",
-    "description": "",
-    "reviewedEntity":{"id":"3b4f7e74-eb82-4120-9ff5-ba429c1ea6df","displayName":"Salesforce"},
+   "id": "2b83cc42-09db-46f6-8c6e-16fec466a82d",
+    "displayName": "15987",
+    "descriptionForReviewers": "asdfasdf",
+    "descriptionForAdmins": "asdfasdf",
+    "scope": {
+        "query": "/groups/8b55b80f-ccd2-415e-ab69-7f0b966869d4/members?$filter=microsoft.graph.user/userType eq ‘Guest’",
+        "type": "MicrosoftGraph”
+    },
+    "reviewers": [
+        {
+            "query": "/groups/46d30af1-e626-4928-83f5-e9bfa400289e/owners?$filter=microsoft.graph.user/userType eq ‘Member’ and microsoft.graph.user/country eq 
+            'USA’",
+            "type": "MicrosoftGraph”
+        }
+    ],
     "settings": {
         "mailNotificationsEnabled": true,
-        "remindersEnabled": true,
+        "reminderNotificationsEnabled": true,
         "justificationRequiredOnApproval": true,
-        "autoReviewEnabled": false,
-        "activityDurationInDays": 30,
-        "autoApplyReviewResultsEnabled": false,
-        "accessRecommendationsEnabled": false,
-        "recurrenceSettings": {
-            "recurrenceType": "onetime",
-            "recurrenceEndType": "endBy",
-            "durationInDays": 0,
-            "recurrenceCount": 0
-        },
-        "autoReviewSettings": {
-            "notReviewedResult": "Deny"
-        }
+        "recommendationsEnabled": true,
+        "instanceDurationInDays": 3,
+        "recurrence": {
+            "pattern": {
+                "type": "weekly",
+                "interval": 1
+            },
+            "range": {
+                "type": "noEnd",
+                "startDate": "2018-08-03T21:02:30.667Z",
+                "count": 0,
+            }
+         },
+        "defaultDecisionEnabled": true,
+        "defaultDecision":"Approve",
+        "autoApplyDecisionsEnabled": true,
+
     }
 }
 ```
