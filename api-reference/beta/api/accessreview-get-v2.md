@@ -88,40 +88,7 @@ Content-type: application/json
    "id": "2b83cc42-09db-46f6-8c6e-16fec466a82d",
     "displayName": "15987",
     "descriptionForReviewers": "asdfasdf",
-    "descriptionForAdmins": "asdfasdf",
-    "scope": {
-        "query": "/groups/8b55b80f-ccd2-415e-ab69-7f0b966869d4/members?$filter=microsoft.graph.user/userType eq ‘Guest’",
-        "type": "MicrosoftGraph”
-    },
-    "reviewers": [
-        {
-            "query": "/groups/46d30af1-e626-4928-83f5-e9bfa400289e/owners?$filter=microsoft.graph.user/userType eq ‘Member’ and microsoft.graph.user/country eq 
-            'USA’",
-            "type": "MicrosoftGraph”
-        }
-    ],
-    "settings": {
-        "mailNotificationsEnabled": true,
-        "reminderNotificationsEnabled": true,
-        "justificationRequiredOnApproval": true,
-        "recommendationsEnabled": true,
-        "instanceDurationInDays": 3,
-        "recurrence": {
-            "pattern": {
-                "type": "weekly",
-                "interval": 1
-            },
-            "range": {
-                "type": "noEnd",
-                "startDate": "2018-08-03T21:02:30.667Z",
-                "count": 0,
-            }
-         },
-        "defaultDecisionEnabled": true,
-        "defaultDecision":"Approve",
-        "autoApplyDecisionsEnabled": true,
-
-    }
+    "descriptionForAdmins": "asdfasdf"
 }
 ```
 
