@@ -49,7 +49,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 | `descriptionForAdmins`           |`String`                                                | Description provided by review creators to provide more context of the review to admins |
 | `descriptionForReviewers`           |`String`                                                | 	Description provided by review creators to provide more context of the review to reviewers. This string is displayed in the email that is sent to the reviewer. |
 | `createdBy`               |[userIdentity](useridentity.md)                                 | The user who created this review. |
-| `scope`               |accessReviewScope                              | This is used to define what to include in scope of the review. The scope definition includes defining the query/url and the type of the scope such as MicrosoftGraph/ARM. Examples of URLs/queries include: /groups/{id}/members |
+| `scope`               |accessReview <!--Scope-->                              | This is used to define what to include in scope of the review. The scope definition includes defining the query/url and the type of the scope such as MicrosoftGraph/ARM. Examples of URLs/queries include: /groups/{id}/members |
 | `settings`                |`microsoft.graph.accessReviewSettings`             | The settings of an accessReview, see type definition below. |
 | `reviewers`            |accessReviewScope collection                                                          | TThis collection of access review scopes is used to define who are the reviewers. The scope definition includes defining the query/url and the type of the scope such as MicrosoftGraph/ARM. | 
 
