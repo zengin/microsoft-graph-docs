@@ -33,7 +33,7 @@ In order to call this API, the signed in user must also be in a directory role t
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /accessReviews/{reviewId}
+GET /identityGovernance/accessReviews/definitions/{reviewId}
 ```
 ## Request headers
 | Name         | Type        | Description |
