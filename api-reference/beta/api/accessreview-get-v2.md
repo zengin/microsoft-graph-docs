@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve an [accessReviewScheduleDefinition](../resources/accessreview.md) object.  
+In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve an [accessReview](../resources/accessreview.md) object.  
 
 To retrieve the reviewers of the access review, use the [list accessReview reviewers](accessreview-listreviewers.md) API. To retrieve the decisions of the access review, use the [list accessReview decisions](accessreview-listdecisions.md) API, or the [list my accessReview decisions](accessreview-listmydecisions.md) API.
 
@@ -33,7 +33,7 @@ In order to call this API, the signed in user must also be in a directory role t
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /identityGovernance/accessReviews/definitions/{reviewId}
+GET /accessReviews/{reviewId}
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an [accessReview
   "name": "get_accessReview"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/2b83cc42-09db-46f6-8c6e-16fec466a82d
+GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-csharp-snippets.md)]
@@ -80,53 +80,40 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
   "truncated": true,
   "@odata.type": "microsoft.graph.accessReview",
 } -->
-
-<!--
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
     "id": "2b83cc42-09db-46f6-8c6e-16fec466a82d",
-    "displayName": "15987",
-    "descriptionForReviewers": "asdfasdf",
-    "descriptionForAdmins": "asdfasdf",
-    "scope": {
-        "query": "/groups/8b55b80f-ccd2-415e-ab69-7f0b966869d4/members?$filter=microsoft.graph.user/userType eq ‘Guest’",
-        "type": "MicrosoftGraph”
-    },
-    "reviewers": [
-        {
-            "query": "/groups/46d30af1-e626-4928-83f5-e9bfa400289e/owners?$filter=microsoft.graph.user/userType eq ‘Member’ and microsoft.graph.user/country eq 
-            'USA’",
-            "type": "MicrosoftGraph”
-        }
-    ],
+    "displayName": "review",
+    "startDateTime": "2017-11-14T01:14:54.89Z",
+    "endDateTime": "2017-12-14T01:14:54.89Z",
+    "status": "InProgress",
+    "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
+    "reviewerType": "self",
+    "description": "",
+    "reviewedEntity":{"id":"3b4f7e74-eb82-4120-9ff5-ba429c1ea6df","displayName":"Salesforce"},
     "settings": {
         "mailNotificationsEnabled": true,
-        "reminderNotificationsEnabled": true,
+        "remindersEnabled": true,
         "justificationRequiredOnApproval": true,
-        "recommendationsEnabled": true,
-        "instanceDurationInDays": 3,
-        "recurrence": {
-            "pattern": {
-                "type": "weekly",
-                "interval": 1
-            },
-            "range": {
-                "type": "noEnd",
-                "startDate": "2018-08-03T21:02:30.667Z",
-                "count": 0,
-            }
-         },
-        "defaultDecisionEnabled": true,
-        "defaultDecision":"Approve",
-        "autoApplyDecisionsEnabled": true,
-
+        "autoReviewEnabled": false,
+        "activityDurationInDays": 30,
+        "autoApplyReviewResultsEnabled": false,
+        "accessRecommendationsEnabled": false,
+        "recurrenceSettings": {
+            "recurrenceType": "onetime",
+            "recurrenceEndType": "endBy",
+            "durationInDays": 0,
+            "recurrenceCount": 0
+        },
+        "autoReviewSettings": {
+            "notReviewedResult": "Deny"
+        }
     }
 }
 ```
--->
 
 ## See also
 
