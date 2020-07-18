@@ -92,11 +92,11 @@ Content-type: application/json
     "status": "InProgress",
     "descriptionForAdmins": "",
     "descriptionForReviewers": "",
-    "createdBy": 
+    "createdBy": [
         "id": "0cb75d4c-b81b-4e82-bd8c-0f2afc174cf8",
         "displayName": "MOD Administrator",
         "userPrincipalName": "admin@M365x998010.onmicrosoft.com"
-    
+    ]
 }
 ```
 
