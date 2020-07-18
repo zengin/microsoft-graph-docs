@@ -83,15 +83,54 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
 {
-   "id": "2b83cc42-09db-46f6-8c6e-16fec466a82d",
-    "displayName": "15987",
-    "descriptionForReviewers": "asdfasdf",
-    "descriptionForAdmins": "asdfasdf",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions/$entity",
+    "id": "4cd7a57f-07a9-4e89-83d8-f2fc1fd764ef",
+    "displayName": "Test 7-15-2020",
+    "createdDateTime": "2020-07-15T18:42:33.2275259Z",
+    "lastModifiedDateTime": "2020-07-15T18:43:05Z",
+    "status": "InProgress",
+    "descriptionForAdmins": "",
+    "descriptionForReviewers": "",
+    "createdBy": {
+        "id": "0cb75d4c-b81b-4e82-bd8c-0f2afc174cf8",
+        "displayName": "MOD Administrator",
+        "userPrincipalName": "admin@M365x998010.onmicrosoft.com"
+    },
     "scope": {
-        "query": "/groups/8b55b80f-ccd2-415e-ab69-7f0b966869d4/members?$filter=microsoft.graph.user/userType eq ‘Guest’",
-        "type": "MicrosoftGraph”
+        "query": "/groups/273f86d7-d0e5-4429-8eaf-06fadf3a5d61/transitiveMembers/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+        "queryType": "MicrosoftGraph"
+    },
+    "reviewers": [
+        {
+            "query": "/users/0cb75d4c-b81b-4e82-bd8c-0f2afc174cf8",
+            "queryType": "MicrosoftGraph"
+        }
+    ],
+    "settings": {
+        "mailNotificationsEnabled": true,
+        "reminderNotificationsEnabled": true,
+        "justificationRequiredOnApproval": true,
+        "defaultDecisionEnabled": false,
+        "defaultDecision": "None",
+        "instanceDurationInDays": 0,
+        "autoApplyDecisionsEnabled": true,
+        "recommendationsEnabled": true,
+        "recurrence": {
+            "pattern": null,
+            "range": {
+                "type": "numbered",
+                "numberOfOccurrences": 0,
+                "recurrenceTimeZone": null,
+                "startDate": "2020-07-16",
+                "endDate": "9999-12-31"
+            }
+        },
+        "applyActions": [
+            {
+                "@odata.type": "#microsoft.graph.removeAccessApplyAction"
+            }
+        ]
     }
 }
 ```
