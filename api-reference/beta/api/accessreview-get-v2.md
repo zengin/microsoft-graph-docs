@@ -91,12 +91,7 @@ Content-type: application/json
     "lastModifiedDateTime": "2020-07-15T18:43:05Z",
     "status": "InProgress",
     "descriptionForAdmins": "",
-    "descriptionForReviewers": "",
-    "createdBy": [
-        "id": "0cb75d4c-b81b-4e82-bd8c-0f2afc174cf8",
-        "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@M365x998010.onmicrosoft.com"
-    ]
+    "descriptionForReviewers": ""
 }
 ```
 
