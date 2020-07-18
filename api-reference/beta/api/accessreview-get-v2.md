@@ -96,41 +96,6 @@ Content-type: application/json
         "id": "0cb75d4c-b81b-4e82-bd8c-0f2afc174cf8",
         "displayName": "MOD Administrator",
         "userPrincipalName": "admin@M365x998010.onmicrosoft.com"
-    },
-    "scope": {
-        "query": "/groups/273f86d7-d0e5-4429-8eaf-06fadf3a5d61/transitiveMembers/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
-        "queryType": "MicrosoftGraph"
-    },
-    "reviewers": [
-        {
-            "query": "/users/0cb75d4c-b81b-4e82-bd8c-0f2afc174cf8",
-            "queryType": "MicrosoftGraph"
-        }
-    ],
-    "settings": {
-        "mailNotificationsEnabled": true,
-        "reminderNotificationsEnabled": true,
-        "justificationRequiredOnApproval": true,
-        "defaultDecisionEnabled": false,
-        "defaultDecision": "None",
-        "instanceDurationInDays": 0,
-        "autoApplyDecisionsEnabled": true,
-        "recommendationsEnabled": true,
-        "recurrence": {
-            "pattern": null,
-            "range": {
-                "type": "numbered",
-                "numberOfOccurrences": 0,
-                "recurrenceTimeZone": null,
-                "startDate": "2020-07-16",
-                "endDate": "9999-12-31"
-            }
-        },
-        "applyActions": [
-            {
-                "@odata.type": "#microsoft.graph.removeAccessApplyAction"
-            }
-        ]
     }
 }
 ```
