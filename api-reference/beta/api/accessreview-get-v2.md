@@ -83,6 +83,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/accessReviews/definitions/$entity",
     "id": "4cd7a57f-07a9-4e89-83d8-f2fc1fd764ef",
