@@ -80,6 +80,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
   "truncated": true,
   "@odata.type": "microsoft.graph.accessReview",
 } -->
+
+<!--
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -124,6 +126,7 @@ Content-type: application/json
     }
 }
 ```
+-->
 
 ## See also
 
