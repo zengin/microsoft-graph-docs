@@ -21,7 +21,7 @@ The following permissions and/or roles are required for a calling user to list a
 
 | Target resource | Operation | Application permissions | Required directory role of the calling user |
 |:----------------|:------------------|:------------|:--------------------------------------------|
-|[accessReview](accessreview.md) of a group or app | Read | AccessReview.Read.All, AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or User Administrator |
+|[accessReviewScheduleDefinition](accessreviewscheduledefinition.md) of a group or app | Read | AccessReview.Read.All, AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or User Administrator |
 
 ## HTTP request
 

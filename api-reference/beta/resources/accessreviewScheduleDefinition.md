@@ -1,13 +1,13 @@
 ---
-title: "accessReview resource type"
-description: "In the Azure AD access reviews feature, the `accessReview` represents an access review.  "
+title: "accessReviewScheduleDefinition resource type"
+description: "In the Azure AD access reviews feature, the `accessReviewScheduleDefinition` represents an access review.  "
 localization_priority: Normal
-author: "markwahl-msft"
+author: "raprakasMSFT"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
-# accessReview resource type
+# accessReviewScheduleDefinition resource type
 
 Namespace: microsoft.graph
 
@@ -18,10 +18,12 @@ Represents an Azure AD [access review](accessreviews-root.md).
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method		   | Return type	|Description|
 |:---------------|:--------|:----------|
-|[List accessReviews](../api/accessreview-list.md) | [accessReview](accessreview.md) collection | List accessReviews for a businessFlowTemplate. |
-|[Get accessReview](../api/accessreview-get.md) |	[accessReview](accessreview.md) |	Get an access review with a specific id. |
+|[List accessReviews](../api/accessreview-list-v2.md) |	[accessReviewScheduleDefinition](accessreviewScheduleDefinition.md) collection |	Get a list of all access review definitions. |
+|[Get accessReview](../api/accessreview-get-v2.md) |	[accessReviewScheduleDefinition](accessreviewScheduleDefinition.md) |	Get an access review deifintion with a specific ID. |
+
+<!-- commented by raprakasMSFT on 7/17/2020
 |[Create accessReview](../api/accessreview-create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
 |[Update accessReview](../api/accessreview-update.md) |	[accessReview](accessreview.md)	| Update an accessReview. |
 |[Delete accessReview](../api/accessreview-delete.md) |	None.	| Delete an accessReview. |
@@ -34,21 +36,22 @@ Represents an Azure AD [access review](accessreviews-root.md).
 |[Stop accessReview](../api/accessreview-stop.md) |		None.	|	Stop an accessReview. |
 |[Reset accessReview decisions](../api/accessreview-reset.md) |		None.	|	Reset the decisions in an in-progress accessReview.|
 |[Apply accessReview decisions](../api/accessreview-apply.md) |		None.	|	Apply the decisions from a completed accessReview.|
+-->
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | The feature-assigned unique identifier of an access review. |
 | `displayName`             |`String`                                                        | The access review name. Required on create. |
-| `startDateTime`           |`DateTimeOffset`                                                | The DateTime when the review is scheduled to be start.  This could be a date in the future.  Required on create. |
-| `endDateTime`             |`DateTimeOffset`                                                | The DateTime when the review is scheduled to end. This must be at least one day later than the start date.  Required on create. |
-| `status`                  |`String`                                                        | This read-only field specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. |
-| `description`             |`String`                                                        | The description provided by the access review creator, to show to the reviewers. |
-| `businessFlowTemplateId`  |`String`                                                        | The business flow template identifier. Required on create.  This value is case sensitive. |
-| `reviewerType`            |`String`                                                        | The relationship type of reviewer to the target object, one of `self`, `delegated` or `entityOwners`. Required on create. | 
+| `createdDateTime`           |`DateTimeOffset`                                                | The DateTime when the review was created. |
+| `lastModifiedDateTime`           |`DateTimeOffset`                                                | The DateTime when the review was last modified. |
+| `status`           |`String`                                                | Status of an accessReview(Read-only). This describes the phase that an access review is in : For ex: InProgress, Completed. The state transitions are as follows - Initializing -> NotStarted -> Starting -> InProgress -> Completing -> Completed -> AutoReviewing -> AutoReviewed |
+| `descriptionForAdmins`           |`String`                                                | Description provided by review creators to provide more context of the review to admins |
+| `descriptionForReviewers`           |`String`                                                | 	Description provided by review creators to provide more context of the review to reviewers. This string is displayed in the email that is sent to the reviewer. |
 | `createdBy`               |[userIdentity](useridentity.md)                                 | The user who created this review. |
-| `reviewedEntity`          |[identity](identity.md)                                      | The object for which the access reviews is reviewing the access rights assignments. This can be the group for the review of memberships of users in a group, or the app for a review of assignments of users to an application. Required on create. | 
+| `scope`               |[accessReviewScope](accessreviewscope.md)                                 | This is used to define what to include in scope of the review. The scope definition includes defining the query/url and the type of the scope such as MicrosoftGraph/ARM. Examples of URLs/queries include: /groups/{id}/members |
 | `settings`                |`microsoft.graph.accessReviewSettings`             | The settings of an accessReview, see type definition below. |
+| `reviewers`            |[accessReviewScope](accessreviewscope.md) collection                                                          | TThis collection of access review scopes is used to define who are the reviewers. The scope definition includes defining the query/url and the type of the scope such as MicrosoftGraph/ARM. | 
 
 
 
@@ -59,11 +62,9 @@ Represents an Azure AD [access review](accessreviews-root.md).
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-| `reviewers`               |[userIdentity](useridentity.md) collection                     | The collection of reviewers for an access review, if access review reviewerType is of type `delegated`. |
-| `decisions`               |[accessReviewDecision](accessreviewdecision.md) collection | The collection of decisions for this access review. |
-| `myDecisions`             |[accessReviewDecision](accessreviewdecision.md) collection | The collection of decisions for the caller, if the caller is a reviewer. |
-| `instances`               |[accessReview](accessreview.md) collection         | The collection of access reviews instances past, present and future, if this object is a recurring access review. |
+| `instances`               |[accessReviewInstance](accessreviewinstance.md) collection                     | Set of access reviews instance for this recurrent access review. |
 
+<!--
 Whether these relationships are present on an object, depends upon whether the object is a one-time access review, the series of a recurring access review, or an instance of a recurring access review.
 
 | Scenario | Has reviewers? | Has decisions and myDecisions? | Has instances? |
@@ -71,7 +72,7 @@ Whether these relationships are present on an object, depends upon whether the o
 |One-time access review|Yes | Yes, once started | No |
 | Recurring access review | Yes | No | Yes |
 | Instance of a recurring access review | Yes | Yes, once started | No |
-
+-->
 ## JSON representation
 
 Here is a JSON representation of the resource.
