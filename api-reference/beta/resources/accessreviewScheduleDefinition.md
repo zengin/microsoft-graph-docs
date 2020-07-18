@@ -51,7 +51,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 | `createdBy`               |[userIdentity](useridentity.md)                                 | The user who created this review. |
 | `scope`               |accessReview <!--Scope-->                              | This is used to define what to include in scope of the review. The scope definition includes defining the query/url and the type of the scope such as MicrosoftGraph/ARM. Examples of URLs/queries include: /groups/{id}/members |
 | `settings`                |`microsoft.graph.accessReviewSettings`             | The settings of an accessReview, see type definition below. |
-| `reviewers`            |accessReviewScope collection                                                          | TThis collection of access review scopes is used to define who are the reviewers. The scope definition includes defining the query/url and the type of the scope such as MicrosoftGraph/ARM. | 
+| `reviewers`            |accessReview <!--Scope--> collection                                                          | TThis collection of access review scopes is used to define who are the reviewers. The scope definition includes defining the query/url and the type of the scope such as MicrosoftGraph/ARM. | 
 
 
 
@@ -62,7 +62,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-| `instances`               |accessreviewInstance collection                     | Set of access reviews instance for this recurrent access review. |
+| `instances`               |accessreview <!--Instance--> collection                     | Set of access reviews instance for this recurrent access review. |
 
 <!--
 Whether these relationships are present on an object, depends upon whether the object is a one-time access review, the series of a recurring access review, or an instance of a recurring access review.
