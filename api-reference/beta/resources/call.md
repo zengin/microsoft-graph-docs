@@ -92,7 +92,8 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | targets             | [invitationParticipantInfo](participantinfo.md) collection                                             | The targets of the call. Required information for creating peer to peer call.                                                                                                            |
 | tenantId            | String                                                                                                 | Read-only. `tenantId` in Azure Active Directory.                                                                                                                        |
 | terminationReason   | String                                                                                                 | Read-only.                                                                                                                                                                       |
-| toneInfo            | [toneInfo](toneinfo.md)                                                                                | Read-only.                                                                                                                                                                        |
+| toneInfo            | [toneInfo](toneinfo.md)                                                                                | Read-only.       |                            
+| transcriptionInfo            | String                                                                                | Read-only. The call state. Possible values are: 'active', 'inactive', 'unknown'          |                                                                                                                                                             
 
 ## Relationships
 
@@ -164,6 +165,10 @@ The following is a JSON representation of the resource.
   "tenantId": "String",
   "terminationReason": "String",
   "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
+    "transcriptionInfo":{
+     "state":"active",
+     "stateUpdatedTime":"2020-05-28T00:10:54.104318Z"
+  }
 }
 ```
 
