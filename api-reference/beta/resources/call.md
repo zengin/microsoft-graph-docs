@@ -93,7 +93,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | tenantId            | String                                                                                                 | Read-only. `tenantId` in Azure Active Directory.                                                                                                                        |
 | terminationReason   | String                                                                                                 | Read-only.                                                                                                                                                                       |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | Read-only.       |                            
-| transcriptionInfo            | String                                                                                | Read-only. The call state. Possible values are: 'active', 'inactive', 'unknown'          |                                                                                                                                                             
+| transcriptionInfo            | String                                                                                | Read-only. The call state. Possible values are: `active`, `inactive`, `unknown`.          |                                                                                                                                                             
 
 ## Relationships
 
