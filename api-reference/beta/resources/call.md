@@ -164,8 +164,8 @@ The following is a JSON representation of the resource.
   "targets": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "tenantId": "String",
   "terminationReason": "String",
-  "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
-    "transcriptionInfo":{
+  "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"},
+   "transcriptionInfo":{
      "state":"active",
      "stateUpdatedTime":"2020-05-28T00:10:54.104318Z"
   }
