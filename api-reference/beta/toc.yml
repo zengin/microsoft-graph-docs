@@ -969,11 +969,13 @@ items:
           href: resources/synchronization-configure-with-custom-target-attributes.md
         - name: Synchronize directory extension attributes
           href: resources/synchronization-configure-with-directory-extension-attributes.md
+        - name: Acquire access token
+          href: api/synchronization-synchronization-acquireaccesstoken.md 
         - name: Directory definition
           href: resources/synchronization-directorydefinition.md
           items:
           - name: Discover
-            href: api/directorydefinition-discover.md
+            href: api/directorydefinition-discover.md  
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
@@ -993,6 +995,8 @@ items:
             href: api/synchronization-synchronizationjob-delete.md
           - name: Provision on demand
             href: api/synchronization-synchronizationjob-provision-on-demand.md
+          - name: Validate credentials
+            href: api/synchronization-synchronizationjob-validatecredentials.md
         - name: Schema
           href: resources/synchronization-synchronizationschema.md
           items:
@@ -1316,6 +1320,8 @@ items:
           href: api/application-post-onlinemeetings.md
         - name: Get
           href: api/onlinemeeting-get.md
+        - name: Update
+          href: api/onlinemeeting-patch.md          
         - name: Delete
           href: api/onlinemeeting-delete.md
         - name: Create or get
@@ -9458,6 +9464,10 @@ items:
             href: api/device-post-registeredowners.md
           - name: Create registered user
             href: api/device-post-registeredusers.md
+          - name: Remove registered owner
+            href: api/device-delete-registeredowners.md
+          - name: Remove registered user
+            href: api/device-delete-registeredusers.md
           - name: List device groups
             href: api/device-list-memberof.md
           - name: List device transitive groups
