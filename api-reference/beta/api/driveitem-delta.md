@@ -2,12 +2,12 @@
 author: JeremyKelley
 description: "This method allows your app to track changes to a drive and its children over time."
 ms.date: 09/10/2017
-title: Sync the contents of a drive
+title: "driveitem: delta"
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Track changes for a Drive
+# driveitem: delta
 
 Namespace: microsoft.graph
 
@@ -292,7 +292,7 @@ In addition to the resync errors detailed above, see [Error Responses][error-res
   "description": "Sync changes from the service to your client state.",
   "keywords": "sync,delta,changes,$delta",
   "section": "documentation",
-  "tocPath": "Items/Sync changes",
+  "tocPath": "Items/Get delta",
   "suppressions": [
   ]
 }

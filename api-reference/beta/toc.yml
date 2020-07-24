@@ -9117,7 +9117,7 @@ items:
           href: api/driveitem-createuploadsession.md
         - name: Search items
           href: api/driveitem-search.md
-        - name: Track changes
+        - name: Get delta
           href: api/driveitem-delta.md
         - name: Get preview link
           href: api/driveitem-preview.md
@@ -11339,6 +11339,8 @@ items:
           href: api/site-unfollow.md
         - name: List followed sites
           href: api/sites-list-followed.md
+        - name: Get delta
+          href: api/sites-delta.md
       - name: Lists
         href: resources/list.md
         items:
