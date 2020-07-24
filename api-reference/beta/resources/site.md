@@ -52,6 +52,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 |:-------------------------|:-------------------|:-----------------------------
 | **id**                   | string             | The [unique identifier](#id-property) of the item. Read-only.
 | **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
+| **deleted**              | [deleted][]        | Information about the deleted state of the item. Read-only.
 | **description**          | string             | The descriptive text for the site.
 | **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
 | **displayName**          | string             | The full title for the site. Read-only.
@@ -90,6 +91,7 @@ The `root` identifier always references the root site for a given target, as fol
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
+[deleted]: deleted.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
@@ -114,7 +116,8 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
     "siteCollection",
     "drive",
     "drives",
-    "sites"
+    "sites",
+    "deleted"
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
@@ -127,6 +130,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "root": { "@odata.type": "microsoft.graph.root" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
+  "deleted": { "@odata.type": "microsoft.graph.deleted"},
   "displayName": "string",
 
   /* relationships */
