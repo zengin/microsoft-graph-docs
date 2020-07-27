@@ -192,8 +192,9 @@ Content-Type: application/json
   "chatInfo": null,
   "meetingInfo": null,
   "meetingCapability": null,
+  "transcriptionInfo": null,
   "toneInfo": null
-}
+ }
 ```
 
 ##### Notification - establishing
@@ -404,6 +405,7 @@ Content-Type: application/json
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
+  "transcriptionInfo":null,
   "meetingCapability": null,
   "toneInfo": null
 }
@@ -666,6 +668,11 @@ Content-Type: application/json
         "displayName": "Bob"
       }
     },
+    "transcriptioninfo": {
+    "@odata.type": "#microsoft.graph.transcriptionInfo",
+     "state":"active",
+     "stateUpdatedTime":"2020-05-28T00:10:54.104318Z"
+  },
     "allowConversationWithoutHost": true
   },
   "routingPolicies": [],
@@ -680,7 +687,8 @@ Content-Type: application/json
   "resultInfo": null,
   "answeredBy": null,
   "meetingCapability": null,
-  "toneInfo": null
+  "toneInfo": null,
+  "transcriptioninfo": null
 }
 ```
 
@@ -771,6 +779,12 @@ Content-Type: application/json
               "displayName": "Bob"
             }
           },
+           "TranscriptionInfo": {
+          "@odata.type": "#microsoft.graph.transcriptioninfo",
+          "state":"inactive",
+          "stateUpdatedTime":"2020-05-28T00:10:54.104318Z"
+
+        },
           "allowConversationWithoutHost": true
         },
         "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92"
