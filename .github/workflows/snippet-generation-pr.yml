@@ -32,10 +32,10 @@ jobs:
         BASE: master
       run: |
         git fetch origin master
-        $count = git rev-list master.. --count
+        $count = git rev-list origin/master.. --count
         if ($count -eq 1) # create PR only if this is the first commit in the branch
         {
-          curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
+          & bash "curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1"
           bin/hub pull-request -b "$BASE" -h "$GITHUB_REF" -m "$MESSAGE_TITLE" -m "$MESSAGE_BODY" -r "$REVIEWERS" -a "$ASSIGNEDTO"
         }
 
