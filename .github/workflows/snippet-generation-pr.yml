@@ -35,6 +35,7 @@ jobs:
         git fetch origin master
         commitCount=`git rev-list origin/master.. --count`
         git rev-list origin/master.. --count
+        git log -n 10
         echo "commitCount is $commitCount"
         git status
         if [ $commitCount == 1 ]; then
