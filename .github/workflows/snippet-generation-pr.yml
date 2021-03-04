@@ -34,6 +34,7 @@ jobs:
         git fetch origin master
         count=$(git rev-list origin/master.. --count >&1)
         echo "count is $count"
+        git status
         if [ $count == 1 ]; then
           echo "count is $count in if block"
           curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
