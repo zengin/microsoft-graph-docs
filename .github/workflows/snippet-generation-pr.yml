@@ -33,11 +33,13 @@ jobs:
       run: |
         git fetch origin master
         count=$(git rev-list origin/master.. --count >&1)
-
+        echo "count is $count"
         if [ $count == 1 ]; then
+          echo "count is $count in if block"
           curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
           bin/hub pull-request -b "$BASE" -h "$GITHUB_REF" -m "$MESSAGE_TITLE" -m "$MESSAGE_BODY" -r "$REVIEWERS" -a "$ASSIGNEDTO"
         else
+          echo "count is $count in else block"
           echo "this is a subsequent commit to the snippets branch, so ignoring PR generation request.."
         fi
 
