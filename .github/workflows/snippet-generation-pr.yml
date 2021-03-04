@@ -31,7 +31,8 @@ jobs:
         ASSIGNEDTO: zengin
         BASE: master
       run: |
-        $count = git rev-list master... --count
+        git fetch origin master
+        $count = git rev-list master.. --count
         if ($count -eq 1) # create PR only if this is the first commit in the branch
         {
           curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
