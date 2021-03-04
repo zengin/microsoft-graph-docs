@@ -31,8 +31,10 @@ jobs:
         ASSIGNEDTO: zengin
         BASE: master
       run: |
+        echo "--commitCount is $commitCount"
         git fetch origin master
         commitCount=`git rev-list origin/master.. --count`
+        git rev-list origin/master.. --count
         echo "commitCount is $commitCount"
         git status
         if [ $commitCount == 1 ]; then
