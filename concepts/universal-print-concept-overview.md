@@ -22,12 +22,15 @@ As organizations adopt Universal Print, organizations and independent software v
 ### Print documents from web and mobile applications
 
 Moving print infrastructure to the cloud enables printing documents directly from web and mobile applications.
+- Users can submit print jobs to printerShare.
+- Printer admins can also submit print jobs to a printer, for doing preliminary testing before sharing the printer with the organization.
 
-To get started with the Universal Print API:
+Follow these steps to submit print jobs to printerShare:
 
-1. [Create a print job](/graph/api/printer-post-jobs?view=graph-rest-beta) and store the resulting document ID.
-2. [Upload document data](/graph/api/printdocument-uploaddata?view=graph-rest-beta) to the document.
-3. [Start the print job](/graph/api/printjob-startprintjob?view=graph-rest-beta).
+1. [Create a print job](/graph/api/printershare-post-jobs?view=graph-rest-beta) and store the resulting document ID.
+2. [Create an uploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) for the document. 
+3. [Upload bytes to the created upload session](./upload-data-to-upload-session.md).
+4. [Start the print job](/graph/api/printjob-start?view=graph-rest-beta).
 
 ### Manage printers
 
@@ -42,12 +45,12 @@ Keeping track of an organization's printers, printer configurations, and printer
   * [List monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta)
 
 * **Configure user permissions** by modifying user and group membership on printers:
-  * [List allowedUsers](/graph/api/printer-list-allowedusers?view=graph-rest-beta)
-  * [Add allowedUser](/graph/api/printer-post-allowedusers?view=graph-rest-beta)
-  * [Remove allowedUser](/graph/api/printer-delete-alloweduser?view=graph-rest-beta)
-  * [List allowedGroups](/graph/api/printer-list-allowedgroups?view=graph-rest-beta)
-  * [Add allowedGroup](/graph/api/printer-post-allowedgroups?view=graph-rest-beta)
-  * [Remove allowedGroup](/graph/api/printer-delete-allowedgroup?view=graph-rest-beta)
+  * [List allowedUsers](/graph/api/printershare-list-allowedusers?view=graph-rest-beta)
+  * [Add allowedUser](/graph/api/printershare-post-allowedusers?view=graph-rest-beta)
+  * [Remove allowedUser](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)
+  * [List allowedGroups](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)
+  * [Add allowedGroup](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)
+  * [Remove allowedGroup](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)
 
 ### Seamlessly replace or update printer hardware
 
@@ -84,7 +87,10 @@ Looking for the API reference for this service?
 
 - [Universal Print API in Microsoft Graph beta](/graph/api/resources/print?view=graph-rest-beta)
 
+## Provide feedback
+
+We'd love to hear your feedback about the Universal Print APIs. Provide your suggestions on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+
 ## See also
 
-- [What is Universal Print](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis)
-- We'd love to hear your feedback about the Universal Print APIs over at [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)!
+- [What is Universal Print](/universal-print/fundamentals/universal-print-whatis)

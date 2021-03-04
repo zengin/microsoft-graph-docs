@@ -1,6 +1,5 @@
 ---
 author: learafa
-ms.author: learafa
 title: Grant permission
 description: Grant a list of users access to use the specified link
 localization_priority: Normal
@@ -221,3 +220,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sharing/Add permissions"
 } -->
+

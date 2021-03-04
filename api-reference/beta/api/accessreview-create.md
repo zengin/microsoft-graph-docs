@@ -3,7 +3,7 @@ title: "Create accessReview"
 description: "In the Azure AD access reviews feature, create a new accessReview object."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -89,7 +89,7 @@ Content-type: application/json
     "startDateTime":"2017-02-10T00:35:53.214Z",
     "endDateTime":"2017-03-12T00:35:53.214Z",
     "reviewedEntity": {
-        "id": "99025615-a0b1-47ec-9117-35377b10998b",
+        "id": "99025615-a0b1-47ec-9117-35377b10998b"
     },
     "reviewerType" : "delegated",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
@@ -159,3 +159,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

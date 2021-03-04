@@ -32,8 +32,8 @@ GET /users/{id | userPrincipalName}/calendars
 
 The user's calendars in the default [calendarGroup](../resources/calendargroup.md).
 ```http
-GET /me/calendargroups/{calendar_group_id}/calendars
-GET /users/{id | userPrincipalName}/calendarGroup/calendars
+GET /me/calendars
+GET /users/{id | userPrincipalName}/calendars
 ```
 
 The user's calendars in a specific [calendarGroup](../resources/calendargroup.md).
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -109,6 +109,7 @@ Content-type: application/json
             "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
             "canShare":true,
             "canViewPrivateItems":true,
+            "hexColor": "",
             "canEdit":true,
             "allowedOnlineMeetingProviders": [
                 "teamsForBusiness"

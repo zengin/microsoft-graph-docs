@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Create a SharePoint List
 localization_priority: Normal
@@ -133,3 +132,4 @@ Default properties will be returned from the actual call.
   "suppressions": [
   ]
 } -->
+

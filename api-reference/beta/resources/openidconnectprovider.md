@@ -3,7 +3,7 @@ title: "openIdConnectProvider resource type"
 description: "Represents OpenIDConnect identity providers in an Azure Active Directory B2C tenant."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "namkedia"
 ---
 
@@ -18,6 +18,17 @@ Represents OpenID Connect identity providers in an Azure Active Directory B2C te
 Configuring an OpenID Connect provider in B2C tenant enables users to sign up and sign in using their custom identity provider in an application.
 
 Inherits from [identityProvider](../resources/identityprovider.md).
+
+## Methods
+
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[List](../api/identityprovider-list.md)|identityProvider collection|Retrieve all identity providers configured in a tenant.|
+|[Create](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new OpenID Connect identity provider.|
+|[Get](../api/identityprovider-get.md) |identityProvider|Retrieve properties of an OpenID Connect identity provider.|
+|[Update](../api/identityprovider-update.md)|None|Update an OpenID Connect identity provider.|
+|[Delete](../api/identityprovider-delete.md)|None|Delete an OpenID Connect identity provider.|
+|[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types.|
 
 ## Properties
 
@@ -66,3 +77,5 @@ The following is a JSON representation of the resource.
   "scope": "String"
 }
 ```
+
+

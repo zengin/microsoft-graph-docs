@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: Update listItem
 description: Update the properties on a **[listItem][]**.
 localization_priority: Priority
@@ -115,3 +114,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

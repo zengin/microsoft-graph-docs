@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Create bundle
 description: Create a bundle of driveItems
 localization_priority: Normal
@@ -92,6 +91,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-bundle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-bundle-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -149,6 +152,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-album-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-album-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -188,3 +195,5 @@ If `My Day at the Beach 1` is taken, then the number would be incremented again 
   "section": "documentation",
   "tocPath": "Bundles/Create"
 } -->
+
+

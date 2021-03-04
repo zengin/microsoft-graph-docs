@@ -3,7 +3,7 @@ title: "directory resource type (deleted items)"
 description: ". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
 localization_priority: Normal
 author: "keylimesoda"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -70,3 +70,4 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

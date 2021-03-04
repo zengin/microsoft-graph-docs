@@ -1,6 +1,5 @@
 ---
 author: learafa
-ms.author: learafa
 title: "Get websocket endpoint"
 description: "Use of these APIs in production applications is not supported."
 localization_priority: Normal
@@ -67,6 +66,10 @@ GET /me/drive/root/subscriptions/socketIo
 [!INCLUDE [sample-code](../includes/snippets/objc/drive-root-subscriptions-socketio-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/drive-root-subscriptions-socketio-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -122,3 +125,5 @@ socket.on("notification", (data)=>console.log("Notification!", data));
   "suppressions": [
   ]
 }-->
+
+

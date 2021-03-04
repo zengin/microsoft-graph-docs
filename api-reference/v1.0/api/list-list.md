@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: List the SharePoint lists in a site
 localization_priority: Priority
@@ -113,3 +112,4 @@ To list them, include `system` in your `$select` statement.
   "suppressions": [
   ]
 } -->
+

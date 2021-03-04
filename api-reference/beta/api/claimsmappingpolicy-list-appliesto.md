@@ -3,7 +3,7 @@ title: "List appliesTo"
 description: "Get a list of directoryObject objects that a claimsMappingPolicy object has been applied to."
 localization_priority: Normal
 author: "paulgarn"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -101,3 +101,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

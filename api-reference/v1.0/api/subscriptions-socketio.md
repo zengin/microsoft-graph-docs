@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: "Get websocket endpoint"
 localization_priority: Normal
 ms.prod: "sharepoint"
@@ -118,3 +117,4 @@ socket.on("notification", (data)=>console.log("Notification!", data));
   "suppressions": [
   ]
 }-->
+

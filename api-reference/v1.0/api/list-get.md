@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: Get a SharePoint list
 localization_priority: Priority
 ms.prod: "sharepoint"
@@ -231,3 +230,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

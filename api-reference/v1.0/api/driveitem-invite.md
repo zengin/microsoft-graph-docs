@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Send an invite to access an item
 localization_priority: Normal
@@ -172,3 +171,4 @@ how errors are returned.
   "suppressions": [
   ]
 } -->
+

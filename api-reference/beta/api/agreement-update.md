@@ -3,7 +3,7 @@ title: "Update agreement"
 description: "Update the properties of an agreement object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "raprakasMSFT"
 ---
 
@@ -73,6 +73,10 @@ Content-length: 85
 [!INCLUDE [sample-code](../includes/snippets/objc/update-agreement-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-agreement-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -108,3 +112,5 @@ Content-length: 105
   ]
 }
 -->
+
+

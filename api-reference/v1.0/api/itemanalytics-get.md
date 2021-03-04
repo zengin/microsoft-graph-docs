@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: Get itemAnalytics
 description: Get itemAnalytics about the views that took place under this resource.
 localization_priority: Normal
@@ -121,3 +120,4 @@ Content-type: application/json
   ]
 }
 -->
+

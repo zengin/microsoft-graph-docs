@@ -5,7 +5,6 @@ services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
-ms.author: solsen
 doc_type: apiPageType
 ms.prod: "dynamics-365-business-central"
 ---
@@ -76,3 +75,5 @@ Here is an example of the response.
   "periodLengthFilter": "3M"   
 }
 ```
+
+
