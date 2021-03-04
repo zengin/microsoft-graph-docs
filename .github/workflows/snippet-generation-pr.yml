@@ -22,7 +22,7 @@ jobs:
 
     # Create a pull request [0]
     - name: Create PR using the GitHub REST API via hub
-      shell: pwsh
+      shell: bash
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         MESSAGE_TITLE: "Snippets Update"
@@ -32,12 +32,12 @@ jobs:
         BASE: master
       run: |
         git fetch origin master
-        $count = git rev-list origin/master.. --count
-        if ($count -eq 1) # create PR only if this is the first commit in the branch
-        {
-          & bash "curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1"
+        count=`git rev-list origin/master.. --count`
+
+        if [ $count -eq 1 ]; then
+          curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
           bin/hub pull-request -b "$BASE" -h "$GITHUB_REF" -m "$MESSAGE_TITLE" -m "$MESSAGE_BODY" -r "$REVIEWERS" -a "$ASSIGNEDTO"
-        }
+        fi
 
 # References
 # [0] https://hub.github.com/hub-pull-request.1.html
